@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://blp3fegvc1q6g"
-path="res://.godot/imported/stoolBarSquare.glb-544c7766e03f21c858c22b2890d66083.scn"
+path="res://.godot/imported/stoolBarSquare.glb-b226f0ea74296e947451c79d55590d93.scn"
 
 [deps]
 
-source_file="res://Assets/BrickAssets/GLTF format/stoolBarSquare.glb"
-dest_files=["res://.godot/imported/stoolBarSquare.glb-544c7766e03f21c858c22b2890d66083.scn"]
+source_file="res://assets/BrickAssets/GLTF format/stoolBarSquare.glb"
+dest_files=["res://.godot/imported/stoolBarSquare.glb-b226f0ea74296e947451c79d55590d93.scn"]
 
 [params]
 

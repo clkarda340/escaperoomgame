@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://bc5prvuvm8yny"
-path="res://.godot/imported/bathroomSinkSquare.glb-0a1306891478467e4d391af6c282536f.scn"
+path="res://.godot/imported/bathroomSinkSquare.glb-b91c8cc45e455d5f79455ba9fe033adc.scn"
 
 [deps]
 
-source_file="res://Assets/BrickAssets/GLTF format/bathroomSinkSquare.glb"
-dest_files=["res://.godot/imported/bathroomSinkSquare.glb-0a1306891478467e4d391af6c282536f.scn"]
+source_file="res://assets/BrickAssets/GLTF format/bathroomSinkSquare.glb"
+dest_files=["res://.godot/imported/bathroomSinkSquare.glb-b91c8cc45e455d5f79455ba9fe033adc.scn"]
 
 [params]
 

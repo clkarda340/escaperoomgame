@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://bud3yc08oy25v"
-path="res://.godot/imported/ceilingFan.glb-4e6df00188313b7ab4cbad34c2ff5568.scn"
+path="res://.godot/imported/ceilingFan.glb-939b04c2ff8efaf58b003f2898c9e706.scn"
 
 [deps]
 
-source_file="res://Assets/BrickAssets/GLTF format/ceilingFan.glb"
-dest_files=["res://.godot/imported/ceilingFan.glb-4e6df00188313b7ab4cbad34c2ff5568.scn"]
+source_file="res://assets/BrickAssets/GLTF format/ceilingFan.glb"
+dest_files=["res://.godot/imported/ceilingFan.glb-939b04c2ff8efaf58b003f2898c9e706.scn"]
 
 [params]
 

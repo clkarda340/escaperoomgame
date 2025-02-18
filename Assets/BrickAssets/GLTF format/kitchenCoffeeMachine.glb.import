@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://b30tyckj6n5vp"
-path="res://.godot/imported/kitchenCoffeeMachine.glb-146829aaec4ee5acbb64cfacd7b5197c.scn"
+path="res://.godot/imported/kitchenCoffeeMachine.glb-b41a1c285f7bafaa7fefe31ace37820f.scn"
 
 [deps]
 
-source_file="res://Assets/BrickAssets/GLTF format/kitchenCoffeeMachine.glb"
-dest_files=["res://.godot/imported/kitchenCoffeeMachine.glb-146829aaec4ee5acbb64cfacd7b5197c.scn"]
+source_file="res://assets/BrickAssets/GLTF format/kitchenCoffeeMachine.glb"
+dest_files=["res://.godot/imported/kitchenCoffeeMachine.glb-b41a1c285f7bafaa7fefe31ace37820f.scn"]
 
 [params]
 

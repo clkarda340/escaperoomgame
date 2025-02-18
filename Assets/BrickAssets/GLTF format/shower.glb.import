@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://jysynv7b6e1w"
-path="res://.godot/imported/shower.glb-e5298fd5d504b542e7ba2952ab2ed573.scn"
+path="res://.godot/imported/shower.glb-3b893446015f028b4cd1e422a5c87775.scn"
 
 [deps]
 
-source_file="res://Assets/BrickAssets/GLTF format/shower.glb"
-dest_files=["res://.godot/imported/shower.glb-e5298fd5d504b542e7ba2952ab2ed573.scn"]
+source_file="res://assets/BrickAssets/GLTF format/shower.glb"
+dest_files=["res://.godot/imported/shower.glb-3b893446015f028b4cd1e422a5c87775.scn"]
 
 [params]
 

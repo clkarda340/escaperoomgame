@@ -1,30 +1,10 @@
-[gd_scene load_steps=6 format=3 uid="uid://dyo4arcx2l8oc"]
+[gd_scene load_steps=3 format=3 uid="uid://dyo4arcx2l8oc"]
 
 [ext_resource type="PackedScene" uid="uid://dpeblt4rqw5b7" path="res://scenes/mimari.tscn" id="1_r6jw6"]
 [ext_resource type="PackedScene" uid="uid://bs72ogkvdd7d6" path="res://addons/proto_controller/proto_controller.tscn" id="2_g72bx"]
 
-[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_p1lhw"]
-sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
-ground_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
-
-[sub_resource type="Sky" id="Sky_xfhca"]
-sky_material = SubResource("ProceduralSkyMaterial_p1lhw")
-
-[sub_resource type="Environment" id="Environment_vgep6"]
-background_mode = 2
-sky = SubResource("Sky_xfhca")
-tonemap_mode = 2
-glow_enabled = true
-
 [node name="Main Game" type="Node3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.2, 0.2, 0.1)
-
-[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
-environment = SubResource("Environment_vgep6")
-
-[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
-transform = Transform3D(-0.866025, -0.433013, 0.25, 0, 0.5, 0.866025, -0.5, 0.75, -0.433013, 0, 0, 0)
-shadow_enabled = true
 
 [node name="Mimari" parent="." instance=ExtResource("1_r6jw6")]
 

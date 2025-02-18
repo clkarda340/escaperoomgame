@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://be02hyxp31jn6"
-path="res://.godot/imported/plantSmall3.glb-dc5ab478f4119a8c0bf9314c45095493.scn"
+path="res://.godot/imported/plantSmall3.glb-2b4790139d3b01630e69dcb018b732e2.scn"
 
 [deps]
 
-source_file="res://Assets/BrickAssets/GLTF format/plantSmall3.glb"
-dest_files=["res://.godot/imported/plantSmall3.glb-dc5ab478f4119a8c0bf9314c45095493.scn"]
+source_file="res://assets/BrickAssets/GLTF format/plantSmall3.glb"
+dest_files=["res://.godot/imported/plantSmall3.glb-2b4790139d3b01630e69dcb018b732e2.scn"]
 
 [params]
 

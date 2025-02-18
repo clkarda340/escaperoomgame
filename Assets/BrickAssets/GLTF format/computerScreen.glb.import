@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://cqtk2va8id46h"
-path="res://.godot/imported/computerScreen.glb-c90eba5cf6a43255836399a9d6093092.scn"
+path="res://.godot/imported/computerScreen.glb-e67ae85be87b0b7c2e6d6bb35a62892e.scn"
 
 [deps]
 
-source_file="res://Assets/BrickAssets/GLTF format/computerScreen.glb"
-dest_files=["res://.godot/imported/computerScreen.glb-c90eba5cf6a43255836399a9d6093092.scn"]
+source_file="res://assets/BrickAssets/GLTF format/computerScreen.glb"
+dest_files=["res://.godot/imported/computerScreen.glb-e67ae85be87b0b7c2e6d6bb35a62892e.scn"]
 
 [params]
 

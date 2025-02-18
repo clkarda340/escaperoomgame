@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://dh15b8qi517vq"
-path="res://.godot/imported/lampSquareFloor.glb-8f61a5d2752dc57e8d4f5c81481e8503.scn"
+path="res://.godot/imported/lampSquareFloor.glb-d39f22219da330a8f0e1a1eaf8f1d500.scn"
 
 [deps]
 
-source_file="res://Assets/BrickAssets/GLTF format/lampSquareFloor.glb"
-dest_files=["res://.godot/imported/lampSquareFloor.glb-8f61a5d2752dc57e8d4f5c81481e8503.scn"]
+source_file="res://assets/BrickAssets/GLTF format/lampSquareFloor.glb"
+dest_files=["res://.godot/imported/lampSquareFloor.glb-d39f22219da330a8f0e1a1eaf8f1d500.scn"]
 
 [params]
 

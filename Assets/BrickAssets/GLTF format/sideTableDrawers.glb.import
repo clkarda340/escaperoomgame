@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://dm55pu35aof8o"
-path="res://.godot/imported/sideTableDrawers.glb-687fbfe7417eba047911cf6672165eb1.scn"
+path="res://.godot/imported/sideTableDrawers.glb-6ac0164cbe359f8aa0b932b9051db51e.scn"
 
 [deps]
 
-source_file="res://Assets/BrickAssets/GLTF format/sideTableDrawers.glb"
-dest_files=["res://.godot/imported/sideTableDrawers.glb-687fbfe7417eba047911cf6672165eb1.scn"]
+source_file="res://assets/BrickAssets/GLTF format/sideTableDrawers.glb"
+dest_files=["res://.godot/imported/sideTableDrawers.glb-6ac0164cbe359f8aa0b932b9051db51e.scn"]
 
 [params]
 

@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://bkbtnvg4na5hh"
-path="res://.godot/imported/bookcaseOpen.glb-42d42b008e6be1dbe03eb0441e1f75a8.scn"
+path="res://.godot/imported/bookcaseOpen.glb-5cda4b35629287f530c5957b2ad610d8.scn"
 
 [deps]
 
-source_file="res://Assets/BrickAssets/GLTF format/bookcaseOpen.glb"
-dest_files=["res://.godot/imported/bookcaseOpen.glb-42d42b008e6be1dbe03eb0441e1f75a8.scn"]
+source_file="res://assets/BrickAssets/GLTF format/bookcaseOpen.glb"
+dest_files=["res://.godot/imported/bookcaseOpen.glb-5cda4b35629287f530c5957b2ad610d8.scn"]
 
 [params]
 

@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://cnu1x372832vq"
-path="res://.godot/imported/bookcaseClosedWide.glb-fb9dc1a95247ff783bb9a4231d1c6805.scn"
+path="res://.godot/imported/bookcaseClosedWide.glb-412dac44a9b989c793d7151f5b1b04ad.scn"
 
 [deps]
 
-source_file="res://Assets/BrickAssets/GLTF format/bookcaseClosedWide.glb"
-dest_files=["res://.godot/imported/bookcaseClosedWide.glb-fb9dc1a95247ff783bb9a4231d1c6805.scn"]
+source_file="res://assets/BrickAssets/GLTF format/bookcaseClosedWide.glb"
+dest_files=["res://.godot/imported/bookcaseClosedWide.glb-412dac44a9b989c793d7151f5b1b04ad.scn"]
 
 [params]
 

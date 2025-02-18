@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://bjkdixauulme"
-path="res://.godot/imported/bear.glb-dfd1a8a63a4b45b3fc4631ec180280c8.scn"
+path="res://.godot/imported/bear.glb-008a28618744c4a38943125034e77f13.scn"
 
 [deps]
 
-source_file="res://Assets/BrickAssets/GLTF format/bear.glb"
-dest_files=["res://.godot/imported/bear.glb-dfd1a8a63a4b45b3fc4631ec180280c8.scn"]
+source_file="res://assets/BrickAssets/GLTF format/bear.glb"
+dest_files=["res://.godot/imported/bear.glb-008a28618744c4a38943125034e77f13.scn"]
 
 [params]
 

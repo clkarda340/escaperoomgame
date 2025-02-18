@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://duk6fyy5jog8t"
-path="res://.godot/imported/cabinetTelevisionDoors.glb-6d2bd805e40b652d137b1d4aa9b040f9.scn"
+path="res://.godot/imported/cabinetTelevisionDoors.glb-e548a73154718190a1211bf41d591538.scn"
 
 [deps]
 
-source_file="res://Assets/BrickAssets/GLTF format/cabinetTelevisionDoors.glb"
-dest_files=["res://.godot/imported/cabinetTelevisionDoors.glb-6d2bd805e40b652d137b1d4aa9b040f9.scn"]
+source_file="res://assets/BrickAssets/GLTF format/cabinetTelevisionDoors.glb"
+dest_files=["res://.godot/imported/cabinetTelevisionDoors.glb-e548a73154718190a1211bf41d591538.scn"]
 
 [params]
 

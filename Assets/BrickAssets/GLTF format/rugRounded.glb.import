@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://c37ygvl8h6r4c"
-path="res://.godot/imported/rugRounded.glb-7ca9ad70307482c45e84b928e22f0a59.scn"
+path="res://.godot/imported/rugRounded.glb-939560814513a1b3bb5ec6f14894a14d.scn"
 
 [deps]
 
-source_file="res://Assets/BrickAssets/GLTF format/rugRounded.glb"
-dest_files=["res://.godot/imported/rugRounded.glb-7ca9ad70307482c45e84b928e22f0a59.scn"]
+source_file="res://assets/BrickAssets/GLTF format/rugRounded.glb"
+dest_files=["res://.godot/imported/rugRounded.glb-939560814513a1b3bb5ec6f14894a14d.scn"]
 
 [params]
 

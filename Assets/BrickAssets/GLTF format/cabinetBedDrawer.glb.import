@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://d32q2w3snqa6w"
-path="res://.godot/imported/cabinetBedDrawer.glb-f1dd5e37dfd3adc2bfa9462ccbe3cf52.scn"
+path="res://.godot/imported/cabinetBedDrawer.glb-17533aeee25f35a2c67fd7339b0e86cd.scn"
 
 [deps]
 
-source_file="res://Assets/BrickAssets/GLTF format/cabinetBedDrawer.glb"
-dest_files=["res://.godot/imported/cabinetBedDrawer.glb-f1dd5e37dfd3adc2bfa9462ccbe3cf52.scn"]
+source_file="res://assets/BrickAssets/GLTF format/cabinetBedDrawer.glb"
+dest_files=["res://.godot/imported/cabinetBedDrawer.glb-17533aeee25f35a2c67fd7339b0e86cd.scn"]
 
 [params]
 

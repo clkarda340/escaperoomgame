@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://dxyx7ijsl1nbt"
-path="res://.godot/imported/kitchenBar.glb-ec5db852c5df98b71b0c82a09feb2d78.scn"
+path="res://.godot/imported/kitchenBar.glb-9de578a20c85ec62df5454859711c8fa.scn"
 
 [deps]
 
-source_file="res://Assets/BrickAssets/GLTF format/kitchenBar.glb"
-dest_files=["res://.godot/imported/kitchenBar.glb-ec5db852c5df98b71b0c82a09feb2d78.scn"]
+source_file="res://assets/BrickAssets/GLTF format/kitchenBar.glb"
+dest_files=["res://.godot/imported/kitchenBar.glb-9de578a20c85ec62df5454859711c8fa.scn"]
 
 [params]
 

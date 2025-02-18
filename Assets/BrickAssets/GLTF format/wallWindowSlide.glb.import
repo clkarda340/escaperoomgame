@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://dyww4yrsu8gcv"
-path="res://.godot/imported/wallWindowSlide.glb-14bc08dbb6bddaa1cbd65d6a5fdb8b88.scn"
+path="res://.godot/imported/wallWindowSlide.glb-0fcd00277d8c8290027ca4f5e193e409.scn"
 
 [deps]
 
-source_file="res://Assets/BrickAssets/GLTF format/wallWindowSlide.glb"
-dest_files=["res://.godot/imported/wallWindowSlide.glb-14bc08dbb6bddaa1cbd65d6a5fdb8b88.scn"]
+source_file="res://assets/BrickAssets/GLTF format/wallWindowSlide.glb"
+dest_files=["res://.godot/imported/wallWindowSlide.glb-0fcd00277d8c8290027ca4f5e193e409.scn"]
 
 [params]
 

@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://do72gc30eqeir"
-path="res://.godot/imported/doorwayFront.glb-da6e8337fe68c964c8b23f5789b5b7fa.scn"
+path="res://.godot/imported/doorwayFront.glb-d7ed221c2b033f58dac8d2247bd945bd.scn"
 
 [deps]
 
-source_file="res://Assets/BrickAssets/GLTF format/doorwayFront.glb"
-dest_files=["res://.godot/imported/doorwayFront.glb-da6e8337fe68c964c8b23f5789b5b7fa.scn"]
+source_file="res://assets/BrickAssets/GLTF format/doorwayFront.glb"
+dest_files=["res://.godot/imported/doorwayFront.glb-d7ed221c2b033f58dac8d2247bd945bd.scn"]
 
 [params]
 

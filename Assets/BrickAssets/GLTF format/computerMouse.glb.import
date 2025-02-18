@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://dm04p8ryduesp"
-path="res://.godot/imported/computerMouse.glb-0b3102deb5e67b154291dced5d5d6116.scn"
+path="res://.godot/imported/computerMouse.glb-f02f10aa95014dcd34d2574d8017dad8.scn"
 
 [deps]
 
-source_file="res://Assets/BrickAssets/GLTF format/computerMouse.glb"
-dest_files=["res://.godot/imported/computerMouse.glb-0b3102deb5e67b154291dced5d5d6116.scn"]
+source_file="res://assets/BrickAssets/GLTF format/computerMouse.glb"
+dest_files=["res://.godot/imported/computerMouse.glb-f02f10aa95014dcd34d2574d8017dad8.scn"]
 
 [params]
 

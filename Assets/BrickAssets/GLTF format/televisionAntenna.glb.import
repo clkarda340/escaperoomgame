@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://bsc5qc5ejclau"
-path="res://.godot/imported/televisionAntenna.glb-2aff5ed49f5326a155c6ae1acc4f3c2a.scn"
+path="res://.godot/imported/televisionAntenna.glb-586c8a9b4e39ea16376c3112f70f8a98.scn"
 
 [deps]
 
-source_file="res://Assets/BrickAssets/GLTF format/televisionAntenna.glb"
-dest_files=["res://.godot/imported/televisionAntenna.glb-2aff5ed49f5326a155c6ae1acc4f3c2a.scn"]
+source_file="res://assets/BrickAssets/GLTF format/televisionAntenna.glb"
+dest_files=["res://.godot/imported/televisionAntenna.glb-586c8a9b4e39ea16376c3112f70f8a98.scn"]
 
 [params]
 

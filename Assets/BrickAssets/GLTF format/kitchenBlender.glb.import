@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://n4veikm3m2da"
-path="res://.godot/imported/kitchenBlender.glb-75e7e980fac03f567eb9fd9294525783.scn"
+path="res://.godot/imported/kitchenBlender.glb-dabbf4e347ce8cdcd6929d5646e5f6cd.scn"
 
 [deps]
 
-source_file="res://Assets/BrickAssets/GLTF format/kitchenBlender.glb"
-dest_files=["res://.godot/imported/kitchenBlender.glb-75e7e980fac03f567eb9fd9294525783.scn"]
+source_file="res://assets/BrickAssets/GLTF format/kitchenBlender.glb"
+dest_files=["res://.godot/imported/kitchenBlender.glb-dabbf4e347ce8cdcd6929d5646e5f6cd.scn"]
 
 [params]
 

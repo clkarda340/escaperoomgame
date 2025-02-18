@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://dn50yqtpqj0hx"
-path="res://.godot/imported/bathroomCabinet.glb-1520e25a8641713992572784f2763ff6.scn"
+path="res://.godot/imported/bathroomCabinet.glb-0698d9cb136898d5b6a4fdf696264d9d.scn"
 
 [deps]
 
-source_file="res://Assets/BrickAssets/GLTF format/bathroomCabinet.glb"
-dest_files=["res://.godot/imported/bathroomCabinet.glb-1520e25a8641713992572784f2763ff6.scn"]
+source_file="res://assets/BrickAssets/GLTF format/bathroomCabinet.glb"
+dest_files=["res://.godot/imported/bathroomCabinet.glb-0698d9cb136898d5b6a4fdf696264d9d.scn"]
 
 [params]
 

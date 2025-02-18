@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://n5d6bh05nal7"
-path="res://.godot/imported/washerDryerStacked.glb-d38b9746d8e17c7be8efa0532c32c50b.scn"
+path="res://.godot/imported/washerDryerStacked.glb-3c3d0924cd0f816bd57f7240a9e3d1b2.scn"
 
 [deps]
 
-source_file="res://Assets/BrickAssets/GLTF format/washerDryerStacked.glb"
-dest_files=["res://.godot/imported/washerDryerStacked.glb-d38b9746d8e17c7be8efa0532c32c50b.scn"]
+source_file="res://assets/BrickAssets/GLTF format/washerDryerStacked.glb"
+dest_files=["res://.godot/imported/washerDryerStacked.glb-3c3d0924cd0f816bd57f7240a9e3d1b2.scn"]
 
 [params]
 

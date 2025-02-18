@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://ddiafjok112j"
-path="res://.godot/imported/bathroomMirror.glb-2c6ef6308003a56b098f8b1ec43ff4c4.scn"
+path="res://.godot/imported/bathroomMirror.glb-4a6a8a30b4cc127ae8d067eb1e693b16.scn"
 
 [deps]
 
-source_file="res://Assets/BrickAssets/GLTF format/bathroomMirror.glb"
-dest_files=["res://.godot/imported/bathroomMirror.glb-2c6ef6308003a56b098f8b1ec43ff4c4.scn"]
+source_file="res://assets/BrickAssets/GLTF format/bathroomMirror.glb"
+dest_files=["res://.godot/imported/bathroomMirror.glb-4a6a8a30b4cc127ae8d067eb1e693b16.scn"]
 
 [params]
 

@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://b8ylqo73nx2j4"
-path="res://.godot/imported/hoodModern.glb-23d8c0474b8532b9503f28ddf7e4b357.scn"
+path="res://.godot/imported/hoodModern.glb-e86770720d9db31d01360d97a35623f5.scn"
 
 [deps]
 
-source_file="res://Assets/BrickAssets/GLTF format/hoodModern.glb"
-dest_files=["res://.godot/imported/hoodModern.glb-23d8c0474b8532b9503f28ddf7e4b357.scn"]
+source_file="res://assets/BrickAssets/GLTF format/hoodModern.glb"
+dest_files=["res://.godot/imported/hoodModern.glb-e86770720d9db31d01360d97a35623f5.scn"]
 
 [params]
 

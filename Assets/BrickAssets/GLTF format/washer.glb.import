@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://cplmwulnawq0g"
-path="res://.godot/imported/washer.glb-20af1a1ce8906cd9bd988c23ae2843b1.scn"
+path="res://.godot/imported/washer.glb-9462738ae675422e475c3a547fcf4fc7.scn"
 
 [deps]
 
-source_file="res://Assets/BrickAssets/GLTF format/washer.glb"
-dest_files=["res://.godot/imported/washer.glb-20af1a1ce8906cd9bd988c23ae2843b1.scn"]
+source_file="res://assets/BrickAssets/GLTF format/washer.glb"
+dest_files=["res://.godot/imported/washer.glb-9462738ae675422e475c3a547fcf4fc7.scn"]
 
 [params]
 

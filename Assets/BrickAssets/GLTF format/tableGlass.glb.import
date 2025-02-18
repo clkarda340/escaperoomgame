@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://gwnniox3krei"
-path="res://.godot/imported/tableGlass.glb-dfabcbe7a6ff93f8ea79ea256ac106f4.scn"
+path="res://.godot/imported/tableGlass.glb-156e7b98b07f746262b026b40a365978.scn"
 
 [deps]
 
-source_file="res://Assets/BrickAssets/GLTF format/tableGlass.glb"
-dest_files=["res://.godot/imported/tableGlass.glb-dfabcbe7a6ff93f8ea79ea256ac106f4.scn"]
+source_file="res://assets/BrickAssets/GLTF format/tableGlass.glb"
+dest_files=["res://.godot/imported/tableGlass.glb-156e7b98b07f746262b026b40a365978.scn"]
 
 [params]
 

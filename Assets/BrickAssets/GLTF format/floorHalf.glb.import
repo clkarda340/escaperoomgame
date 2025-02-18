@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://drr3ynmc285k2"
-path="res://.godot/imported/floorHalf.glb-a2625cbf5afb51eb2fe05aecfdb59e49.scn"
+path="res://.godot/imported/floorHalf.glb-9f866f5a03311e5cf26a2f088c3feadd.scn"
 
 [deps]
 
-source_file="res://Assets/BrickAssets/GLTF format/floorHalf.glb"
-dest_files=["res://.godot/imported/floorHalf.glb-a2625cbf5afb51eb2fe05aecfdb59e49.scn"]
+source_file="res://assets/BrickAssets/GLTF format/floorHalf.glb"
+dest_files=["res://.godot/imported/floorHalf.glb-9f866f5a03311e5cf26a2f088c3feadd.scn"]
 
 [params]
 

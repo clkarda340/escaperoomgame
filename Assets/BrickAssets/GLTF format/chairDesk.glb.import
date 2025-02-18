@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://y23mdkmrhejv"
-path="res://.godot/imported/chairDesk.glb-95d4674d24c0cbcb588e2beb0dbb7596.scn"
+path="res://.godot/imported/chairDesk.glb-ccc181b2078317d1e0d21b9ca2799846.scn"
 
 [deps]
 
-source_file="res://Assets/BrickAssets/GLTF format/chairDesk.glb"
-dest_files=["res://.godot/imported/chairDesk.glb-95d4674d24c0cbcb588e2beb0dbb7596.scn"]
+source_file="res://assets/BrickAssets/GLTF format/chairDesk.glb"
+dest_files=["res://.godot/imported/chairDesk.glb-ccc181b2078317d1e0d21b9ca2799846.scn"]
 
 [params]
 

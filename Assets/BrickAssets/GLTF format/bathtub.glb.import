@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://bxjpctif0i88x"
-path="res://.godot/imported/bathtub.glb-d3d6e635397104eff677f24aebdc0f71.scn"
+path="res://.godot/imported/bathtub.glb-8e73d2e95962375771a127d0e2fccab5.scn"
 
 [deps]
 
-source_file="res://Assets/BrickAssets/GLTF format/bathtub.glb"
-dest_files=["res://.godot/imported/bathtub.glb-d3d6e635397104eff677f24aebdc0f71.scn"]
+source_file="res://assets/BrickAssets/GLTF format/bathtub.glb"
+dest_files=["res://.godot/imported/bathtub.glb-8e73d2e95962375771a127d0e2fccab5.scn"]
 
 [params]
 

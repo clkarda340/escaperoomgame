@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://gm5xolrmuyf1"
-path="res://.godot/imported/chairModernFrameCushion.glb-56211947cb463b026c278fe7e3b24ddb.scn"
+path="res://.godot/imported/chairModernFrameCushion.glb-6613fb55f2f81fc33bc4381c2329da75.scn"
 
 [deps]
 
-source_file="res://Assets/BrickAssets/GLTF format/chairModernFrameCushion.glb"
-dest_files=["res://.godot/imported/chairModernFrameCushion.glb-56211947cb463b026c278fe7e3b24ddb.scn"]
+source_file="res://assets/BrickAssets/GLTF format/chairModernFrameCushion.glb"
+dest_files=["res://.godot/imported/chairModernFrameCushion.glb-6613fb55f2f81fc33bc4381c2329da75.scn"]
 
 [params]
 

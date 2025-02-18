@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://dj5g7uw3ft3cc"
-path="res://.godot/imported/pottedPlant.glb-80aa1b8b82ed42aee9babc205b4d4c0b.scn"
+path="res://.godot/imported/pottedPlant.glb-087f9a72a48ea86ff3b65f9d147aa870.scn"
 
 [deps]
 
-source_file="res://Assets/BrickAssets/GLTF format/pottedPlant.glb"
-dest_files=["res://.godot/imported/pottedPlant.glb-80aa1b8b82ed42aee9babc205b4d4c0b.scn"]
+source_file="res://assets/BrickAssets/GLTF format/pottedPlant.glb"
+dest_files=["res://.godot/imported/pottedPlant.glb-087f9a72a48ea86ff3b65f9d147aa870.scn"]
 
 [params]
 

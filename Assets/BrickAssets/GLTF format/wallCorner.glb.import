@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://cj28v4idxom7m"
-path="res://.godot/imported/wallCorner.glb-bea04f3794da0de124770943301e2ab3.scn"
+path="res://.godot/imported/wallCorner.glb-73dafd302273de762e40710124c64909.scn"
 
 [deps]
 
-source_file="res://Assets/BrickAssets/GLTF format/wallCorner.glb"
-dest_files=["res://.godot/imported/wallCorner.glb-bea04f3794da0de124770943301e2ab3.scn"]
+source_file="res://assets/BrickAssets/GLTF format/wallCorner.glb"
+dest_files=["res://.godot/imported/wallCorner.glb-73dafd302273de762e40710124c64909.scn"]
 
 [params]
 

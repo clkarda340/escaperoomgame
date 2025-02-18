@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://b4d2x2avcxukd"
-path="res://.godot/imported/kitchenSink.glb-07bef197c162716204d1785811e909ab.scn"
+path="res://.godot/imported/kitchenSink.glb-12f66390c5a246268ac7f8001839ada5.scn"
 
 [deps]
 
-source_file="res://Assets/BrickAssets/GLTF format/kitchenSink.glb"
-dest_files=["res://.godot/imported/kitchenSink.glb-07bef197c162716204d1785811e909ab.scn"]
+source_file="res://assets/BrickAssets/GLTF format/kitchenSink.glb"
+dest_files=["res://.godot/imported/kitchenSink.glb-12f66390c5a246268ac7f8001839ada5.scn"]
 
 [params]
 

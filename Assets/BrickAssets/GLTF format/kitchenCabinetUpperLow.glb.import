@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://b5akvnx5ebtmo"
-path="res://.godot/imported/kitchenCabinetUpperLow.glb-78b121660c757548a66fb3a2c2da7b54.scn"
+path="res://.godot/imported/kitchenCabinetUpperLow.glb-fbba8f6b9be0bc64426c3f5caca1ebfb.scn"
 
 [deps]
 
-source_file="res://Assets/BrickAssets/GLTF format/kitchenCabinetUpperLow.glb"
-dest_files=["res://.godot/imported/kitchenCabinetUpperLow.glb-78b121660c757548a66fb3a2c2da7b54.scn"]
+source_file="res://assets/BrickAssets/GLTF format/kitchenCabinetUpperLow.glb"
+dest_files=["res://.godot/imported/kitchenCabinetUpperLow.glb-fbba8f6b9be0bc64426c3f5caca1ebfb.scn"]
 
 [params]
 

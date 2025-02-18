@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://dvk6a4lg2g78v"
-path="res://.godot/imported/chairRounded.glb-1fa370b08998e0ed623ac208a8590107.scn"
+path="res://.godot/imported/chairRounded.glb-847d90e8ea6f9d6e701c911eda5d4a0d.scn"
 
 [deps]
 
-source_file="res://Assets/BrickAssets/GLTF format/chairRounded.glb"
-dest_files=["res://.godot/imported/chairRounded.glb-1fa370b08998e0ed623ac208a8590107.scn"]
+source_file="res://assets/BrickAssets/GLTF format/chairRounded.glb"
+dest_files=["res://.godot/imported/chairRounded.glb-847d90e8ea6f9d6e701c911eda5d4a0d.scn"]
 
 [params]
 

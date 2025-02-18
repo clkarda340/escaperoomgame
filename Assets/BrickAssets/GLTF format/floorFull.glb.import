@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://cm53qnt522q4i"
-path="res://.godot/imported/floorFull.glb-b7eb31cdc12e8b5f9df23f9132c45079.scn"
+path="res://.godot/imported/floorFull.glb-eb2302c7cb7cb0eab064f7d27e0f4d2d.scn"
 
 [deps]
 
-source_file="res://Assets/BrickAssets/GLTF format/floorFull.glb"
-dest_files=["res://.godot/imported/floorFull.glb-b7eb31cdc12e8b5f9df23f9132c45079.scn"]
+source_file="res://assets/BrickAssets/GLTF format/floorFull.glb"
+dest_files=["res://.godot/imported/floorFull.glb-eb2302c7cb7cb0eab064f7d27e0f4d2d.scn"]
 
 [params]
 
