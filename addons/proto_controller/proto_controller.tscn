@@ -34,7 +34,8 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.7, 0)
 [node name="Hand" type="Node3D" parent="Head"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.430138, 0)
 
-[node name="SpotLight3D" type="SpotLight3D" parent="Head/Hand"]
+[node name="OmniLight3D" type="OmniLight3D" parent="Head/Hand"]
+light_color = Color(0.325441, 0.325441, 0.325441, 1)
+light_energy = 0.1
 shadow_enabled = true
-spot_range = 8.706
-spot_angle = 27.86
+omni_range = 1.6503
