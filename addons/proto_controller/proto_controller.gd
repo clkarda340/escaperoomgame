@@ -85,6 +85,7 @@ func _physics_process(delta: float) -> void:
 		$CanvasLayer/BoxContainer/Label.show()
 		if Input.is_action_just_pressed("interact"):
 			print(target)	
+			target.is_threat = false
 		
 	if can_freefly and freeflying:
 		var input_dir := Input.get_vector(input_left, input_right, input_forward, input_back)
