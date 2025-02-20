@@ -1,8 +1,9 @@
-[gd_scene load_steps=7 format=3 uid="uid://dyo4arcx2l8oc"]
+[gd_scene load_steps=8 format=3 uid="uid://dyo4arcx2l8oc"]
 
 [ext_resource type="PackedScene" uid="uid://dpeblt4rqw5b7" path="res://scenes/mimari.tscn" id="1_r6jw6"]
 [ext_resource type="Script" path="res://scripts/main_game.gd" id="1_ujsor"]
 [ext_resource type="PackedScene" uid="uid://bs72ogkvdd7d6" path="res://addons/proto_controller/proto_controller.tscn" id="2_g72bx"]
+[ext_resource type="AudioStream" uid="uid://q41r7kqbhgeb" path="res://assets/Music/Ingame.mp3" id="4_1kbah"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_6s78k"]
 sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
@@ -46,3 +47,9 @@ input_left = "left"
 input_right = "right"
 input_forward = "forward"
 input_back = "backward"
+
+[node name="Ingame" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("4_1kbah")
+volume_db = -29.982
+autoplay = true
+parameters/looping = true

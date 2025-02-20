@@ -22,6 +22,7 @@ func load_data():
 		save_data()
 		return
 	load_video_settings()
+	load_audio_settings()
 	
 func load_video_settings():
 	var screen_type = config.get_value("Video","FullscreenCheck")
@@ -32,4 +33,12 @@ func load_video_settings():
 	DisplayServer.window_set_vsync_mode(vsync)
 	var brightness = config.get_value("Video","Brightness")
 	
+func load_audio_settings():
+	var master = config.get_value("Audio","0")
+	var sfx = config.get_value("Audio","1")
+	var music = config.get_value("Audio","2")
+	AudioServer.set_bus_volume_db(0,linear_to_db(master))
+	AudioServer.set_bus_volume_db(1,linear_to_db(sfx))
+	AudioServer.set_bus_volume_db(2,linear_to_db(music))
+
 	

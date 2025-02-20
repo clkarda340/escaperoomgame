@@ -27,6 +27,9 @@ func _on_back_pressed() -> void:
 	get_parent().get_parent().queue_free()
 
 func _on_brightness_value_changed(value: float) -> void:
+	var main_game = get_tree().get_root().get_node_or_null("Main Game")
+	if main_game != null:
+		main_game.get_node("WorldEnvironment").environment.adjustment_brightness = value
 	Persistence.config.set_value("Video","Brightness",value)
 	Persistence.save_data()
 
