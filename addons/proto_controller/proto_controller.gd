@@ -86,13 +86,6 @@ func _physics_process(delta: float) -> void:
 		if Input.is_action_just_pressed("interact"):
 			print(target)	
 		
-			
-	
-		
-		 
-			
-		
-		
 	if can_freefly and freeflying:
 		var input_dir := Input.get_vector(input_left, input_right, input_forward, input_back)
 		var motion := (head.global_basis * Vector3(input_dir.x, 0, input_dir.y)).normalized()

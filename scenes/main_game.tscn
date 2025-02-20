@@ -27,6 +27,7 @@ sdfgi_read_sky_light = false
 fog_mode = 1
 fog_density = 1.0
 volumetric_fog_enabled = true
+adjustment_enabled = true
 
 [node name="Main Game" type="Node3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.2, 0.2, 0.1)
@@ -40,7 +41,6 @@ environment = SubResource("Environment_4yirn")
 [node name="Player" parent="." instance=ExtResource("2_g72bx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.3, 0)
 collision_mask = 5
-can_jump = false
 base_speed = 4.0
 input_left = "left"
 input_right = "right"
