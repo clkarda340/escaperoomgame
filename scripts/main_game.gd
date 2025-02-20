@@ -4,7 +4,7 @@ var paused=false
 var pause_screen = load("res://scenes/options.tscn").instantiate()
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	get_tree().get_root().get_child(1).get_node("WorldEnvironment").environment.adjustment_brightness = Persistence.config.get_value("Video","Brightness")
+	get_tree().get_root().get_node("Main Game").get_node("WorldEnvironment").environment.adjustment_brightness = Persistence.config.get_value("Video","Brightness")
 	
 
 

@@ -105,6 +105,16 @@ shadow_mesh = SubResource("ArrayMesh_o5x5o")
 height = 1.0
 radius = 0.7
 
+[sub_resource type="Animation" id="Animation_g1y7a"]
+resource_name = "door_open"
+tracks/0/type = "rotation_3d"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("door")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = PackedFloat32Array(0, 1, 0, -7.6741e-07, 0, 1, 0.2, 1, 0, 0.130525, 0, 0.991445, 0.433333, 1, 0, 0.382683, 0, 0.92388, 0.666667, 1, 0, 0.608761, 0, 0.793353, 0.866667, 1, 0, 0.793353, 0, 0.608761)
+
 [sub_resource type="Animation" id="Animation_w6nh4"]
 length = 0.001
 
@@ -118,27 +128,6 @@ tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = PackedFloat32Array(0.0666667, 1, 0, 0.793353, 0, 0.608761, 0.266667, 1, 0, 0.608761, 0, 0.793353, 0.466667, 1, 0, 0.382683, 0, 0.92388, 0.666667, 1, 0, 0.130525, 0, 0.991445, 0.833333, 1, 0, -7.6741e-07, 0, 1)
 
-[sub_resource type="Animation" id="Animation_g1y7a"]
-resource_name = "door_open"
-tracks/0/type = "rotation_3d"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("door")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = PackedFloat32Array(0, 1, 0, -7.6741e-07, 0, 1, 0.2, 1, 0, 0.130525, 0, 0.991445, 0.433333, 1, 0, 0.382683, 0, 0.92388, 0.666667, 1, 0, 0.608761, 0, 0.793353, 0.866667, 1, 0, 0.793353, 0, 0.608761)
-
-[sub_resource type="Animation" id="Animation_fxnya"]
-resource_name = "door_slam"
-length = 0.2
-tracks/0/type = "rotation_3d"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("door")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = PackedFloat32Array(0, 1, 0, 0.793353, 0, 0.608761, 0.1, 1, 0, 0.608761, 0, 0.793353, 0.133333, 1, 0, 0.382683, 0, 0.92388, 0.166667, 1, 0, -7.6741e-07, 0, 1)
-
 [sub_resource type="Animation" id="Animation_tn24m"]
 resource_name = "door_wiggle"
 length = 0.8
@@ -150,6 +139,17 @@ tracks/0/path = NodePath("door")
 tracks/0/interp = 1
 tracks/0/loop_wrap = false
 tracks/0/keys = PackedFloat32Array(0, 1, 0, 0.608761, 0, 0.793353, 0.766667, 1, 0, 0.793353, 0, 0.608761)
+
+[sub_resource type="Animation" id="Animation_fxnya"]
+resource_name = "door_slam"
+length = 0.2
+tracks/0/type = "rotation_3d"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("door")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = PackedFloat32Array(0, 1, 0, 0.793353, 0, 0.608761, 0.1, 1, 0, 0.608761, 0, 0.793353, 0.133333, 1, 0, 0.382683, 0, 0.92388, 0.166667, 1, 0, -7.6741e-07, 0, 1)
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_6q56h"]
 _data = {
