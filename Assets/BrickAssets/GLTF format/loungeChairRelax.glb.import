@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://co0jbm8iixy7y"
-path="res://.godot/imported/loungeChairRelax.glb-c856ce1dd413c22d46ec39647772f9a0.scn"
+path="res://.godot/imported/loungeChairRelax.glb-2b69b3e42e96685aac722bd0500ed711.scn"
 
 [deps]
 
-source_file="res://Assets/BrickAssets/GLTF format/loungeChairRelax.glb"
-dest_files=["res://.godot/imported/loungeChairRelax.glb-c856ce1dd413c22d46ec39647772f9a0.scn"]
+source_file="res://assets/BrickAssets/GLTF format/loungeChairRelax.glb"
+dest_files=["res://.godot/imported/loungeChairRelax.glb-2b69b3e42e96685aac722bd0500ed711.scn"]
 
 [params]
 

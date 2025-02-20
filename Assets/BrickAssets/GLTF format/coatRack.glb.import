@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://bii4k5ktm54sc"
-path="res://.godot/imported/coatRack.glb-339249a2a62f9c84947fa52a329ebc6a.scn"
+path="res://.godot/imported/coatRack.glb-d6048ce943039d3f46f9f7cf6f92acf0.scn"
 
 [deps]
 
-source_file="res://Assets/BrickAssets/GLTF format/coatRack.glb"
-dest_files=["res://.godot/imported/coatRack.glb-339249a2a62f9c84947fa52a329ebc6a.scn"]
+source_file="res://assets/BrickAssets/GLTF format/coatRack.glb"
+dest_files=["res://.godot/imported/coatRack.glb-d6048ce943039d3f46f9f7cf6f92acf0.scn"]
 
 [params]
 

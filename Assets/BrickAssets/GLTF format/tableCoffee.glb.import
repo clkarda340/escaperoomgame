@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://qmq78ix6547y"
-path="res://.godot/imported/tableCoffee.glb-1dd81c845acb57bfca5eaa42b245dbbe.scn"
+path="res://.godot/imported/tableCoffee.glb-13f403e87d1f4f14d5a104a6f0a1993d.scn"
 
 [deps]
 
-source_file="res://Assets/BrickAssets/GLTF format/tableCoffee.glb"
-dest_files=["res://.godot/imported/tableCoffee.glb-1dd81c845acb57bfca5eaa42b245dbbe.scn"]
+source_file="res://assets/BrickAssets/GLTF format/tableCoffee.glb"
+dest_files=["res://.godot/imported/tableCoffee.glb-13f403e87d1f4f14d5a104a6f0a1993d.scn"]
 
 [params]
 

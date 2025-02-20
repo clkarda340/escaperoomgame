@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://cn35jue6u1fgx"
-path="res://.godot/imported/computerKeyboard.glb-1910a87388c3a41a9e2f5dafe0231b08.scn"
+path="res://.godot/imported/computerKeyboard.glb-51b4e8425801152df19e002accb581bd.scn"
 
 [deps]
 
-source_file="res://Assets/BrickAssets/GLTF format/computerKeyboard.glb"
-dest_files=["res://.godot/imported/computerKeyboard.glb-1910a87388c3a41a9e2f5dafe0231b08.scn"]
+source_file="res://assets/BrickAssets/GLTF format/computerKeyboard.glb"
+dest_files=["res://.godot/imported/computerKeyboard.glb-51b4e8425801152df19e002accb581bd.scn"]
 
 [params]
 

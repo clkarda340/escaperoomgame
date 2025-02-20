@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://b8yi7cq17hxwf"
-path="res://.godot/imported/toaster.glb-fdb0e7e795c1633ce6890316d4c27f9e.scn"
+path="res://.godot/imported/toaster.glb-0ddefa9e159bfec42bbd5b175cfdec66.scn"
 
 [deps]
 
-source_file="res://Assets/BrickAssets/GLTF format/toaster.glb"
-dest_files=["res://.godot/imported/toaster.glb-fdb0e7e795c1633ce6890316d4c27f9e.scn"]
+source_file="res://assets/BrickAssets/GLTF format/toaster.glb"
+dest_files=["res://.godot/imported/toaster.glb-0ddefa9e159bfec42bbd5b175cfdec66.scn"]
 
 [params]
 

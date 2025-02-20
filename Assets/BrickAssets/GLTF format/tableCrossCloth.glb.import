@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://be1o3eprskdf5"
-path="res://.godot/imported/tableCrossCloth.glb-a66ab4469324054fb67bc42091a047a0.scn"
+path="res://.godot/imported/tableCrossCloth.glb-bbea6bb285a1604fc780e8a3ac20c972.scn"
 
 [deps]
 
-source_file="res://Assets/BrickAssets/GLTF format/tableCrossCloth.glb"
-dest_files=["res://.godot/imported/tableCrossCloth.glb-a66ab4469324054fb67bc42091a047a0.scn"]
+source_file="res://assets/BrickAssets/GLTF format/tableCrossCloth.glb"
+dest_files=["res://.godot/imported/tableCrossCloth.glb-bbea6bb285a1604fc780e8a3ac20c972.scn"]
 
 [params]
 

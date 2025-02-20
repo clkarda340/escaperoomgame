@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://dci0m3klnnpme"
-path="res://.godot/imported/kitchenCabinetDrawer.glb-0bf0db08c8b785e846ff9698f87de245.scn"
+path="res://.godot/imported/kitchenCabinetDrawer.glb-bf840f1a344a5a8f49fa9d2fe0469fbb.scn"
 
 [deps]
 
-source_file="res://Assets/BrickAssets/GLTF format/kitchenCabinetDrawer.glb"
-dest_files=["res://.godot/imported/kitchenCabinetDrawer.glb-0bf0db08c8b785e846ff9698f87de245.scn"]
+source_file="res://assets/BrickAssets/GLTF format/kitchenCabinetDrawer.glb"
+dest_files=["res://.godot/imported/kitchenCabinetDrawer.glb-bf840f1a344a5a8f49fa9d2fe0469fbb.scn"]
 
 [params]
 

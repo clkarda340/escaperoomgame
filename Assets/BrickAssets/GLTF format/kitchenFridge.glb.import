@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://b5kd2fwn2dkvm"
-path="res://.godot/imported/kitchenFridge.glb-647eb0f98e55d10f9aa119d01b495769.scn"
+path="res://.godot/imported/kitchenFridge.glb-c4b069717003bf9c7e505adf617c72d6.scn"
 
 [deps]
 
-source_file="res://Assets/BrickAssets/GLTF format/kitchenFridge.glb"
-dest_files=["res://.godot/imported/kitchenFridge.glb-647eb0f98e55d10f9aa119d01b495769.scn"]
+source_file="res://assets/BrickAssets/GLTF format/kitchenFridge.glb"
+dest_files=["res://.godot/imported/kitchenFridge.glb-c4b069717003bf9c7e505adf617c72d6.scn"]
 
 [params]
 

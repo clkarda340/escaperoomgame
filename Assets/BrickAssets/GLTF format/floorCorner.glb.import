@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://clupd1004ryqp"
-path="res://.godot/imported/floorCorner.glb-d9adb60d594fc122eb6a17f92ddbcc62.scn"
+path="res://.godot/imported/floorCorner.glb-6e06ee01e6b59879baf2aa8751747f61.scn"
 
 [deps]
 
-source_file="res://Assets/BrickAssets/GLTF format/floorCorner.glb"
-dest_files=["res://.godot/imported/floorCorner.glb-d9adb60d594fc122eb6a17f92ddbcc62.scn"]
+source_file="res://assets/BrickAssets/GLTF format/floorCorner.glb"
+dest_files=["res://.godot/imported/floorCorner.glb-6e06ee01e6b59879baf2aa8751747f61.scn"]
 
 [params]
 

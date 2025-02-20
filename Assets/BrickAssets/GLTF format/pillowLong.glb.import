@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://dfytfmsefk17x"
-path="res://.godot/imported/pillowLong.glb-d3b69faea50e4927576b495b14d899cc.scn"
+path="res://.godot/imported/pillowLong.glb-42a220077e0d551f7c9823243c3d4aa0.scn"
 
 [deps]
 
-source_file="res://Assets/BrickAssets/GLTF format/pillowLong.glb"
-dest_files=["res://.godot/imported/pillowLong.glb-d3b69faea50e4927576b495b14d899cc.scn"]
+source_file="res://assets/BrickAssets/GLTF format/pillowLong.glb"
+dest_files=["res://.godot/imported/pillowLong.glb-42a220077e0d551f7c9823243c3d4aa0.scn"]
 
 [params]
 

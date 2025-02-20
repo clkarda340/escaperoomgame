@@ -1,0 +1,48 @@
+[gd_scene load_steps=7 format=3 uid="uid://dyo4arcx2l8oc"]
+
+[ext_resource type="PackedScene" uid="uid://dpeblt4rqw5b7" path="res://scenes/mimari.tscn" id="1_r6jw6"]
+[ext_resource type="Script" path="res://scripts/main_game.gd" id="1_ujsor"]
+[ext_resource type="PackedScene" uid="uid://bs72ogkvdd7d6" path="res://addons/proto_controller/proto_controller.tscn" id="2_g72bx"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_6s78k"]
+sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
+ground_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
+
+[sub_resource type="Sky" id="Sky_s8sll"]
+sky_material = SubResource("ProceduralSkyMaterial_6s78k")
+
+[sub_resource type="Environment" id="Environment_4yirn"]
+background_mode = 1
+background_color = Color(0.255659, 0.255659, 0.255659, 1)
+background_energy_multiplier = 0.13
+sky = SubResource("Sky_s8sll")
+ambient_light_color = Color(0.144063, 0.144063, 0.144063, 1)
+tonemap_mode = 3
+ssao_enabled = true
+ssil_enabled = true
+ssil_radius = 7.92
+ssil_sharpness = 1.0
+sdfgi_use_occlusion = true
+sdfgi_read_sky_light = false
+fog_mode = 1
+fog_density = 1.0
+volumetric_fog_enabled = true
+
+[node name="Main Game" type="Node3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.2, 0.2, 0.1)
+script = ExtResource("1_ujsor")
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_4yirn")
+
+[node name="Mimari" parent="." instance=ExtResource("1_r6jw6")]
+
+[node name="Player" parent="." instance=ExtResource("2_g72bx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.3, 0)
+collision_mask = 5
+can_jump = false
+base_speed = 4.0
+input_left = "left"
+input_right = "right"
+input_forward = "forward"
+input_back = "backward"

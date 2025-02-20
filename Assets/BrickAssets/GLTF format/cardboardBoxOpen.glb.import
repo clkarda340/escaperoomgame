@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://bkbnqjm85jk1s"
-path="res://.godot/imported/cardboardBoxOpen.glb-25c3da6cdf89d703c897c395ebf1d2f0.scn"
+path="res://.godot/imported/cardboardBoxOpen.glb-74c4f8ab3c579cf5f32cdb5e9213c0fe.scn"
 
 [deps]
 
-source_file="res://Assets/BrickAssets/GLTF format/cardboardBoxOpen.glb"
-dest_files=["res://.godot/imported/cardboardBoxOpen.glb-25c3da6cdf89d703c897c395ebf1d2f0.scn"]
+source_file="res://assets/BrickAssets/GLTF format/cardboardBoxOpen.glb"
+dest_files=["res://.godot/imported/cardboardBoxOpen.glb-74c4f8ab3c579cf5f32cdb5e9213c0fe.scn"]
 
 [params]
 

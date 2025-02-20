@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://c1d7ntwphspme"
-path="res://.godot/imported/bathroomCabinetDrawer.glb-73c580f241af8e5c6126f9a7d360dc55.scn"
+path="res://.godot/imported/bathroomCabinetDrawer.glb-56a6af6bdf714349b3e158224aa88258.scn"
 
 [deps]
 
-source_file="res://Assets/BrickAssets/GLTF format/bathroomCabinetDrawer.glb"
-dest_files=["res://.godot/imported/bathroomCabinetDrawer.glb-73c580f241af8e5c6126f9a7d360dc55.scn"]
+source_file="res://assets/BrickAssets/GLTF format/bathroomCabinetDrawer.glb"
+dest_files=["res://.godot/imported/bathroomCabinetDrawer.glb-56a6af6bdf714349b3e158224aa88258.scn"]
 
 [params]
 

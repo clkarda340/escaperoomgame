@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://da4cp2hhsmcn8"
-path="res://.godot/imported/loungeSofaLong.glb-2ebe455cd267b459a126450be8bfc8a8.scn"
+path="res://.godot/imported/loungeSofaLong.glb-376418d4be84ff7133db335c2798c545.scn"
 
 [deps]
 
-source_file="res://Assets/BrickAssets/GLTF format/loungeSofaLong.glb"
-dest_files=["res://.godot/imported/loungeSofaLong.glb-2ebe455cd267b459a126450be8bfc8a8.scn"]
+source_file="res://assets/BrickAssets/GLTF format/loungeSofaLong.glb"
+dest_files=["res://.godot/imported/loungeSofaLong.glb-376418d4be84ff7133db335c2798c545.scn"]
 
 [params]
 

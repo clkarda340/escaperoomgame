@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://du8677aycmbv0"
-path="res://.godot/imported/toiletSquare.glb-7860125d7f1411a4400aeae061c4eb2a.scn"
+path="res://.godot/imported/toiletSquare.glb-5881dd6ec7d049f0d3263e6404ffc4b1.scn"
 
 [deps]
 
-source_file="res://Assets/BrickAssets/GLTF format/toiletSquare.glb"
-dest_files=["res://.godot/imported/toiletSquare.glb-7860125d7f1411a4400aeae061c4eb2a.scn"]
+source_file="res://assets/BrickAssets/GLTF format/toiletSquare.glb"
+dest_files=["res://.godot/imported/toiletSquare.glb-5881dd6ec7d049f0d3263e6404ffc4b1.scn"]
 
 [params]
 

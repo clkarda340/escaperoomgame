@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://cwtat72yrtk20"
-path="res://.godot/imported/radio.glb-b6ac0daa6a77ca42883ce570b5cf3b0e.scn"
+path="res://.godot/imported/radio.glb-94e418e5951fa65d1fa4a4eceef6d281.scn"
 
 [deps]
 
-source_file="res://Assets/BrickAssets/GLTF format/radio.glb"
-dest_files=["res://.godot/imported/radio.glb-b6ac0daa6a77ca42883ce570b5cf3b0e.scn"]
+source_file="res://assets/BrickAssets/GLTF format/radio.glb"
+dest_files=["res://.godot/imported/radio.glb-94e418e5951fa65d1fa4a4eceef6d281.scn"]
 
 [params]
 

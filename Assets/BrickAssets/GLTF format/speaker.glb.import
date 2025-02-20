@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://ct2bef3m1s6ta"
-path="res://.godot/imported/speaker.glb-038eb604730553cb0a32a362f26921cf.scn"
+path="res://.godot/imported/speaker.glb-19fef7ba5c5897e30a594309b302fa82.scn"
 
 [deps]
 
-source_file="res://Assets/BrickAssets/GLTF format/speaker.glb"
-dest_files=["res://.godot/imported/speaker.glb-038eb604730553cb0a32a362f26921cf.scn"]
+source_file="res://assets/BrickAssets/GLTF format/speaker.glb"
+dest_files=["res://.godot/imported/speaker.glb-19fef7ba5c5897e30a594309b302fa82.scn"]
 
 [params]
 

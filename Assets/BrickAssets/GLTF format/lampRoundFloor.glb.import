@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://duq747u07nkiw"
-path="res://.godot/imported/lampRoundFloor.glb-eb7d6a111c946f737e719be252f51eaf.scn"
+path="res://.godot/imported/lampRoundFloor.glb-ff30a9af764b3a484fe3accfff055b97.scn"
 
 [deps]
 
-source_file="res://Assets/BrickAssets/GLTF format/lampRoundFloor.glb"
-dest_files=["res://.godot/imported/lampRoundFloor.glb-eb7d6a111c946f737e719be252f51eaf.scn"]
+source_file="res://assets/BrickAssets/GLTF format/lampRoundFloor.glb"
+dest_files=["res://.godot/imported/lampRoundFloor.glb-ff30a9af764b3a484fe3accfff055b97.scn"]
 
 [params]
 

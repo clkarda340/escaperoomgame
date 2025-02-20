@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://lw0ue7w3i1hv"
-path="res://.godot/imported/stairs.glb-2586c9179b4599c2edc12693711a3ff6.scn"
+path="res://.godot/imported/stairs.glb-28a263bb40ec2c6875d350b9c4f1b9d0.scn"
 
 [deps]
 
-source_file="res://Assets/BrickAssets/GLTF format/stairs.glb"
-dest_files=["res://.godot/imported/stairs.glb-2586c9179b4599c2edc12693711a3ff6.scn"]
+source_file="res://assets/BrickAssets/GLTF format/stairs.glb"
+dest_files=["res://.godot/imported/stairs.glb-28a263bb40ec2c6875d350b9c4f1b9d0.scn"]
 
 [params]
 

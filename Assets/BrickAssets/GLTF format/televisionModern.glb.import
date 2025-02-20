@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://bq0e8pedacpso"
-path="res://.godot/imported/televisionModern.glb-b6b1f93dc780e3170670116c6a04a5ee.scn"
+path="res://.godot/imported/televisionModern.glb-e98ad8d2544ad7cd491b8f02d7bd5a7e.scn"
 
 [deps]
 
-source_file="res://Assets/BrickAssets/GLTF format/televisionModern.glb"
-dest_files=["res://.godot/imported/televisionModern.glb-b6b1f93dc780e3170670116c6a04a5ee.scn"]
+source_file="res://assets/BrickAssets/GLTF format/televisionModern.glb"
+dest_files=["res://.godot/imported/televisionModern.glb-e98ad8d2544ad7cd491b8f02d7bd5a7e.scn"]
 
 [params]
 

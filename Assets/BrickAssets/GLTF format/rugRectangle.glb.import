@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://bucx0f8eqfd5o"
-path="res://.godot/imported/rugRectangle.glb-3aee03b5ac0152d61f67e7ce94a8d32b.scn"
+path="res://.godot/imported/rugRectangle.glb-8cf26595794b3ea89ac50e2ce613face.scn"
 
 [deps]
 
-source_file="res://Assets/BrickAssets/GLTF format/rugRectangle.glb"
-dest_files=["res://.godot/imported/rugRectangle.glb-3aee03b5ac0152d61f67e7ce94a8d32b.scn"]
+source_file="res://assets/BrickAssets/GLTF format/rugRectangle.glb"
+dest_files=["res://.godot/imported/rugRectangle.glb-8cf26595794b3ea89ac50e2ce613face.scn"]
 
 [params]
 

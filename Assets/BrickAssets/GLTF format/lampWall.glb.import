@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://efgamqfd3htk"
-path="res://.godot/imported/lampWall.glb-780698b054daadfd0cd36555c4e485c5.scn"
+path="res://.godot/imported/lampWall.glb-f58059f813e4aa143178fd208130ce09.scn"
 
 [deps]
 
-source_file="res://Assets/BrickAssets/GLTF format/lampWall.glb"
-dest_files=["res://.godot/imported/lampWall.glb-780698b054daadfd0cd36555c4e485c5.scn"]
+source_file="res://assets/BrickAssets/GLTF format/lampWall.glb"
+dest_files=["res://.godot/imported/lampWall.glb-f58059f813e4aa143178fd208130ce09.scn"]
 
 [params]
 

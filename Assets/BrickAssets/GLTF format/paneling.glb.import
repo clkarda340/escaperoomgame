@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://b10a413mrmceh"
-path="res://.godot/imported/paneling.glb-d20472c9c9a36bab7507fe16ee3eec5b.scn"
+path="res://.godot/imported/paneling.glb-62126906ade37df24b0a80db8230c513.scn"
 
 [deps]
 
-source_file="res://Assets/BrickAssets/GLTF format/paneling.glb"
-dest_files=["res://.godot/imported/paneling.glb-d20472c9c9a36bab7507fe16ee3eec5b.scn"]
+source_file="res://assets/BrickAssets/GLTF format/paneling.glb"
+dest_files=["res://.godot/imported/paneling.glb-62126906ade37df24b0a80db8230c513.scn"]
 
 [params]
 

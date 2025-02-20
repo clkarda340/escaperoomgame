@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://15tbsbs2rfu7"
-path="res://.godot/imported/tableCloth.glb-b5d37ca698b683d38d326406d7dbcb7f.scn"
+path="res://.godot/imported/tableCloth.glb-33863148d587ee75210b0189e374358b.scn"
 
 [deps]
 
-source_file="res://Assets/BrickAssets/GLTF format/tableCloth.glb"
-dest_files=["res://.godot/imported/tableCloth.glb-b5d37ca698b683d38d326406d7dbcb7f.scn"]
+source_file="res://assets/BrickAssets/GLTF format/tableCloth.glb"
+dest_files=["res://.godot/imported/tableCloth.glb-33863148d587ee75210b0189e374358b.scn"]
 
 [params]
 

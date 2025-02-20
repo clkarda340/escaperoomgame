@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://buw8iqv714axi"
-path="res://.godot/imported/showerRound.glb-9364cf172489c077e8f4c040b371984e.scn"
+path="res://.godot/imported/showerRound.glb-d165462478a3d6913993a1e511f65024.scn"
 
 [deps]
 
-source_file="res://Assets/BrickAssets/GLTF format/showerRound.glb"
-dest_files=["res://.godot/imported/showerRound.glb-9364cf172489c077e8f4c040b371984e.scn"]
+source_file="res://assets/BrickAssets/GLTF format/showerRound.glb"
+dest_files=["res://.godot/imported/showerRound.glb-d165462478a3d6913993a1e511f65024.scn"]
 
 [params]
 

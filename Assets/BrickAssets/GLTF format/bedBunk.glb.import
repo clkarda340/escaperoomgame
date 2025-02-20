@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://4qygr2memn7a"
-path="res://.godot/imported/bedBunk.glb-5589332e08152fba26832ba255e86bbf.scn"
+path="res://.godot/imported/bedBunk.glb-3b3ed83d81afda2dd00e1ca7a5a8c465.scn"
 
 [deps]
 
-source_file="res://Assets/BrickAssets/GLTF format/bedBunk.glb"
-dest_files=["res://.godot/imported/bedBunk.glb-5589332e08152fba26832ba255e86bbf.scn"]
+source_file="res://assets/BrickAssets/GLTF format/bedBunk.glb"
+dest_files=["res://.godot/imported/bedBunk.glb-3b3ed83d81afda2dd00e1ca7a5a8c465.scn"]
 
 [params]
 

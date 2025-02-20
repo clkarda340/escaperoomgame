@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://ksirx3xymw5s"
-path="res://.godot/imported/kitchenMicrowave.glb-73362058d16b4612f06d26be94977040.scn"
+path="res://.godot/imported/kitchenMicrowave.glb-66039f37373b9dbbbb1b4da86560c406.scn"
 
 [deps]
 
-source_file="res://Assets/BrickAssets/GLTF format/kitchenMicrowave.glb"
-dest_files=["res://.godot/imported/kitchenMicrowave.glb-73362058d16b4612f06d26be94977040.scn"]
+source_file="res://assets/BrickAssets/GLTF format/kitchenMicrowave.glb"
+dest_files=["res://.godot/imported/kitchenMicrowave.glb-66039f37373b9dbbbb1b4da86560c406.scn"]
 
 [params]
 

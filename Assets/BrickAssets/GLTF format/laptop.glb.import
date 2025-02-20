@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://drpp7yytgl8l7"
-path="res://.godot/imported/laptop.glb-bdf7e9123ae9cf749facced93d1f5d94.scn"
+path="res://.godot/imported/laptop.glb-e1026fd41fd589e6c16914cf69b0a481.scn"
 
 [deps]
 
-source_file="res://Assets/BrickAssets/GLTF format/laptop.glb"
-dest_files=["res://.godot/imported/laptop.glb-bdf7e9123ae9cf749facced93d1f5d94.scn"]
+source_file="res://assets/BrickAssets/GLTF format/laptop.glb"
+dest_files=["res://.godot/imported/laptop.glb-e1026fd41fd589e6c16914cf69b0a481.scn"]
 
 [params]
 

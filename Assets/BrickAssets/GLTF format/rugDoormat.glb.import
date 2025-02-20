@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://cq0lf8c3dpoh1"
-path="res://.godot/imported/rugDoormat.glb-820fd017594b586d8339542b7ef113bd.scn"
+path="res://.godot/imported/rugDoormat.glb-19dc766edcd696bb84cecf167757baa3.scn"
 
 [deps]
 
-source_file="res://Assets/BrickAssets/GLTF format/rugDoormat.glb"
-dest_files=["res://.godot/imported/rugDoormat.glb-820fd017594b586d8339542b7ef113bd.scn"]
+source_file="res://assets/BrickAssets/GLTF format/rugDoormat.glb"
+dest_files=["res://.godot/imported/rugDoormat.glb-19dc766edcd696bb84cecf167757baa3.scn"]
 
 [params]
 

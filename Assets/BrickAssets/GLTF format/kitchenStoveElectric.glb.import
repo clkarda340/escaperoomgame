@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://83kwmeoumqvf"
-path="res://.godot/imported/kitchenStoveElectric.glb-044e9d32cdd17fcaab515d6fe4b38195.scn"
+path="res://.godot/imported/kitchenStoveElectric.glb-e87d0283cf4c1621851522444b1de69f.scn"
 
 [deps]
 
-source_file="res://Assets/BrickAssets/GLTF format/kitchenStoveElectric.glb"
-dest_files=["res://.godot/imported/kitchenStoveElectric.glb-044e9d32cdd17fcaab515d6fe4b38195.scn"]
+source_file="res://assets/BrickAssets/GLTF format/kitchenStoveElectric.glb"
+dest_files=["res://.godot/imported/kitchenStoveElectric.glb-e87d0283cf4c1621851522444b1de69f.scn"]
 
 [params]
 

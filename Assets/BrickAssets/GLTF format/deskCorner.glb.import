@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://1aa30mbissev"
-path="res://.godot/imported/deskCorner.glb-a0d5ac832026524ac57614e05d4ad322.scn"
+path="res://.godot/imported/deskCorner.glb-4cd3b1dc2c6cfbe54886d740f586d06c.scn"
 
 [deps]
 
-source_file="res://Assets/BrickAssets/GLTF format/deskCorner.glb"
-dest_files=["res://.godot/imported/deskCorner.glb-a0d5ac832026524ac57614e05d4ad322.scn"]
+source_file="res://assets/BrickAssets/GLTF format/deskCorner.glb"
+dest_files=["res://.godot/imported/deskCorner.glb-4cd3b1dc2c6cfbe54886d740f586d06c.scn"]
 
 [params]
 

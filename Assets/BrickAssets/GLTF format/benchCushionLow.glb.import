@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://dmuuxk2urjthj"
-path="res://.godot/imported/benchCushionLow.glb-088efe5f4cecec23757d93a1832434c5.scn"
+path="res://.godot/imported/benchCushionLow.glb-5332ced78345c628d869a2993570b9c5.scn"
 
 [deps]
 
-source_file="res://Assets/BrickAssets/GLTF format/benchCushionLow.glb"
-dest_files=["res://.godot/imported/benchCushionLow.glb-088efe5f4cecec23757d93a1832434c5.scn"]
+source_file="res://assets/BrickAssets/GLTF format/benchCushionLow.glb"
+dest_files=["res://.godot/imported/benchCushionLow.glb-5332ced78345c628d869a2993570b9c5.scn"]
 
 [params]
 
