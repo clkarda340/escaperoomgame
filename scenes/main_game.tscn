@@ -1,5 +1,6 @@
-[gd_scene load_steps=6 format=3 uid="uid://dyo4arcx2l8oc"]
+[gd_scene load_steps=7 format=3 uid="uid://dyo4arcx2l8oc"]
 
+[ext_resource type="Script" path="res://scripts/main_game.gd" id="1_hv06y"]
 [ext_resource type="PackedScene" uid="uid://dpeblt4rqw5b7" path="res://scenes/mimari.tscn" id="1_r6jw6"]
 [ext_resource type="PackedScene" uid="uid://bs72ogkvdd7d6" path="res://addons/proto_controller/proto_controller.tscn" id="2_g72bx"]
 
@@ -26,9 +27,13 @@ sdfgi_read_sky_light = false
 fog_mode = 1
 fog_density = 1.0
 volumetric_fog_enabled = true
+adjustment_enabled = true
+adjustment_brightness = 2.5
+adjustment_contrast = 1.01
 
 [node name="Main Game" type="Node3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.2, 0.2, 0.1)
+script = ExtResource("1_hv06y")
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource("Environment_4yirn")

@@ -1,0 +1,156 @@
+[gd_scene load_steps=3 format=3 uid="uid://dq7xljqum823g"]
+
+[ext_resource type="Script" path="res://scripts/options.gd" id="1_81kmp"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_8ibgf"]
+bg_color = Color(0.230315, 0.230315, 0.230315, 1)
+
+[node name="OptionsTab" type="TabContainer"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_8ibgf")
+current_tab = 0
+script = ExtResource("1_81kmp")
+
+[node name="Video" type="TabBar" parent="."]
+layout_mode = 2
+metadata/_tab_index = 0
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Video"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -47.5
+offset_top = -20.0
+offset_right = 47.5
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="VBoxContainer" parent="Video/HBoxContainer"]
+layout_mode = 2
+
+[node name="BrightnessLabel" type="Label" parent="Video/HBoxContainer/Label"]
+layout_mode = 2
+text = "Brightness"
+
+[node name="FullScreenLabel" type="Label" parent="Video/HBoxContainer/Label"]
+layout_mode = 2
+text = "Fullscreen"
+
+[node name="BorderlessLabel" type="Label" parent="Video/HBoxContainer/Label"]
+layout_mode = 2
+text = "Borderless"
+
+[node name="VSync" type="Label" parent="Video/HBoxContainer/Label"]
+layout_mode = 2
+text = "VSync"
+
+[node name="Option" type="VBoxContainer" parent="Video/HBoxContainer"]
+layout_mode = 2
+
+[node name="Brightness" type="HSlider" parent="Video/HBoxContainer/Option"]
+unique_name_in_owner = true
+layout_mode = 2
+min_value = 1.0
+max_value = 10.0
+step = 0.5
+value = 1.5
+
+[node name="FullscreenCheck" type="CheckBox" parent="Video/HBoxContainer/Option"]
+unique_name_in_owner = true
+layout_mode = 2
+
+[node name="BorderlessCheck" type="CheckBox" parent="Video/HBoxContainer/Option"]
+unique_name_in_owner = true
+layout_mode = 2
+
+[node name="VSync" type="OptionButton" parent="Video/HBoxContainer/Option"]
+unique_name_in_owner = true
+layout_mode = 2
+selected = 1
+item_count = 4
+popup/item_0/text = "Disabled"
+popup/item_1/text = "Enabled"
+popup/item_1/id = 1
+popup/item_2/text = "Adaptive"
+popup/item_2/id = 2
+popup/item_3/text = "Mailbox"
+popup/item_3/id = 3
+
+[node name="Audio" type="TabBar" parent="."]
+visible = false
+layout_mode = 2
+metadata/_tab_index = 1
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Audio"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -75.0
+offset_top = -25.0
+offset_right = 75.0
+offset_bottom = 25.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Audio/HBoxContainer"]
+layout_mode = 2
+
+[node name="MasterLabel" type="Label" parent="Audio/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+text = "Master"
+
+[node name="SFXLabel" type="Label" parent="Audio/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+text = "SFX
+"
+horizontal_alignment = 1
+
+[node name="MusicLabel" type="Label" parent="Audio/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+text = "Music"
+horizontal_alignment = 1
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="Audio/HBoxContainer"]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+
+[node name="Master" type="HSlider" parent="Audio/HBoxContainer/VBoxContainer2"]
+unique_name_in_owner = true
+layout_mode = 2
+max_value = 1.0
+step = 0.1
+
+[node name="SFX" type="HSlider" parent="Audio/HBoxContainer/VBoxContainer2"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_vertical = 6
+max_value = 1.0
+step = 0.1
+value = 1.0
+
+[node name="Music" type="HSlider" parent="Audio/HBoxContainer/VBoxContainer2"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_vertical = 6
+max_value = 1.0
+step = 0.1
+value = 1.0
+
+[connection signal="value_changed" from="Video/HBoxContainer/Option/Brightness" to="." method="_on_brightness_value_changed"]
+[connection signal="toggled" from="Video/HBoxContainer/Option/FullscreenCheck" to="." method="_on_fullscreen_check_toggled"]
+[connection signal="toggled" from="Video/HBoxContainer/Option/BorderlessCheck" to="." method="_on_borderless_check_toggled"]
+[connection signal="item_selected" from="Video/HBoxContainer/Option/VSync" to="." method="_on_v_sync_item_selected"]
+[connection signal="value_changed" from="Audio/HBoxContainer/VBoxContainer2/Master" to="." method="_on_master_value_changed"]
+[connection signal="value_changed" from="Audio/HBoxContainer/VBoxContainer2/SFX" to="." method="_on_sfx_value_changed"]
+[connection signal="value_changed" from="Audio/HBoxContainer/VBoxContainer2/Music" to="." method="_on_music_value_changed"]
