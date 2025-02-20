@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://pyci4yn6i5bk"]
+[gd_scene load_steps=3 format=3 uid="uid://pyci4yn6i5bk"]
 
 [ext_resource type="Script" path="res://scripts/main_menu.gd" id="1_n3in4"]
+[ext_resource type="AudioStream" uid="uid://bv5hlacq3141m" path="res://assets/Music/Menu.mp3" id="2_mk6du"]
 
 [node name="MainMenu" type="Control"]
 layout_mode = 3
@@ -33,6 +34,12 @@ text = "Play
 layout_mode = 2
 text = "Options
 "
+
+[node name="Menu" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("2_mk6du")
+autoplay = true
+bus = &"Music"
+parameters/looping = true
 
 [connection signal="pressed" from="PanelContainer/VBoxContainer/Play" to="." method="_on_play_pressed"]
 [connection signal="pressed" from="PanelContainer/VBoxContainer/Options" to="." method="_on_options_pressed"]

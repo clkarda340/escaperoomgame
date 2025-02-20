@@ -124,7 +124,6 @@ size = Vector3(20, 0.5, 20)
 
 [node name="Tavan" type="CSGBox3D" parent="Dış duvarlar"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.600901, 3.0325, -0.64396)
-visible = false
 size = Vector3(20, 0.5, 19.7217)
 
 [node name="Boşluk" type="CSGBox3D" parent="Dış duvarlar"]
@@ -248,21 +247,27 @@ shape = SubResource("CylinderShape3D_lnnpm")
 
 [node name="doorway" parent="Kapılar" instance=ExtResource("4_sis80")]
 transform = Transform3D(2.07059, 0, 0, 0, 2.2784, 0, 0, 0, 2, 0.3, 0.2, -4)
+visible = false
 
 [node name="doorway2" parent="Kapılar" instance=ExtResource("4_sis80")]
 transform = Transform3D(2.09034, 0, 0, 0, 2.32717, 0, 0, 0, 1.74195, -3.0045, 0.15568, -4)
+visible = false
 
 [node name="doorway3" parent="Kapılar" instance=ExtResource("4_sis80")]
 transform = Transform3D(-1.05782e-07, 0, -2, 0, 2.2784, 0, 2.42, 0, -8.74228e-08, 2.6, 0.2, -0.7)
+visible = false
 
 [node name="doorway5" parent="Kapılar" instance=ExtResource("4_sis80")]
 transform = Transform3D(-1.07916e-07, 0, -2.01846, 0, 2.29943, 0, 2.46882, 0, -8.82299e-08, -6, 0.2, -0.2)
+visible = false
 
 [node name="doorway6" parent="Kapılar" instance=ExtResource("4_sis80")]
 transform = Transform3D(-9.92573e-08, 0, -2.01846, 0, 2.28529, 0, 2.27074, 0, -8.82299e-08, -6, 0.2, 4.4)
+visible = false
 
 [node name="doorway7" parent="Kapılar" instance=ExtResource("4_sis80")]
 transform = Transform3D(2.05076, 0, -1.42109e-14, 0, 2.27398, 0, -6.41706e-15, 0, 2.01846, 0.0999997, 0.2, 3.4)
+visible = false
 
 [node name="doorwayFront2" parent="Kapılar" instance=ExtResource("3_oi3yh")]
 transform = Transform3D(2.508, 0, 0, 0, 2.28, 0, 0, 0, 2.28, -4, 0.2, 6.4)
