@@ -23,7 +23,9 @@ func _process(delta: float) -> void:
 		pause_screen = load("res://scenes/options.tscn").instantiate()
 		game_paused = !game_paused
 		pause_game()
-		
+	print(remap($Player.health,0,$Player.max_health,0.4,0))
+	get_node("ColorRect").material.set_shader_parameter("transparency",remap($Player.health,0,$Player.max_health,0.3,0))
+	get_node("ColorRect").material.set_shader_parameter("amount",remap($Player.health,0,$Player.max_health,3,1))
 func pause_game():
 	if game_paused:
 		if get_tree().get_root().get_node_or_null("Options"):

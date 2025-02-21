@@ -1,9 +1,10 @@
-[gd_scene load_steps=8 format=3 uid="uid://dyo4arcx2l8oc"]
+[gd_scene load_steps=10 format=3 uid="uid://dyo4arcx2l8oc"]
 
 [ext_resource type="PackedScene" uid="uid://dpeblt4rqw5b7" path="res://scenes/mimari.tscn" id="1_r6jw6"]
 [ext_resource type="Script" path="res://scripts/main_game.gd" id="1_ujsor"]
 [ext_resource type="PackedScene" uid="uid://bs72ogkvdd7d6" path="res://addons/proto_controller/proto_controller.tscn" id="2_g72bx"]
 [ext_resource type="AudioStream" uid="uid://q41r7kqbhgeb" path="res://assets/Music/Ingame.mp3" id="4_1kbah"]
+[ext_resource type="Shader" path="res://assets/shaders/screen_effect.gdshader" id="5_0wuqe"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_6s78k"]
 sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
@@ -30,9 +31,15 @@ fog_density = 1.0
 volumetric_fog_enabled = true
 adjustment_enabled = true
 
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_2fm4i"]
+shader = ExtResource("5_0wuqe")
+shader_parameter/transparency = 0.2
+shader_parameter/amount = 4.0
+
 [node name="Main Game" type="Node3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.2, 0.2, 0.1)
 script = ExtResource("1_ujsor")
+damaging_coefficient = 8
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource("Environment_4yirn")
@@ -42,7 +49,6 @@ environment = SubResource("Environment_4yirn")
 [node name="Player" parent="." instance=ExtResource("2_g72bx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.3, 0)
 collision_mask = 5
-max_health = 30.0
 base_speed = 4.0
 input_left = "left"
 input_right = "right"
@@ -60,7 +66,19 @@ wait_time = 5.0
 autostart = true
 
 [node name="Health Timer" type="Timer" parent="."]
+wait_time = 4.0
 autostart = true
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="ColorRect" type="ColorRect" parent="."]
+top_level = true
+material = SubResource("ShaderMaterial_2fm4i")
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
 
 [connection signal="timeout" from="Threatify Timer" to="." method="_on_threatify_timer_timeout"]
 [connection signal="timeout" from="Health Timer" to="." method="_on_health_timer_timeout"]
