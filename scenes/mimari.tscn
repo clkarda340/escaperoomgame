@@ -1,7 +1,9 @@
-[gd_scene load_steps=82 format=3 uid="uid://dpeblt4rqw5b7"]
+[gd_scene load_steps=90 format=3 uid="uid://dpeblt4rqw5b7"]
 
 [ext_resource type="PackedScene" uid="uid://o8xlkrsurpdb" path="res://assets/BrickAssets/GLTF format/bedDouble.glb" id="1_5atvr"]
+[ext_resource type="PackedScene" uid="uid://duk6fyy5jog8t" path="res://assets/BrickAssets/GLTF format/cabinetTelevisionDoors.glb" id="1_o4lqs"]
 [ext_resource type="PackedScene" uid="uid://dj5g7uw3ft3cc" path="res://assets/BrickAssets/GLTF format/pottedPlant.glb" id="2_eljoh"]
+[ext_resource type="PackedScene" uid="uid://c2uasebk07vsb" path="res://assets/BrickAssets/GLTF format/cabinetTelevision.glb" id="2_gaunw"]
 [ext_resource type="Script" path="res://scripts/interactable_bed.gd" id="2_hvmeb"]
 [ext_resource type="PackedScene" uid="uid://do72gc30eqeir" path="res://assets/BrickAssets/GLTF format/doorwayFront.glb" id="3_oi3yh"]
 [ext_resource type="PackedScene" uid="uid://c11n1k8ksrdoj" path="res://assets/BrickAssets/GLTF format/doorway.glb" id="4_sis80"]
@@ -71,6 +73,12 @@
 [ext_resource type="PackedScene" uid="uid://bq0e8pedacpso" path="res://assets/BrickAssets/GLTF format/televisionModern.glb" id="66_3wfse"]
 [ext_resource type="PackedScene" uid="uid://0jbaqe6atg8x" path="res://assets/BrickAssets/GLTF format/televisionVintage.glb" id="67_nd0ah"]
 [ext_resource type="PackedScene" uid="uid://b8yi7cq17hxwf" path="res://assets/BrickAssets/GLTF format/toaster.glb" id="68_02klp"]
+[ext_resource type="PackedScene" uid="uid://cmhtv8ekbm02l" path="res://assets/BrickAssets/GLTF format/loungeSofaCorner.glb" id="74_wpjvv"]
+[ext_resource type="PackedScene" uid="uid://bnyb31b4lhxpf" path="res://assets/BrickAssets/GLTF format/loungeSofa.glb" id="75_janlc"]
+[ext_resource type="PackedScene" uid="uid://c4k4vpqmrfb3k" path="res://assets/BrickAssets/GLTF format/pillowBlue.glb" id="76_rch4r"]
+[ext_resource type="PackedScene" uid="uid://bii4k5ktm54sc" path="res://assets/BrickAssets/GLTF format/coatRack.glb" id="77_3djql"]
+[ext_resource type="PackedScene" uid="uid://datdj885dmtmo" path="res://assets/BrickAssets/GLTF format/bench.glb" id="78_n6yvo"]
+[ext_resource type="PackedScene" uid="uid://by2ksic21r7j7" path="res://assets/BrickAssets/GLTF format/pillowBlueLong.glb" id="79_bqvxt"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_gcc01"]
 size = Vector3(1, 0.5, 1.2)
@@ -281,6 +289,68 @@ size = Vector3(0.3, 2.8, 5.1)
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -3.4, 1.35, 6.5)
 operation = 2
 size = Vector3(1.2, 2.3, 1)
+
+[node name="OturmaOdası" type="Node" parent="."]
+
+[node name="cabinetTelevisionDoors" parent="OturmaOdası" instance=ExtResource("1_o4lqs")]
+transform = Transform3D(-1.18021e-07, 0, -2.7, 0, 2.7, 0, 2.7, 0, -1.18021e-07, 8.4088, 0.255975, -8.358)
+
+[node name="cabinetTelevision" parent="OturmaOdası" instance=ExtResource("2_gaunw")]
+transform = Transform3D(-8.74228e-08, 0, -2, 0, 2, 0, 2, 0, -8.74228e-08, 8.4136, 0.243491, -5.99828)
+
+[node name="cabinetTelevision2" parent="OturmaOdası" instance=ExtResource("2_gaunw")]
+transform = Transform3D(-8.74228e-08, 0, -2, 0, 2, 0, 2, 0, -8.74228e-08, 8.41428, 0.24828, -10.1757)
+
+[node name="televisionVintage2" parent="OturmaOdası" instance=ExtResource("67_nd0ah")]
+transform = Transform3D(-1.74846e-07, 0, -4, 0, 4, 0, 4, 0, -1.74846e-07, 8.47977, 1.04526, -8.143)
+
+[node name="televisionAntenna2" parent="OturmaOdası" instance=ExtResource("65_samyg")]
+transform = Transform3D(-2.18557e-07, 0, -5, 0, 5, 0, 5, 0, -2.18557e-07, 8.61405, 2.14556, -7.33084)
+
+[node name="books" parent="OturmaOdası" instance=ExtResource("22_qhif0")]
+transform = Transform3D(-6.55671e-08, 0, -1.5, 0, 1.5, 0, 1.5, 0, -6.55671e-08, 8.4284, 0.625612, -8.88675)
+
+[node name="books3" parent="OturmaOdası" instance=ExtResource("22_qhif0")]
+transform = Transform3D(-6.55671e-08, 0, -1.5, 0, 1.5, 0, 1.5, 0, -6.55671e-08, 8.4284, 0.625612, -9.11579)
+
+[node name="books9" parent="OturmaOdası" instance=ExtResource("22_qhif0")]
+transform = Transform3D(-6.55671e-08, 0, -1.5, 0, 1.5, 0, 1.5, 0, -6.55671e-08, 8.4284, 0.625612, -9.34665)
+
+[node name="books2" parent="OturmaOdası" instance=ExtResource("22_qhif0")]
+transform = Transform3D(-6.55671e-08, 0, -1.5, 0, 1.5, 0, 1.5, 0, -6.55671e-08, 8.4755, 0.625612, -9.62861)
+
+[node name="books7" parent="OturmaOdası" instance=ExtResource("22_qhif0")]
+transform = Transform3D(-6.55671e-08, 0, 1.5, 0, 1.5, 0, -1.5, 0, -6.55671e-08, 8.62893, 0.625612, -9.86129)
+
+[node name="books8" parent="OturmaOdası" instance=ExtResource("22_qhif0")]
+transform = Transform3D(-6.55671e-08, 0, 1.5, 0, 1.5, 0, -1.5, 0, -6.55671e-08, 8.62893, 0.410635, -9.86129)
+
+[node name="books4" parent="OturmaOdası" instance=ExtResource("22_qhif0")]
+transform = Transform3D(-6.55671e-08, 0, -1.5, 0, 1.5, 0, 1.5, 0, -6.55671e-08, 8.4284, 0.416282, -8.88675)
+
+[node name="books5" parent="OturmaOdası" instance=ExtResource("22_qhif0")]
+transform = Transform3D(-6.55671e-08, 0, -1.5, 0, 1.5, 0, 1.5, 0, -6.55671e-08, 8.4755, 0.416282, -9.62861)
+
+[node name="books6" parent="OturmaOdası" instance=ExtResource("22_qhif0")]
+transform = Transform3D(-6.55671e-08, 0, 1.5, 0, 1.5, 0, -1.5, 0, -6.55671e-08, 8.62893, 0.416282, -9.13166)
+
+[node name="plantSmall1" parent="OturmaOdası" instance=ExtResource("55_y83d5")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 8.6074, 0.898416, -8.95124)
+
+[node name="plantSmall2" parent="OturmaOdası" instance=ExtResource("27_3ox7f")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 8.61911, 0.858318, -9.72814)
+
+[node name="pottedPlant" parent="OturmaOdası" instance=ExtResource("2_eljoh")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 5.22958, 0.25203, -9.78822)
+
+[node name="radio" parent="OturmaOdası" instance=ExtResource("28_yb28r")]
+transform = Transform3D(-0.967359, 0, -1.75049, 0, 2, 0, 1.75049, 0, -0.967359, 8.7485, 0.866969, -5.14537)
+
+[node name="pillow3" parent="OturmaOdası" instance=ExtResource("53_71v2s")]
+transform = Transform3D(1.99531, 0.133711, -0.0291804, 0.00410896, 0.367711, 1.9659, 0.136796, -1.96135, 0.366575, 8.4951, 0.945195, -5.35916)
+
+[node name="lampSquareTable" parent="OturmaOdası" instance=ExtResource("48_6h63t")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 8.61729, 0.873205, -9.29121)
 
 [node name="Yatakodası" type="Node" parent="."]
 
@@ -660,7 +730,7 @@ transform = Transform3D(1, 0, 0, 0, 0.639009, -0.769199, 0, 0.769199, 0.639009, 
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.20435, 0.250001, 2.26245)
 
 [node name="plantSmall3" parent="." instance=ExtResource("54_qejnx")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.26143, 0.250001, 1.97601)
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -6.26143, 0.250001, 1.97601)
 
 [node name="plantSmall2" parent="." instance=ExtResource("27_3ox7f")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.31477, 0.250001, 2.1659)
@@ -742,3 +812,54 @@ transform = Transform3D(-0.999702, 0, 0.0244147, 0, 1, 0, -0.0244147, 0, -0.9997
 
 [node name="toaster" parent="." instance=ExtResource("68_02klp")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.04991, 0.250001, 2.14791)
+
+[node name="loungeSofaCorner" parent="." instance=ExtResource("74_wpjvv")]
+transform = Transform3D(0.00404976, 0.00431729, 2.69999, -0.00411953, 2.69999, -0.00431111, -2.69999, -0.00411306, 0.00405634, 1.94292, 0.25, -7.63)
+
+[node name="loungeSofa" parent="." instance=ExtResource("75_janlc")]
+transform = Transform3D(-1.09278e-07, 0, 2.5, 0, 2.5, 0, -2.5, 0, -1.09278e-07, 0.427588, 0.25, -4.8633)
+
+[node name="loungeSofa2" parent="." instance=ExtResource("75_janlc")]
+transform = Transform3D(2.5, 0, 0, 0, 2.5, 0, 0, 0, 2.5, 2.34848, 0.25, -9.15465)
+
+[node name="pillowBlue" parent="." instance=ExtResource("76_rch4r")]
+transform = Transform3D(2.58047, 0, 1.5301, 0, 3, 0, -1.5301, 0, 2.58047, 2.62415, 0.856427, -9.49425)
+
+[node name="pillowBlue2" parent="." instance=ExtResource("76_rch4r")]
+transform = Transform3D(2.32417, 0, -1.8969, 0, 3, 0, 1.8969, 0, 2.32417, 3.89091, 0.898449, -9.74416)
+
+[node name="pillow3" parent="." instance=ExtResource("53_71v2s")]
+transform = Transform3D(2.5, 0, 0, 0, 2.5, 0, 0, 0, 2.5, 3.27935, 0.864848, -9.75084)
+
+[node name="loungeSofa3" parent="." instance=ExtResource("75_janlc")]
+transform = Transform3D(-2.5, 0, -2.18557e-07, 0, 2.5, 0, 2.18557e-07, 0, -2.5, 5.95022, 0.25, -5.30734)
+
+[node name="pillowBlue3" parent="." instance=ExtResource("76_rch4r")]
+transform = Transform3D(-2.3948, 0, 1.80691, 0, 3, 0, -1.80691, 0, -2.3948, 4.37254, 0.890436, -4.63992)
+
+[node name="pillowBlue4" parent="." instance=ExtResource("76_rch4r")]
+transform = Transform3D(-2.72958, 0, -1.24475, 0, 3, 0, 1.24475, 0, -2.72958, 5.67213, 0.898449, -5.05031)
+
+[node name="pillow4" parent="." instance=ExtResource("53_71v2s")]
+transform = Transform3D(-2.5, -2.2479e-15, -2.18557e-07, 2.03218e-07, -0.920068, -2.32454, -8.04349e-08, -2.32454, 0.920068, 5.03903, 0.925695, -4.74541)
+
+[node name="coatRack" parent="." instance=ExtResource("77_3djql")]
+transform = Transform3D(2.8, 0, 0, 0, 2.8, 0, 0, 0, 2.8, -5.20352, 1.81977, -3.5863)
+
+[node name="bench" parent="." instance=ExtResource("78_n6yvo")]
+transform = Transform3D(1.07833, 0, 2.7995, 0, 3, 0, -2.7995, 0, 1.07833, -5.33702, 0.25, -2.33384)
+
+[node name="benchCushionLow2" parent="." instance=ExtResource("41_ylu4m")]
+transform = Transform3D(0.782394, 0, 1.84061, 0, 2, 0, -1.84061, 0, 0.782394, -4.38427, 0.25, -2.15739)
+
+[node name="benchCushion3" parent="." instance=ExtResource("40_pv07o")]
+transform = Transform3D(-2.49999, 0.00491627, -0.00287392, 0.00491474, 2.49999, 0.00132846, 0.00287652, 0.00132281, -2.5, 7.48258, 0.25, -4.71306)
+
+[node name="pillowBlueLong" parent="." instance=ExtResource("79_bqvxt")]
+transform = Transform3D(1.5, 0, 0, 0, 0.385067, 1.44973, 0, -1.44973, 0.385067, 6.76794, 0.327923, -4.68922)
+
+[node name="rugDoormat8" parent="." instance=ExtResource("56_omv02")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 0.349744, 0.299638, -3.54712)
+
+[node name="rugRectangle2" parent="." instance=ExtResource("57_sve5m")]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 1.62483, 0.25, -5.8536)
