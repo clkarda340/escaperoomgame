@@ -876,7 +876,7 @@ transform = Transform3D(-0.275467, 0, 0.0123479, 0, 0.197562, 0, -0.0176205, 0, 
 mesh = ExtResource("75_qxq34")
 
 [node name="Araba" type="MeshInstance3D" parent="."]
-transform = Transform3D(0.137737, 0, 0.227624, 0, 0.291475, 0, -0.331431, 0, 0.0945968, -6.90889, 0.427731, 3.62341)
+transform = Transform3D(-0.1752, 0.0907394, 0.20972, -0.0989284, 0.415348, -0.0891827, -0.297214, -0.191738, -0.0939405, -7.37525, 0.345374, 3.35645)
 mesh = ExtResource("76_m0m8w")
 
 [node name="3d-model" type="MeshInstance3D" parent="."]
