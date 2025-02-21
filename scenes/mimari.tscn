@@ -1,4 +1,4 @@
-[gd_scene load_steps=90 format=3 uid="uid://dpeblt4rqw5b7"]
+[gd_scene load_steps=91 format=3 uid="uid://dpeblt4rqw5b7"]
 
 [ext_resource type="PackedScene" uid="uid://o8xlkrsurpdb" path="res://assets/BrickAssets/GLTF format/bedDouble.glb" id="1_5atvr"]
 [ext_resource type="PackedScene" uid="uid://duk6fyy5jog8t" path="res://assets/BrickAssets/GLTF format/cabinetTelevisionDoors.glb" id="1_o4lqs"]
@@ -79,6 +79,7 @@
 [ext_resource type="PackedScene" uid="uid://bii4k5ktm54sc" path="res://assets/BrickAssets/GLTF format/coatRack.glb" id="77_3djql"]
 [ext_resource type="PackedScene" uid="uid://datdj885dmtmo" path="res://assets/BrickAssets/GLTF format/bench.glb" id="78_n6yvo"]
 [ext_resource type="PackedScene" uid="uid://by2ksic21r7j7" path="res://assets/BrickAssets/GLTF format/pillowBlueLong.glb" id="79_bqvxt"]
+[ext_resource type="PackedScene" uid="uid://drpp7yytgl8l7" path="res://assets/BrickAssets/GLTF format/laptop.glb" id="80_wlm5r"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_gcc01"]
 size = Vector3(1, 0.5, 1.2)
@@ -862,4 +863,28 @@ transform = Transform3D(1.5, 0, 0, 0, 0.385067, 1.44973, 0, -1.44973, 0.385067, 
 transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 0.349744, 0.299638, -3.54712)
 
 [node name="rugRectangle2" parent="." instance=ExtResource("57_sve5m")]
-transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 1.62483, 0.25, -5.8536)
+transform = Transform3D(3.4, 0, 0, 0, 3.4, 0, 0, 0, 3.4, 1.84608, 0.25, -5.72936)
+
+[node name="sideTable2" parent="." instance=ExtResource("60_ygrpk")]
+transform = Transform3D(-8.74228e-08, 0, 2, 0, 2, 0, -2, 0, -8.74228e-08, 0.980078, 0.170167, -6.9591)
+
+[node name="rugRound2" parent="." instance=ExtResource("58_5082x")]
+transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, -0.0399984, 0.25, -6.79656)
+
+[node name="speaker3" parent="." instance=ExtResource("29_motvd")]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 5.78181, 0.25, -9.80566)
+
+[node name="speaker4" parent="." instance=ExtResource("29_motvd")]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 6.39443, 0.25, -9.80566)
+
+[node name="speakerSmall2" parent="." instance=ExtResource("62_jsa83")]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 6.95555, 0.25, -9.95793)
+
+[node name="speakerSmall3" parent="." instance=ExtResource("62_jsa83")]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 7.51556, 0.25, -9.95793)
+
+[node name="laptop" parent="." instance=ExtResource("80_wlm5r")]
+transform = Transform3D(0.301875, 0, -1.16141, 0, 1.2, 0, 1.16141, 0, 0.301875, 0.667724, 0.955024, -7.29631)
+
+[node name="ceilingFan2" parent="." instance=ExtResource("44_70ljx")]
+transform = Transform3D(3.85551, 0, 0, 0, 2.7019, 0, 0, 0, 4.43923, 4.12062, 3.13898, -7.23791)
