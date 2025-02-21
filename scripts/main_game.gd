@@ -14,7 +14,7 @@ func _ready() -> void:
 	interactables.append(get_node("Mimari/Kitchen/kitchenStove/InteractableOven"))
 	
 	#Tüm interactable'ler eklendikten sonra
-	not_used = interactables
+	not_used = interactables.duplicate()
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -47,9 +47,13 @@ func _on_threatify_timer_timeout() -> void:
 		threatify()
 	else:
 		$"Threatify Timer".queue_free()
-		$"Health Timer".queue_free()
-		$Player.health = $Player.max_health
-		$Ingame.stop()
+		for i in interactables:
+			if i.is_threat:
+				return
+			else:
+				$"Health Timer".queue_free()
+				$Player.health = $Player.max_health
+				$Ingame.stop()
 	#$"Threatify Timer".start() #EĞER LOOP İÇİNDE ÇALIŞMIYORSA BU KOD LAZIM 
 
 
