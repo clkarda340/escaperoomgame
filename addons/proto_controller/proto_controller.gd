@@ -6,7 +6,6 @@
 extends CharacterBody3D
 
 ## Can we move around?
-@onready var prompt = $Prompt
 @export var can_move : bool = true
 ## Are we affected by gravity?
 @export var has_gravity : bool = true
@@ -17,6 +16,7 @@ extends CharacterBody3D
 ## Can we press to enter freefly mode (noclip)?
 @export var can_freefly : bool = false
 
+@export var max_health : float = 50
 @export_group("Speeds")
 ## Look around rotation speed.
 @export var look_speed : float = 0.002
@@ -49,7 +49,17 @@ var mouse_captured : bool = false
 var look_rotation : Vector2
 var move_speed : float = 0.0
 var freeflying : bool = false
-
+var health = max_health:
+	set(value):
+		if value > max_health:
+			health = max_health
+		elif value < 0:
+			health = 0
+			release_mouse()
+			get_parent().game_lost()
+		else:
+			health = value
+			
 ## IMPORTANT REFERENCES
 @onready var head: Node3D = $Head
 @onready var collider: CollisionShape3D = $Collider
@@ -84,7 +94,7 @@ func _physics_process(delta: float) -> void:
 		var target = $Head/Camera3D/RayCast3D.get_collider()
 		$CanvasLayer/BoxContainer/Label.show()
 		if Input.is_action_just_pressed("interact"):
-			print(target)	
+			target.is_threat = false
 		
 	if can_freefly and freeflying:
 		var input_dir := Input.get_vector(input_left, input_right, input_forward, input_back)

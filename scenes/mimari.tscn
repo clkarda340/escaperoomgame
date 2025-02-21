@@ -1,12 +1,15 @@
-[gd_scene load_steps=75 format=3 uid="uid://dpeblt4rqw5b7"]
+[gd_scene load_steps=82 format=3 uid="uid://dpeblt4rqw5b7"]
 
 [ext_resource type="PackedScene" uid="uid://o8xlkrsurpdb" path="res://assets/BrickAssets/GLTF format/bedDouble.glb" id="1_5atvr"]
 [ext_resource type="PackedScene" uid="uid://dj5g7uw3ft3cc" path="res://assets/BrickAssets/GLTF format/pottedPlant.glb" id="2_eljoh"]
+[ext_resource type="Script" path="res://scripts/interactable_bed.gd" id="2_hvmeb"]
 [ext_resource type="PackedScene" uid="uid://do72gc30eqeir" path="res://assets/BrickAssets/GLTF format/doorwayFront.glb" id="3_oi3yh"]
 [ext_resource type="PackedScene" uid="uid://c11n1k8ksrdoj" path="res://assets/BrickAssets/GLTF format/doorway.glb" id="4_sis80"]
 [ext_resource type="PackedScene" uid="uid://bn0vmmxt3mhav" path="res://assets/BrickAssets/GLTF format/kitchenStove.glb" id="5_twmpm"]
+[ext_resource type="Script" path="res://scripts/interactable_oven.gd" id="6_2okq6"]
 [ext_resource type="PackedScene" uid="uid://b4d2x2avcxukd" path="res://assets/BrickAssets/GLTF format/kitchenSink.glb" id="6_hj3p3"]
 [ext_resource type="PackedScene" uid="uid://b5kd2fwn2dkvm" path="res://assets/BrickAssets/GLTF format/kitchenFridge.glb" id="7_7bn84"]
+[ext_resource type="AudioStream" uid="uid://s2bkgmabew7g" path="res://assets/Sound Effects/oven-timer-complete-43537.mp3" id="7_udpe8"]
 [ext_resource type="PackedScene" uid="uid://dci0m3klnnpme" path="res://assets/BrickAssets/GLTF format/kitchenCabinetDrawer.glb" id="8_nqa2j"]
 [ext_resource type="PackedScene" uid="uid://dowxdbak6hvh6" path="res://assets/BrickAssets/GLTF format/kitchenCabinet.glb" id="9_u3gld"]
 [ext_resource type="PackedScene" uid="uid://n4veikm3m2da" path="res://assets/BrickAssets/GLTF format/kitchenBlender.glb" id="10_pw06m"]
@@ -72,6 +75,9 @@
 [sub_resource type="BoxShape3D" id="BoxShape3D_gcc01"]
 size = Vector3(1, 0.5, 1.2)
 
+[sub_resource type="BoxShape3D" id="BoxShape3D_jdstq"]
+size = Vector3(0.978455, 1, 1.1499)
+
 [sub_resource type="CylinderShape3D" id="CylinderShape3D_lnnpm"]
 height = 0.6
 radius = 0.1
@@ -82,6 +88,59 @@ size = Vector3(0.4, 0.4, 0.4)
 [sub_resource type="CylinderShape3D" id="CylinderShape3D_twv1c"]
 height = 0.287718
 radius = 0.12147
+
+[sub_resource type="Animation" id="Animation_2dp0f"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("KitchenOvenLight:light_energy")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [1.152]
+}
+
+[sub_resource type="Animation" id="Animation_7cbqr"]
+resource_name = "blink"
+length = 2.6
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("KitchenOvenLight:light_energy")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0.0333334, 0.966667, 1.9),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [0.5, 0.0, 1.152]
+}
+tracks/1/type = "audio"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Oven-timer")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"clips": [{
+"end_offset": 0.38,
+"start_offset": 0.0,
+"stream": ExtResource("7_udpe8")
+}],
+"times": PackedFloat32Array(0.0333333)
+}
+tracks/1/use_blend = true
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_x21q7"]
+_data = {
+"RESET": SubResource("Animation_2dp0f"),
+"blink": SubResource("Animation_7cbqr")
+}
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_ah3cx"]
 size = Vector3(0.845801, 0.4, 0.731909)
@@ -96,34 +155,34 @@ radius = 0.348651
 use_collision = true
 
 [node name="CSGBox3D" type="CSGBox3D" parent="Dış Duvarlar 2"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.35, 1.6, -5.35)
-size = Vector3(0.3, 2.8, 10.3)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.35, 1.77506, -5.35)
+size = Vector3(0.3, 3.15012, 10.3)
 
 [node name="CSGBox3D5" type="CSGBox3D" parent="Dış Duvarlar 2"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.35, 1.6, 4.65)
-size = Vector3(0.3, 2.8, 9.7)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.35, 1.80192, 4.65)
+size = Vector3(0.3, 3.20383, 9.7)
 
 [node name="CSGBox3D4" type="CSGBox3D" parent="Dış Duvarlar 2"]
-transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -0.55, 1.6, -10.4)
-size = Vector3(0.3, 2.8, 20)
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -0.55, 1.81254, -10.4)
+size = Vector3(0.3, 3.22507, 20)
 
 [node name="Dış duvarlar" type="CSGCombiner3D" parent="."]
 use_collision = true
 
 [node name="CSGBox3D2" type="CSGBox3D" parent="Dış duvarlar"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.35, 1.6, -0.5)
-size = Vector3(0.3, 2.8, 20)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.35, 1.84914, -0.5)
+size = Vector3(0.3, 3.29827, 20)
 
 [node name="CSGBox3D3" type="CSGBox3D" parent="Dış duvarlar"]
-transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -0.55, 1.6, 9.3)
-size = Vector3(0.3, 2.8, 20)
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -0.55, 1.80143, 9.3)
+size = Vector3(0.3, 3.20286, 20)
 
 [node name="Zemin" type="CSGBox3D" parent="Dış duvarlar"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.5, 0, -0.5)
 size = Vector3(20, 0.5, 20)
 
 [node name="Tavan" type="CSGBox3D" parent="Dış duvarlar"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.600901, 3.0325, -0.64396)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.600901, 3.41868, -0.64396)
 size = Vector3(20, 0.5, 19.7217)
 
 [node name="Boşluk" type="CSGBox3D" parent="Dış duvarlar"]
@@ -234,6 +293,15 @@ transform = Transform3D(-2.244, 0, -1.96177e-07, 0, 2.244, 0, 1.96177e-07, 0, -2
 transform = Transform3D(1, 0, -1.92557e-12, 0, 1, 0, 1.92557e-12, 0, 1, 0.445631, 0.160873, -0.568449)
 shape = SubResource("BoxShape3D_gcc01")
 
+[node name="InteractableBed" type="Area3D" parent="Yatakodası/bedDouble"]
+collision_layer = 4
+collision_mask = 4
+script = ExtResource("2_hvmeb")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Yatakodası/bedDouble/InteractableBed"]
+transform = Transform3D(1, 0, 2.13163e-14, 0, 1, 0, -2.13163e-14, 0, 1, 0.500092, 0, -0.57246)
+shape = SubResource("BoxShape3D_jdstq")
+
 [node name="pottedPlant" parent="Yatakodası" instance=ExtResource("2_eljoh")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.4, 0.257308, -4.8)
 
@@ -292,11 +360,23 @@ spot_angle = 72.43
 transform = Transform3D(1, 0, -7.21201e-12, 0, 1, 0, 7.21201e-12, 0, 1, 0.216454, 0.238095, -0.200003)
 shape = SubResource("BoxShape3D_q325s")
 
-[node name="Interactables" type="Area3D" parent="Kitchen/kitchenStove"]
+[node name="InteractableOven" type="Area3D" parent="Kitchen/kitchenStove"]
+unique_name_in_owner = true
+collision_layer = 4
+collision_mask = 4
+script = ExtResource("6_2okq6")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Kitchen/kitchenStove/Interactables"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Kitchen/kitchenStove/InteractableOven"]
 transform = Transform3D(1, 0, -8.47033e-22, 0, 1, 0, 8.47033e-22, 0, 1, 0.162946, 0, -0.0689418)
 shape = SubResource("CylinderShape3D_twv1c")
+
+[node name="Oven-timer" type="AudioStreamPlayer" parent="Kitchen/kitchenStove"]
+bus = &"SFX"
+
+[node name="KitchenLightBlink" type="AnimationPlayer" parent="Kitchen/kitchenStove"]
+libraries = {
+"": SubResource("AnimationLibrary_x21q7")
+}
 
 [node name="kitchenSink" parent="Kitchen" instance=ExtResource("6_hj3p3")]
 transform = Transform3D(2.09, 0, -1.42109e-14, 0, 2.09, 0, 1.42109e-14, 0, 2.09, 3.32857, 0.3, 4.48571)
