@@ -10,7 +10,11 @@ var not_used = []
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	get_tree().get_root().get_node("Main Game").get_node("WorldEnvironment").environment.adjustment_brightness = Persistence.config.get_value("Video","Brightness")
+	#Burada tüm interactables'i buraya geçirmemiz gerekiyor. Geçirmediklerimiz çalışmıyor. 
 	interactables.append(get_node("Mimari/Kitchen/kitchenStove/InteractableOven"))
+	
+	#Tüm interactable'ler eklendikten sonra
+	not_used = interactables
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -32,16 +36,13 @@ func pause_game():
 		
 
 func threatify():
-	var interactible_seed = randi_range(0,len(not_used)-1)
-	var object = not_used[interactible_seed]
+	var interactable_seed = randi_range(0,len(not_used)-1)
+	var object = not_used[interactable_seed]
 	object.is_threat = true
 	object.is_used = true
+	not_used.remove_at(interactable_seed)
 
 func _on_threatify_timer_timeout() -> void:
-	not_used = []
-	for i in interactables:
-		if i.is_threat == false and i.is_used == false:
-			not_used.append(i)
 	if len(not_used) > 0:
 		threatify()
 	else:
