@@ -65,7 +65,7 @@ pause={
 
 3d_physics/layer_1="Player"
 3d_physics/layer_2="RandomStuf"
-3d_physics/layer_3="Interactibles"
+3d_physics/layer_3="Interactables"
 
 [physics]
 

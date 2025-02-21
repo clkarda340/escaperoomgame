@@ -42,6 +42,7 @@ environment = SubResource("Environment_4yirn")
 [node name="Player" parent="." instance=ExtResource("2_g72bx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.3, 0)
 collision_mask = 5
+max_health = 30.0
 base_speed = 4.0
 input_left = "left"
 input_right = "right"
@@ -53,3 +54,13 @@ stream = ExtResource("4_1kbah")
 volume_db = -29.982
 autoplay = true
 parameters/looping = true
+
+[node name="Threatify Timer" type="Timer" parent="."]
+wait_time = 5.0
+autostart = true
+
+[node name="Health Timer" type="Timer" parent="."]
+autostart = true
+
+[connection signal="timeout" from="Threatify Timer" to="." method="_on_threatify_timer_timeout"]
+[connection signal="timeout" from="Health Timer" to="." method="_on_health_timer_timeout"]

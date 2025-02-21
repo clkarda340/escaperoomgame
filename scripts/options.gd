@@ -23,7 +23,7 @@ func _ready() -> void:
 	AudioServer.set_bus_volume_db(0,linear_to_db(%Master.value))
 
 func _on_back_pressed() -> void:
-	#get_tree().change_scene_to_file("res://scenes/main_menu.tscn")
+	get_tree().paused = false
 	get_parent().get_parent().queue_free()
 
 func _on_brightness_value_changed(value: float) -> void:
