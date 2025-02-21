@@ -1,10 +1,10 @@
 extends Area3D
 
-var is_threat:=true
+var is_threat:=false
+var is_used :=false
 var oven_light
 var oven_timer
 var kitchen_light
-var time_passed:=0.0
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	oven_light = get_parent().get_node("KitchenOvenLight")
@@ -15,7 +15,7 @@ func _ready() -> void:
 func _process(delta: float) -> void:
 	
 	if is_threat==true:
-		time_passed += delta
+		oven_light.visible = true
 		in_threat()
 		pass
 	else:
