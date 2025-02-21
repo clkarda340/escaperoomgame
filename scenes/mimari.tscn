@@ -936,7 +936,7 @@ transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, -9.71376, 1.06208, -4.6
 transform = Transform3D(0.87991, 0, 1.79604, 0, 2, 0, -1.79604, 0, 0.87991, -5.54399, 0.778037, -4.66857)
 
 [node name="coatRackStanding" parent="." instance=ExtResource("83_vb8x1")]
-transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -1.68513, 0.25, -6.81787)
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 1.96785, 0.25, 1.59501)
 
 [node name="cardboardBoxOpen2" parent="." instance=ExtResource("43_5ct58")]
 transform = Transform3D(1.77475, 0, 0.922104, 0, 2, 0, -0.922104, 0, 1.77475, -4.63564, 0.281123, -9.55737)
@@ -955,3 +955,6 @@ transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -9.92596, 0.25, -9.38015)
 
 [node name="cabinetBedDrawerTable" parent="." instance=ExtResource("86_wgbxi")]
 transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -8.30503, 0.25, -9.45671)
+
+[node name="doorwayFront" parent="." instance=ExtResource("3_oi3yh")]
+transform = Transform3D(-1.09278e-07, 0, 2.5, 0, 2.5, 0, -2.5, 0, -1.09278e-07, 2.68324, 0.177078, 0.533763)
