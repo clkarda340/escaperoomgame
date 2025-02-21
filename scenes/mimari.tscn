@@ -1,4 +1,4 @@
-[gd_scene load_steps=88 format=3 uid="uid://dpeblt4rqw5b7"]
+[gd_scene load_steps=90 format=3 uid="uid://dpeblt4rqw5b7"]
 
 [ext_resource type="PackedScene" uid="uid://o8xlkrsurpdb" path="res://assets/BrickAssets/GLTF format/bedDouble.glb" id="1_5atvr"]
 [ext_resource type="PackedScene" uid="uid://duk6fyy5jog8t" path="res://assets/BrickAssets/GLTF format/cabinetTelevisionDoors.glb" id="1_o4lqs"]
@@ -75,7 +75,9 @@
 [ext_resource type="PackedScene" uid="uid://bii4k5ktm54sc" path="res://assets/BrickAssets/GLTF format/coatRack.glb" id="77_3djql"]
 [ext_resource type="ArrayMesh" uid="uid://cln7oqhq5hlw6" path="res://3d-model.obj" id="77_vrefu"]
 [ext_resource type="PackedScene" uid="uid://datdj885dmtmo" path="res://assets/BrickAssets/GLTF format/bench.glb" id="78_n6yvo"]
+[ext_resource type="ArrayMesh" uid="uid://dmq3lm6rpwlhi" path="res://BabyBottle.obj" id="78_og2of"]
 [ext_resource type="PackedScene" uid="uid://by2ksic21r7j7" path="res://assets/BrickAssets/GLTF format/pillowBlueLong.glb" id="79_bqvxt"]
+[ext_resource type="ArrayMesh" uid="uid://dldsyyfs3yppk" path="res://BabyPacifier.obj" id="79_sjg8o"]
 [ext_resource type="PackedScene" uid="uid://drpp7yytgl8l7" path="res://assets/BrickAssets/GLTF format/laptop.glb" id="80_wlm5r"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_gcc01"]
@@ -854,7 +856,19 @@ transform = Transform3D(0.998825, -0.033661, 0.0348782, 0.0348782, 0.998782, -0.
 mesh = ExtResource("74_5s181")
 
 [node name="TopOyuncak4" type="MeshInstance3D" parent="."]
-transform = Transform3D(0.998825, -0.033661, 0.0348782, 0.0348782, 0.998782, -0.0348995, -0.033661, 0.036075, 0.998782, -7.98157, 0.25, 5.91528)
+transform = Transform3D(0.998825, -0.033661, 0.0348782, 0.0348782, 0.998782, -0.0348995, -0.033661, 0.036075, 0.998782, -6.69723, 0.291317, 5.96975)
+mesh = ExtResource("74_5s181")
+
+[node name="TopOyuncak5" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.998825, -0.033661, 0.0348782, 0.0348782, 0.998782, -0.0348995, -0.033661, 0.036075, 0.998782, -7.50699, 0.32271, 4.34503)
+mesh = ExtResource("74_5s181")
+
+[node name="TopOyuncak6" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.998825, -0.033661, 0.0348782, 0.0348782, 0.998782, -0.0348995, -0.033661, 0.036075, 0.998782, -6.88577, 0.310913, 5.25129)
+mesh = ExtResource("74_5s181")
+
+[node name="TopOyuncak7" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.998825, -0.033661, 0.0348782, 0.0348782, 0.998782, -0.0348995, -0.033661, 0.036075, 0.998782, -8.91829, 0.276056, 4.31983)
 mesh = ExtResource("74_5s181")
 
 [node name="Cot" type="MeshInstance3D" parent="."]
@@ -868,3 +882,27 @@ mesh = ExtResource("76_m0m8w")
 [node name="3d-model" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.50253, 0.25, 3.26904)
 mesh = ExtResource("77_vrefu")
+
+[node name="BabyBottle" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.0623957, 0, 0, 0, 0.0703038, 0, 0, 0, 0.04, -9.84984, 1.10906, 3.13434)
+mesh = ExtResource("78_og2of")
+
+[node name="BabyBottle2" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.0623957, 0, 0, 0, 0.0703038, 0, 0, 0, 0.04, -9.67625, 1.10906, 3.13434)
+mesh = ExtResource("78_og2of")
+
+[node name="BabyBottle3" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.0623957, 0, 0, 0, 0.0703038, 0, 0, 0, 0.04, -9.50552, 1.10906, 3.13434)
+mesh = ExtResource("78_og2of")
+
+[node name="BabyBottle4" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.0623957, 0, 0, 0, 0.0703038, 0, 0, 0, 0.04, -9.32508, 1.10906, 3.13434)
+mesh = ExtResource("78_og2of")
+
+[node name="BabyPacifier" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.1, 0, 0, 0, 0.0997671, 0.00682068, 0, -0.00682068, 0.0997671, -9.0543, 1.16343, 3.09398)
+mesh = ExtResource("79_sjg8o")
+
+[node name="BabyPacifier2" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.0490615, -0.0170515, 0.085453, -0.00576259, 0.0972171, 0.0227075, -0.0869469, -0.0160649, 0.0467135, -8.91916, 0.987495, 5.14745)
+mesh = ExtResource("79_sjg8o")
