@@ -189,7 +189,7 @@ _data = {
 }
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_ah3cx"]
-size = Vector3(0.845801, 0.4, 0.731909)
+size = Vector3(0.845801, 0.482715, 0.731909)
 
 [sub_resource type="CylinderShape3D" id="CylinderShape3D_xceee"]
 height = 0.4
@@ -663,8 +663,11 @@ skeleton = NodePath("../..")
 [node name="StaticBody3D" type="StaticBody3D" parent="BabyRoom/Cot"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="BabyRoom/Cot/StaticBody3D"]
-transform = Transform3D(3.17376, 0, -1.19209e-07, 0, 0.825185, 0, -1.16229e-06, 0, 4.71196, 0.733849, 3.95778, -0.184689)
+transform = Transform3D(3.17376, 0, -1.08752e-07, 0, 0.825185, 0, -1.16229e-06, 0, 4.29863, 0.733849, 3.95778, -0.184689)
 shape = SubResource("BoxShape3D_3f2ug")
+
+[node name="paneling" parent="BabyRoom/Cot/StaticBody3D" instance=ExtResource("52_u4tao")]
+transform = Transform3D(-5.84691e-07, -0.0467554, 7.1129, 0, 8.92954, 0.0372434, -13.3762, 2.04374e-09, -3.10915e-07, -23.2586, 5.82748, 66.9171)
 
 [node name="Araba" type="MeshInstance3D" parent="BabyRoom"]
 transform = Transform3D(0.252499, -0.0989209, -0.167198, 0.103115, 0.446718, -0.000379397, 0.233302, -0.0903798, 0.181123, -7.37525, 0.345374, 3.35645)
@@ -1069,7 +1072,7 @@ collision_layer = 4
 collision_mask = 4
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Kitchen/kitchenFridge/StaticBody3D"]
-transform = Transform3D(1, 0, 6.60805e-13, 0, 1, 0, -6.60805e-13, 0, 1, 0.216048, 0.477316, -0.151781)
+transform = Transform3D(0.523311, 0, 2.60977e-13, 0, 1.70151, 0, -4.45866e-13, 0, 0.394011, 0.216048, 0.497485, -0.151781)
 shape = SubResource("BoxShape3D_ah3cx")
 
 [node name="kitchenBlender" parent="Kitchen" instance=ExtResource("10_pw06m")]
