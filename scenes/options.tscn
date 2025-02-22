@@ -22,17 +22,42 @@ grow_vertical = 2
 [node name="OptionsTab" parent="PanelContainer" instance=ExtResource("1_fvrmt")]
 layout_mode = 2
 
-[node name="Back" type="Button" parent="PanelContainer"]
-layout_mode = 2
-size_flags_horizontal = 8
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -31.0
+grow_horizontal = 2
+grow_vertical = 0
 size_flags_vertical = 8
+alignment = 1
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -31.0
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="Back" type="Button" parent="HBoxContainer2"]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 8
+theme_override_font_sizes/font_size = 50
 text = "Back"
 
-[node name="Quit" type="Button" parent="PanelContainer"]
+[node name="Quit" type="Button" parent="HBoxContainer2"]
 layout_mode = 2
-size_flags_horizontal = 0
+size_flags_horizontal = 3
 size_flags_vertical = 8
+theme_override_font_sizes/font_size = 50
 text = "Quit Game"
 
-[connection signal="pressed" from="PanelContainer/Back" to="PanelContainer/OptionsTab" method="_on_back_pressed"]
-[connection signal="pressed" from="PanelContainer/Quit" to="PanelContainer/OptionsTab" method="_on_quit_pressed"]
+[connection signal="pressed" from="HBoxContainer2/Back" to="PanelContainer/OptionsTab" method="_on_back_pressed"]
+[connection signal="pressed" from="HBoxContainer2/Quit" to="PanelContainer/OptionsTab" method="_on_quit_pressed"]

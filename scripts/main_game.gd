@@ -2,6 +2,7 @@ extends Node3D
 
 @export var healing_coefficient := 10
 @export var damaging_coefficient := 3
+@export var time_before_damage := 5.0
 
 var in_game_music
 var game_paused=false
@@ -14,7 +15,12 @@ func _ready() -> void:
 	in_game_music = get_node("Ingame")
 	#Burada tüm interactables'i buraya geçirmemiz gerekiyor. Geçirmediklerimiz çalışmıyor. 
 	interactables.append(get_node("Mimari/Kitchen/kitchenStove/InteractableOven"))
+	interactables.append(get_node("Mimari/ÇalışmaOdası/laptop/InteractableLaptop"))
 	interactables.append(get_node("Mimari/OturmaOdası/televisionVintage2/InteractableTV"))
+	interactables.append(get_node("Mimari/OturmaOdası/radio/InteractableRadio"))
+	interactables.append(get_node("Mimari/OturmaOdası/ceilingFan2/InteractableFan"))
+	interactables.append(get_node("Mimari/Tuvalet/washerDryer/InteractableWashingMachine"))
+	interactables.append(get_node("Mimari/Kitchen/kitchenFridge/InteractableFridge"))
 	#Tüm interactable'ler eklendikten sonra
 	not_used = interactables.duplicate()
 
@@ -57,6 +63,8 @@ func _on_threatify_timer_timeout() -> void:
 		$Player.health = $Player.max_health
 		if in_game_music.playing:
 			in_game_music.stop()
+		await get_tree().create_timer(1.0).timeout
+		get_node("ThreatGone").play()
 
 
 func _on_health_timer_timeout() -> void:
@@ -66,6 +74,7 @@ func _on_health_timer_timeout() -> void:
 		if i.is_threat:
 			active_threats_count +=1
 	if active_threats_count>0:
+		await get_tree().create_timer(time_before_damage).timeout
 		player.health -= damaging_coefficient*active_threats_count
 	else:
 		player.health+= healing_coefficient

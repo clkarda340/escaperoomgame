@@ -94,7 +94,10 @@ func _physics_process(delta: float) -> void:
 		var target = $Head/Camera3D/RayCast3D.get_collider()
 		$CanvasLayer/BoxContainer/Label.show()
 		if Input.is_action_just_pressed("interact"):
-			target.is_threat = false
+			if "is_open" in target:
+				target.change_door_state()
+			else:
+				target.is_threat = false
 		
 	if can_freefly and freeflying:
 		var input_dir := Input.get_vector(input_left, input_right, input_forward, input_back)
