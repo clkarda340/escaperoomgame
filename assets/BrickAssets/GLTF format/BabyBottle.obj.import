@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://dmq3lm6rpwlhi"
+path="res://.godot/imported/BabyBottle.obj-5a45ffbfb467b210e2756aacc75667ea.mesh"
+
+[deps]
+
+files=["res://.godot/imported/BabyBottle.obj-5a45ffbfb467b210e2756aacc75667ea.mesh"]
+
+source_file="res://assets/BrickAssets/GLTF format/BabyBottle.obj"
+dest_files=["res://.godot/imported/BabyBottle.obj-5a45ffbfb467b210e2756aacc75667ea.mesh", "res://.godot/imported/BabyBottle.obj-5a45ffbfb467b210e2756aacc75667ea.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false
