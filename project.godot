@@ -23,6 +23,10 @@ Persistence="*res://scripts/persistence.gd"
 
 project/assembly_name="Gerilimli Ev"
 
+[filesystem]
+
+import/blender/enabled=false
+
 [input]
 
 forward={
