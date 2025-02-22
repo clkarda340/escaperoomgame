@@ -90,7 +90,7 @@
 [ext_resource type="PackedScene" uid="uid://b4bdikliuy11n" path="res://assets/BrickAssets/GLTF format/cabinetBedDrawerTable.glb" id="86_wgbxi"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_3f2ug"]
-size = Vector3(0.602139, 2.20983, 0.807467)
+size = Vector3(0.552046, 2.00835, 1.13719)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_aq37p"]
 size = Vector3(0.552246, 0.571484, 0.18811)
@@ -660,43 +660,61 @@ transform = Transform3D(-0.275467, 0, 0.0123479, 0, 0.197562, 0, -0.0176205, 0, 
 mesh = ExtResource("75_qxq34")
 skeleton = NodePath("../..")
 
+[node name="StaticBody3D" type="StaticBody3D" parent="BabyRoom/Cot"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="BabyRoom/Cot/StaticBody3D"]
+transform = Transform3D(3.7355, 0, -1.19209e-07, 0, 0.825186, 0, -1.46031e-06, 0, 4.71196, 0.733847, 3.95778, -0.0670795)
+shape = SubResource("BoxShape3D_3f2ug")
+
 [node name="Araba" type="MeshInstance3D" parent="BabyRoom"]
 transform = Transform3D(0.252499, -0.0989209, -0.167198, 0.103115, 0.446718, -0.000379397, 0.233302, -0.0903798, 0.181123, -7.37525, 0.345374, 3.35645)
 mesh = ExtResource("76_m0m8w")
 skeleton = NodePath("../..")
 
+[node name="StaticBody3D" type="StaticBody3D" parent="BabyRoom/Araba"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="BabyRoom/Araba/StaticBody3D"]
+transform = Transform3D(2.88813, 0, -6.97135e-08, 0, 0.12423, 0, 0, 0, 1.77001, -0.0405774, -2.79015e-09, 0.0911587)
+shape = SubResource("BoxShape3D_3f2ug")
+
 [node name="3d-model" type="MeshInstance3D" parent="BabyRoom"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.50253, 0.25, 3.26904)
+transform = Transform3D(0.822392, 0, 0.568921, 0, 1, 0, -0.568921, 0, 0.822392, -9.36506, 0.25, 3.62906)
 mesh = ExtResource("77_vrefu")
 skeleton = NodePath("../..")
 
+[node name="StaticBody3D" type="StaticBody3D" parent="BabyRoom/3d-model"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="BabyRoom/3d-model/StaticBody3D"]
+transform = Transform3D(1.71136, 0, 0, 0, 0.371817, 0, 1.19209e-07, 0, 0.485677, 0.0755138, 0.428078, -0.116261)
+shape = SubResource("BoxShape3D_3f2ug")
+
 [node name="BabyBottle" type="MeshInstance3D" parent="BabyRoom"]
-transform = Transform3D(0.0623957, 0, 0, 0, 0.0703038, 0, 0, 0, 0.04, -9.84984, 1.10906, 3.13434)
+transform = Transform3D(0.0562616, 0.000681855, 0.017291, -0.000703951, 0.0702993, 4.39397e-05, -0.0269697, -0.000412502, 0.0360697, -9.89319, 1.11351, 3.62778)
 mesh = ExtResource("78_og2of")
 skeleton = NodePath("../..")
 
 [node name="BabyBottle2" type="MeshInstance3D" parent="BabyRoom"]
-transform = Transform3D(0.0623957, 0, 0, 0, 0.0703038, 0, 0, 0, 0.04, -9.67625, 1.10906, 3.13434)
+transform = Transform3D(0.0562616, 0.000681855, 0.017291, -0.000703951, 0.0702993, 4.39397e-05, -0.0269697, -0.000412502, 0.0360697, -9.70116, 1.11101, 3.5194)
 mesh = ExtResource("78_og2of")
 skeleton = NodePath("../..")
 
 [node name="BabyBottle3" type="MeshInstance3D" parent="BabyRoom"]
-transform = Transform3D(0.0623957, 0, 0, 0, 0.0703038, 0, 0, 0, 0.04, -9.50552, 1.10906, 3.13434)
+transform = Transform3D(0.0562616, 0.000681855, 0.017291, -0.000703951, 0.0702993, 4.39397e-05, -0.0269697, -0.000412502, 0.0360697, -9.47101, 1.10825, 3.43009)
 mesh = ExtResource("78_og2of")
 skeleton = NodePath("../..")
 
 [node name="BabyBottle4" type="MeshInstance3D" parent="BabyRoom"]
-transform = Transform3D(0.0623957, 0, 0, 0, 0.0703038, 0, 0, 0, 0.04, -9.32508, 1.10906, 3.13434)
+transform = Transform3D(0.0562616, 0.000681855, 0.017291, -0.000703951, 0.0702993, 4.39397e-05, -0.0269697, -0.000412502, 0.0360697, -9.27847, 1.10573, 3.31813)
 mesh = ExtResource("78_og2of")
 skeleton = NodePath("../..")
 
 [node name="BabyPacifier" type="MeshInstance3D" parent="BabyRoom"]
-transform = Transform3D(0.1, 0, 0, 0, 0.0997671, 0.00682068, 0, -0.00682068, 0.0997671, -9.0543, 1.16343, 3.09398)
+transform = Transform3D(0.0822392, -2.32831e-10, 0.0568921, -0.00388043, 0.0997671, 0.00560928, -0.0567596, -0.00682068, 0.0820477, -9.05108, 1.16485, 3.11471)
 mesh = ExtResource("79_sjg8o")
 skeleton = NodePath("../..")
 
 [node name="BabyPacifier2" type="MeshInstance3D" parent="BabyRoom"]
-transform = Transform3D(0.0490615, -0.0170515, 0.085453, -0.00576259, 0.0972171, 0.0227075, -0.0869469, -0.0160649, 0.0467135, -8.91916, 0.987495, 5.14745)
+transform = Transform3D(-0.00826819, -0.0170515, 0.098188, -0.0176578, 0.0972171, 0.015396, -0.0980808, -0.0160649, -0.0110491, -8.89983, 0.992028, 5.15436)
 mesh = ExtResource("79_sjg8o")
 skeleton = NodePath("../..")
 
@@ -705,22 +723,26 @@ skeleton = NodePath("../..")
 [node name="benchCushion" parent="DaginikOda" instance=ExtResource("40_pv07o")]
 transform = Transform3D(-0.692697, 0, 0.721228, 0, 1, 0, -0.721228, 0, -0.692697, -8.31821, 0.250001, 1.4641)
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="DaginikOda/benchCushion"]
-
 [node name="StaticBody3D" type="StaticBody3D" parent="DaginikOda/benchCushion"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="DaginikOda/benchCushion/StaticBody3D"]
+transform = Transform3D(1.00435, 0, -2.47733e-08, 0, 0.432336, 0, 0, 0, 0.628992, 0.364059, 0, 0.154831)
+shape = SubResource("BoxShape3D_3f2ug")
 
 [node name="benchCushion2" parent="DaginikOda" instance=ExtResource("40_pv07o")]
 transform = Transform3D(0.717373, 0, 0.696689, 0, 1, 0, -0.696689, 0, 0.717373, -8.56696, 0.250001, 1.03432)
-
-[node name="StaticBody3D" type="StaticBody3D" parent="DaginikOda/benchCushion2"]
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="DaginikOda/benchCushion2"]
 
 [node name="benchCushionLow" parent="DaginikOda" instance=ExtResource("41_ylu4m")]
 transform = Transform3D(0.264715, 0, 0.964327, 0, 1, 0, -0.964327, 0, 0.264715, -8.1348, 0.250001, 1.34875)
 
 [node name="cardboardBoxClosed" parent="DaginikOda" instance=ExtResource("42_hcl4m")]
 transform = Transform3D(-0.20955, 0, -0.977798, 0, 1, 0, 0.977798, 0, -0.20955, -9.17806, 0.250001, -2.44166)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="DaginikOda/cardboardBoxClosed"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="DaginikOda/cardboardBoxClosed/StaticBody3D"]
+transform = Transform3D(0.753683, 0, -8.49543e-08, 0, 0.202986, 0, 0, 0, 0.268293, -0.0572371, 0.0443754, -0.156477)
+shape = SubResource("BoxShape3D_3f2ug")
 
 [node name="cardboardBoxClosed2" parent="DaginikOda" instance=ExtResource("42_hcl4m")]
 transform = Transform3D(-0.999215, 0, 0.0396086, 0, 1, 0, -0.0396086, 0, -0.999215, -8.83202, 0.250001, -2.64934)
@@ -761,10 +783,16 @@ transform = Transform3D(-0.958413, -0.252746, -0.132528, -0.22771, 0.957188, -0.
 [node name="loungeChairRelax" parent="DaginikOda" instance=ExtResource("50_kaktv")]
 transform = Transform3D(0.0205411, 0, 0.999789, 0, 1, 0, -0.999789, 0, 0.0205411, -7.6199, 0.250001, -0.982085)
 
+[node name="StaticBody3D" type="StaticBody3D" parent="DaginikOda/loungeChairRelax"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="DaginikOda/loungeChairRelax/StaticBody3D"]
+transform = Transform3D(1.03967, 0, 3.44589e-08, 0, 0.277979, 0, -1.00583e-07, 0, 0.400002, 0.237391, 0.34134, -0.370735)
+shape = SubResource("BoxShape3D_3f2ug")
+
 [node name="loungeDesignChair" parent="DaginikOda" instance=ExtResource("51_263lu")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.96236, 0.250001, -2.97731)
 
-[node name="paneling" parent="DaginikOda" instance=ExtResource("52_u4tao")]
+[node name="Node3D" parent="DaginikOda" instance=ExtResource("52_u4tao")]
 transform = Transform3D(1, 0, 0, 0, 0.247134, 0.968981, 0, -0.968981, 0.247134, -7.99853, 0.256433, 0.781801)
 
 [node name="paneling3" parent="DaginikOda" instance=ExtResource("52_u4tao")]
@@ -830,23 +858,41 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.66045, 0.250001, 2.03812)
 [node name="sideTable" parent="DaginikOda" instance=ExtResource("60_ygrpk")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.34169, 0.250001, 1.30415)
 
+[node name="StaticBody3D" type="StaticBody3D" parent="DaginikOda/sideTable"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="DaginikOda/sideTable/StaticBody3D"]
+transform = Transform3D(1.03967, 0, -6.31436e-09, 0, 0.209072, 0, 0, 0, 0.160321, 0.23757, 0.22361, -0.0747582)
+shape = SubResource("BoxShape3D_3f2ug")
+
 [node name="sideTableDrawers" parent="DaginikOda" instance=ExtResource("61_6dfce")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.77662, 0.250001, -3.31559)
 
 [node name="sideTableDrawers2" parent="DaginikOda" instance=ExtResource("61_6dfce")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.77662, 0.622604, -3.31559)
 
+[node name="StaticBody3D" type="StaticBody3D" parent="DaginikOda/sideTableDrawers2"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="DaginikOda/sideTableDrawers2/StaticBody3D"]
+transform = Transform3D(0.808595, 0, -1.57544e-08, 0, 0.517404, 0, 0, 0, 0.400002, 0.288782, 0.262343, -0.104347)
+shape = SubResource("BoxShape3D_3f2ug")
+
 [node name="sideTableDrawers3" parent="DaginikOda" instance=ExtResource("61_6dfce")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.77662, 1.00041, -3.31559)
 
 [node name="speaker" parent="DaginikOda" instance=ExtResource("29_motvd")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.90466, 0.250001, -3.782)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.86192, 0.22129, -3.33037)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="DaginikOda/speaker"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="DaginikOda/speaker/StaticBody3D"]
+transform = Transform3D(0.801746, 0, -6.72618e-09, 0, 0.366767, 0, 0, 0, 0.170777, -0.0926519, 0.316635, -0.0677485)
+shape = SubResource("BoxShape3D_3f2ug")
 
 [node name="speaker2" parent="DaginikOda" instance=ExtResource("29_motvd")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.63497, 0.250001, -3.782)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.20189, 0.250001, -3.34099)
 
 [node name="speakerSmall" parent="DaginikOda" instance=ExtResource("62_jsa83")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.38738, 0.250001, -3.83069)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.0176, 0.355249, -3.33532)
 
 [node name="stoolBar" parent="DaginikOda" instance=ExtResource("63_n2pbg")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.73532, 0.25, -3.40857)
@@ -877,7 +923,7 @@ transform = Transform3D(1.67368, 0, -1.09489, 0, 2, 0, 1.09489, 0, 1.67368, -2.8
 [node name="StaticBody3D" type="StaticBody3D" parent="Bedroom/loungeChairRelax2"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Bedroom/loungeChairRelax2/StaticBody3D"]
-transform = Transform3D(1.03967, 0, -4.15793e-08, 0, 0.0709729, 0, 0, 0, 1.05569, 0.237391, 0.213551, -0.402842)
+transform = Transform3D(0.883131, 0, -2.98023e-08, 0, 0.0709729, 0, 0, 0, 0.551843, 0.22437, 0.213551, -0.402842)
 shape = SubResource("BoxShape3D_3f2ug")
 
 [node name="lampRoundTable3" parent="Bedroom" instance=ExtResource("45_483pw")]
