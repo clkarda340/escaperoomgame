@@ -3,6 +3,7 @@ extends Node3D
 @export var healing_coefficient := 10
 @export var damaging_coefficient := 3
 
+var in_game_music
 var game_paused=false
 var pause_screen = load("res://scenes/options.tscn").instantiate()
 var interactables = []
@@ -10,9 +11,10 @@ var not_used = []
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	get_tree().get_root().get_node("Main Game").get_node("WorldEnvironment").environment.adjustment_brightness = Persistence.config.get_value("Video","Brightness")
+	in_game_music = get_node("Ingame")
 	#Burada tüm interactables'i buraya geçirmemiz gerekiyor. Geçirmediklerimiz çalışmıyor. 
 	interactables.append(get_node("Mimari/Kitchen/kitchenStove/InteractableOven"))
-	
+	interactables.append(get_node("Mimari/OturmaOdası/televisionVintage2/InteractableTV"))
 	#Tüm interactable'ler eklendikten sonra
 	not_used = interactables.duplicate()
 
@@ -23,7 +25,6 @@ func _process(delta: float) -> void:
 		pause_screen = load("res://scenes/options.tscn").instantiate()
 		game_paused = !game_paused
 		pause_game()
-	print(remap($Player.health,0,$Player.max_health,0.4,0))
 	get_node("ColorRect").material.set_shader_parameter("transparency",remap($Player.health,0,$Player.max_health,0.3,0))
 	get_node("ColorRect").material.set_shader_parameter("amount",remap($Player.health,0,$Player.max_health,3,1))
 func pause_game():
@@ -52,11 +53,10 @@ func _on_threatify_timer_timeout() -> void:
 		for i in interactables:
 			if i.is_threat:
 				return
-			else:
-				$"Health Timer".queue_free()
-				$Player.health = $Player.max_health
-				$Ingame.stop()
-	#$"Threatify Timer".start() #EĞER LOOP İÇİNDE ÇALIŞMIYORSA BU KOD LAZIM 
+		$"Health Timer".queue_free()
+		$Player.health = $Player.max_health
+		if in_game_music.playing:
+			in_game_music.stop()
 
 
 func _on_health_timer_timeout() -> void:
