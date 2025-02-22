@@ -27,10 +27,6 @@ project/assembly_name="Gerilimli Ev"
 
 import/blender/enabled=false
 
-[global_group]
-
-Tuvalet=""
-
 [input]
 
 forward={
