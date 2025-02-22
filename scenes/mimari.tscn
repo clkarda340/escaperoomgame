@@ -67,18 +67,18 @@
 [ext_resource type="PackedScene" uid="uid://0jbaqe6atg8x" path="res://assets/BrickAssets/GLTF format/televisionVintage.glb" id="67_nd0ah"]
 [ext_resource type="AudioStream" uid="uid://cag4k0mrb15l2" path="res://assets/Sound Effects/computer-startup-music-97699.mp3" id="73_0wu1u"]
 [ext_resource type="Script" path="res://scripts/interactable_laptop.gd" id="73_34khw"]
-[ext_resource type="ArrayMesh" uid="uid://dh4hragf7kt0a" path="res://ÇocukOyuncğaı.obj" id="74_5s181"]
+[ext_resource type="ArrayMesh" uid="uid://dh4hragf7kt0a" path="res://assets/BrickAssets/GLTF format/ÇocukOyuncğaı.obj" id="74_5s181"]
 [ext_resource type="PackedScene" uid="uid://cmhtv8ekbm02l" path="res://assets/BrickAssets/GLTF format/loungeSofaCorner.glb" id="74_wpjvv"]
 [ext_resource type="PackedScene" uid="uid://bnyb31b4lhxpf" path="res://assets/BrickAssets/GLTF format/loungeSofa.glb" id="75_janlc"]
-[ext_resource type="ArrayMesh" uid="uid://b2ostm7rkvro5" path="res://Bebek_Yatağı.obj" id="75_qxq34"]
-[ext_resource type="ArrayMesh" uid="uid://53j6xj2dyotk" path="res://Araba.obj" id="76_m0m8w"]
+[ext_resource type="ArrayMesh" uid="uid://b2ostm7rkvro5" path="res://assets/BrickAssets/GLTF format/Bebek_Yatağı.obj" id="75_qxq34"]
+[ext_resource type="ArrayMesh" uid="uid://53j6xj2dyotk" path="res://assets/BrickAssets/GLTF format/Araba.obj" id="76_m0m8w"]
 [ext_resource type="PackedScene" uid="uid://c4k4vpqmrfb3k" path="res://assets/BrickAssets/GLTF format/pillowBlue.glb" id="76_rch4r"]
 [ext_resource type="PackedScene" uid="uid://bii4k5ktm54sc" path="res://assets/BrickAssets/GLTF format/coatRack.glb" id="77_3djql"]
-[ext_resource type="ArrayMesh" uid="uid://cln7oqhq5hlw6" path="res://3d-model.obj" id="77_vrefu"]
+[ext_resource type="ArrayMesh" uid="uid://cln7oqhq5hlw6" path="res://assets/BrickAssets/GLTF format/3d-model.obj" id="77_vrefu"]
 [ext_resource type="PackedScene" uid="uid://datdj885dmtmo" path="res://assets/BrickAssets/GLTF format/bench.glb" id="78_n6yvo"]
-[ext_resource type="ArrayMesh" uid="uid://dmq3lm6rpwlhi" path="res://BabyBottle.obj" id="78_og2of"]
+[ext_resource type="ArrayMesh" uid="uid://dmq3lm6rpwlhi" path="res://assets/BrickAssets/GLTF format/BabyBottle.obj" id="78_og2of"]
 [ext_resource type="PackedScene" uid="uid://by2ksic21r7j7" path="res://assets/BrickAssets/GLTF format/pillowBlueLong.glb" id="79_bqvxt"]
-[ext_resource type="ArrayMesh" uid="uid://dldsyyfs3yppk" path="res://BabyPacifier.obj" id="79_sjg8o"]
+[ext_resource type="ArrayMesh" uid="uid://dldsyyfs3yppk" path="res://assets/BrickAssets/GLTF format/BabyPacifier.obj" id="79_sjg8o"]
 [ext_resource type="PackedScene" uid="uid://drpp7yytgl8l7" path="res://assets/BrickAssets/GLTF format/laptop.glb" id="80_wlm5r"]
 [ext_resource type="PackedScene" uid="uid://y23mdkmrhejv" path="res://assets/BrickAssets/GLTF format/chairDesk.glb" id="83_dsyyb"]
 [ext_resource type="PackedScene" uid="uid://bevss30m1rxe2" path="res://assets/BrickAssets/GLTF format/coatRackStanding.glb" id="83_vb8x1"]
@@ -114,6 +114,21 @@ size = Vector3(0.3, 0.218652, 0.0940063)
 height = 0.14027
 radius = 0.250154
 
+[sub_resource type="Animation" id="Animation_vlqck"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(0, 0, 0)]
+}
+
 [sub_resource type="Animation" id="Animation_c2x40"]
 resource_name = "play"
 length = 2.0
@@ -130,21 +145,6 @@ tracks/0/keys = {
 "transitions": PackedFloat32Array(1, 1, 1),
 "update": 2,
 "values": [Vector3(0, 0, 0), Vector3(0, 3.14159, 0), Vector3(0, 6.28319, 0)]
-}
-
-[sub_resource type="Animation" id="Animation_vlqck"]
-length = 0.001
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath(".:rotation")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector3(0, 0, 0)]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_4spdy"]
@@ -298,6 +298,16 @@ size = Vector3(0.845801, 0.4, 0.731909)
 height = 1.8
 radius = 0.34131
 
+[sub_resource type="Animation" id="Animation_arxhp"]
+length = 0.001
+tracks/0/type = "position_3d"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = PackedFloat32Array(0, 1, 8.4, 0.3, 6.7)
+
 [sub_resource type="Animation" id="Animation_3jstj"]
 resource_name = "shiver"
 length = 0.3
@@ -309,16 +319,6 @@ tracks/0/path = NodePath(".")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = PackedFloat32Array(0, 1, 8.4, 0.3, 6.7, 0.0666667, 1, 8.4, 0.3, 6.70729, 0.166667, 1, 8.4, 0.3, 6.7, 0.266667, 1, 8.4, 0.3, 6.68287)
-
-[sub_resource type="Animation" id="Animation_arxhp"]
-length = 0.001
-tracks/0/type = "position_3d"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath(".")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = PackedFloat32Array(0, 1, 8.4, 0.3, 6.7)
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_och5t"]
 _data = {
