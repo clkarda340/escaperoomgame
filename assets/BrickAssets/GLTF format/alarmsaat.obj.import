@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://ubag0ynjvg5i"
+path="res://.godot/imported/alarmsaat.obj-86e5499277d4a49cd39dab237394a673.mesh"
+
+[deps]
+
+files=["res://.godot/imported/alarmsaat.obj-86e5499277d4a49cd39dab237394a673.mesh"]
+
+source_file="res://assets/BrickAssets/GLTF format/alarmsaat.obj"
+dest_files=["res://.godot/imported/alarmsaat.obj-86e5499277d4a49cd39dab237394a673.mesh", "res://.godot/imported/alarmsaat.obj-86e5499277d4a49cd39dab237394a673.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false
