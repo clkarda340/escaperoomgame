@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://civwdnqqdv0bf"
+path="res://.godot/imported/washing-machine-20006.mp3-379557b422c8901fcc48fff4ed67d5f9.mp3str"
+
+[deps]
+
+source_file="res://assets/Sound Effects/washing-machine-20006.mp3"
+dest_files=["res://.godot/imported/washing-machine-20006.mp3-379557b422c8901fcc48fff4ed67d5f9.mp3str"]
+
+[params]
+
+loop=true
+loop_offset=0.0
+bpm=0.0
+beat_count=0
+bar_beats=4

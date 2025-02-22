@@ -23,6 +23,6 @@ func _process(delta: float) -> void:
 		kitchen_light.stop()
 
 func in_threat():
-	var kitchen_light = $"../KitchenLightBlink"
+	kitchen_light = $"../KitchenLightBlink"
 	kitchen_light.play("blink")
 	
