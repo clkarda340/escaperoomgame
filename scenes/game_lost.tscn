@@ -1,10 +1,16 @@
-[gd_scene load_steps=4 format=3 uid="uid://2covfo2kp4as"]
+[gd_scene load_steps=6 format=3 uid="uid://2covfo2kp4as"]
 
 [ext_resource type="Script" path="res://scripts/game_lost.gd" id="1_27t3i"]
+[ext_resource type="Shader" path="res://assets/shaders/screen_effect.gdshader" id="2_4qs7n"]
 [ext_resource type="AudioStream" uid="uid://blro5qw1g7epb" path="res://assets/Music/Finale.mp3" id="2_yujcn"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_74o8t"]
 bg_color = Color(0.273873, 0.273873, 0.273873, 1)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_gbisx"]
+shader = ExtResource("2_4qs7n")
+shader_parameter/transparency = 0.3
+shader_parameter/amount = 1.0
 
 [node name="GameLost" type="Control"]
 process_mode = 3
@@ -25,35 +31,75 @@ grow_horizontal = 2
 grow_vertical = 2
 theme_override_styles/panel = SubResource("StyleBoxFlat_74o8t")
 
-[node name="Label" type="Label" parent="Panel"]
+[node name="Lost" type="Label" parent="Panel"]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -407.0
-offset_top = -254.0
-offset_right = 363.0
-offset_bottom = -49.0
+offset_left = -385.0
+offset_top = -269.0
+offset_right = 385.0
+offset_bottom = 144.0
 grow_horizontal = 2
 grow_vertical = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_font_sizes/font_size = 150
-text = "Game Lost"
+text = "Game Lost
+
+"
+horizontal_alignment = 1
 visible_characters_behavior = 1
 
-[node name="Button" type="Button" parent="Panel"]
+[node name="Explanation" type="Label" parent="Panel"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -232.0
+offset_top = -34.5
+offset_right = 232.0
+offset_bottom = 34.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 50
+text = "Can't Sleep Tonight"
+horizontal_alignment = 1
+
+[node name="ColorRect" type="ColorRect" parent="Panel"]
+material = SubResource("ShaderMaterial_gbisx")
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Panel"]
 layout_mode = 1
 anchors_preset = 12
 anchor_top = 1.0
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_top = -315.0
-offset_bottom = -170.0
+offset_top = -8.0
 grow_horizontal = 2
 grow_vertical = 0
+
+[node name="Restart" type="Button" parent="Panel/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
 theme_override_font_sizes/font_size = 100
 text = "Restart"
+
+[node name="Quit" type="Button" parent="Panel/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_font_sizes/font_size = 100
+text = "Quit Game"
 
 [node name="Finale" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("2_yujcn")
@@ -61,4 +107,5 @@ volume_db = -5.0
 autoplay = true
 parameters/looping = true
 
-[connection signal="pressed" from="Panel/Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="Panel/HBoxContainer/Restart" to="." method="_on_restart_pressed"]
+[connection signal="pressed" from="Panel/HBoxContainer/Quit" to="." method="_on_quit_pressed"]

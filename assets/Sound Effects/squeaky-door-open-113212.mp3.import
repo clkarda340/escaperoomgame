@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dmqpjdm2ehesp"
+path="res://.godot/imported/squeaky-door-open-113212.mp3-ca038aecb370cfac61d95448b473d35a.mp3str"
+
+[deps]
+
+source_file="res://assets/Sound Effects/squeaky-door-open-113212.mp3"
+dest_files=["res://.godot/imported/squeaky-door-open-113212.mp3-ca038aecb370cfac61d95448b473d35a.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0.0
+bpm=0.0
+beat_count=0
+bar_beats=4
