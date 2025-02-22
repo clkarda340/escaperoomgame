@@ -1,10 +1,11 @@
-[gd_scene load_steps=10 format=3 uid="uid://dyo4arcx2l8oc"]
+[gd_scene load_steps=11 format=3 uid="uid://dyo4arcx2l8oc"]
 
 [ext_resource type="PackedScene" uid="uid://dpeblt4rqw5b7" path="res://scenes/mimari.tscn" id="1_r6jw6"]
 [ext_resource type="Script" path="res://scripts/main_game.gd" id="1_ujsor"]
 [ext_resource type="PackedScene" uid="uid://bs72ogkvdd7d6" path="res://addons/proto_controller/proto_controller.tscn" id="2_g72bx"]
 [ext_resource type="AudioStream" uid="uid://q41r7kqbhgeb" path="res://assets/Music/Ingame.mp3" id="4_1kbah"]
 [ext_resource type="Shader" path="res://assets/shaders/screen_effect.gdshader" id="5_0wuqe"]
+[ext_resource type="AudioStream" uid="uid://db5k6qxqp8xrx" path="res://assets/Music/ThreatGone.wav" id="6_y5jlj"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_6s78k"]
 sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
@@ -40,6 +41,7 @@ shader_parameter/amount = 4.0
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.2, 0.2, 0.1)
 script = ExtResource("1_ujsor")
 damaging_coefficient = 8
+time_before_damage = 3.0
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource("Environment_4yirn")
@@ -49,7 +51,8 @@ environment = SubResource("Environment_4yirn")
 [node name="Player" parent="." instance=ExtResource("2_g72bx")]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -8.98014, 0.3, -7.93829)
 collision_mask = 5
-base_speed = 4.0
+can_jump = false
+base_speed = 3.0
 input_left = "left"
 input_right = "right"
 input_forward = "forward"
@@ -66,10 +69,8 @@ wait_time = 10.0
 autostart = true
 
 [node name="Health Timer" type="Timer" parent="."]
-wait_time = 4.0
+wait_time = 6.0
 autostart = true
-
-[node name="CanvasLayer" type="CanvasLayer" parent="."]
 
 [node name="ColorRect" type="ColorRect" parent="."]
 top_level = true
@@ -79,6 +80,11 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+
+[node name="ThreatGone" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("6_y5jlj")
+volume_db = -15.0
+bus = &"Music"
 
 [connection signal="timeout" from="Threatify Timer" to="." method="_on_threatify_timer_timeout"]
 [connection signal="timeout" from="Health Timer" to="." method="_on_health_timer_timeout"]

@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://y5qgvjeyrsw3"
+path="res://.godot/imported/broken-fridge.mp3-b260696aa9a25f9da942121e515a0172.mp3str"
+
+[deps]
+
+source_file="res://assets/Sound Effects/broken-fridge.mp3"
+dest_files=["res://.godot/imported/broken-fridge.mp3-b260696aa9a25f9da942121e515a0172.mp3str"]
+
+[params]
+
+loop=true
+loop_offset=0.0
+bpm=0.0
+beat_count=0
+bar_beats=4
