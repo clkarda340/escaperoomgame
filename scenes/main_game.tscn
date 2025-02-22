@@ -49,6 +49,7 @@ environment = SubResource("Environment_4yirn")
 [node name="Player" parent="." instance=ExtResource("2_g72bx")]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -8.98014, 0.3, -7.93829)
 collision_mask = 5
+can_jump = false
 base_speed = 4.0
 input_left = "left"
 input_right = "right"
