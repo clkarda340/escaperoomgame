@@ -90,7 +90,7 @@
 [ext_resource type="PackedScene" uid="uid://b4bdikliuy11n" path="res://assets/BrickAssets/GLTF format/cabinetBedDrawerTable.glb" id="86_wgbxi"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_3f2ug"]
-size = Vector3(0.552046, 2.00835, 1.13719)
+size = Vector3(0.552046, 2.00835, 1.08727)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_aq37p"]
 size = Vector3(0.552246, 0.571484, 0.18811)
@@ -663,7 +663,7 @@ skeleton = NodePath("../..")
 [node name="StaticBody3D" type="StaticBody3D" parent="BabyRoom/Cot"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="BabyRoom/Cot/StaticBody3D"]
-transform = Transform3D(3.7355, 0, -1.19209e-07, 0, 0.825186, 0, -1.46031e-06, 0, 4.71196, 0.733847, 3.95778, -0.0670795)
+transform = Transform3D(3.17376, 0, -1.19209e-07, 0, 0.825185, 0, -1.16229e-06, 0, 4.71196, 0.733849, 3.95778, -0.184689)
 shape = SubResource("BoxShape3D_3f2ug")
 
 [node name="Araba" type="MeshInstance3D" parent="BabyRoom"]
@@ -685,7 +685,7 @@ skeleton = NodePath("../..")
 [node name="StaticBody3D" type="StaticBody3D" parent="BabyRoom/3d-model"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="BabyRoom/3d-model/StaticBody3D"]
-transform = Transform3D(1.71136, 0, 0, 0, 0.371817, 0, 1.19209e-07, 0, 0.485677, 0.0755138, 0.428078, -0.116261)
+transform = Transform3D(1.71136, 0, 0, 0, 0.371817, 0, 1.19209e-07, 0, 0.409408, 0.0755138, 0.428078, -0.116261)
 shape = SubResource("BoxShape3D_3f2ug")
 
 [node name="BabyBottle" type="MeshInstance3D" parent="BabyRoom"]
