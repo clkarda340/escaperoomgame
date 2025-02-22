@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://dldsyyfs3yppk"
+path="res://.godot/imported/BabyPacifier.obj-ff0cb8f5e48b750fbf007827dca48d87.mesh"
+
+[deps]
+
+files=["res://.godot/imported/BabyPacifier.obj-ff0cb8f5e48b750fbf007827dca48d87.mesh"]
+
+source_file="res://assets/BrickAssets/GLTF format/BabyPacifier.obj"
+dest_files=["res://.godot/imported/BabyPacifier.obj-ff0cb8f5e48b750fbf007827dca48d87.mesh", "res://.godot/imported/BabyPacifier.obj-ff0cb8f5e48b750fbf007827dca48d87.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false
