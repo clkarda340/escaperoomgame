@@ -10,12 +10,19 @@ config_version=5
 
 [application]
 
-config/name="Home Alone"
+config/name="Midnight Anxiety"
 config/name_localized={
-"tr": "Evde Tek"
+"tr": "Geceyarısı Anksiyete"
 }
-config/description="You wake up in the middle of the night and you have to check those irritating noises in the house. You have to solve those if you want to get back to your sleep. Your vision gets blurry if you waste too much time. Be quick, do your best to get back to your cozy bed and sleep tight next time!"
-config/version="0.1"
+config/description="This game is about the feeling of something might be wrong. 
+Character wakes up at night, and tries to conquer this feeling
+ in order to get back to sleep.
+
+
+
+
+"
+config/version="0.1.1"
 run/main_scene="res://scenes/main_menu.tscn"
 config/features=PackedStringArray("4.3", "Forward Plus")
 config/icon="res://icon2.png"

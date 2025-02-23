@@ -68,3 +68,9 @@ func set_volume(idx,value):
 
 func _on_quit_pressed() -> void:
 	get_tree().quit()
+
+
+func _on_restart_pressed() -> void:
+	get_tree().reload_current_scene()
+	get_parent().get_parent().queue_free()
+	get_tree().paused = false
