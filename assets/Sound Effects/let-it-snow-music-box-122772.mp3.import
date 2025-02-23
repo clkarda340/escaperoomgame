@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://c7q3yvbh5hu5e"
+path="res://.godot/imported/let-it-snow-music-box-122772.mp3-81c0e3ef8812b5664c52954d73088378.mp3str"
+
+[deps]
+
+source_file="res://assets/Sound Effects/let-it-snow-music-box-122772.mp3"
+dest_files=["res://.godot/imported/let-it-snow-music-box-122772.mp3-81c0e3ef8812b5664c52954d73088378.mp3str"]
+
+[params]
+
+loop=true
+loop_offset=0.0
+bpm=0.0
+beat_count=0
+bar_beats=4

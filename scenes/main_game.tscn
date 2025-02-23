@@ -40,8 +40,9 @@ shader_parameter/amount = 4.0
 [node name="Main Game" type="Node3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.2, 0.2, 0.1)
 script = ExtResource("1_ujsor")
-damaging_coefficient = 8
-time_before_damage = 3.0
+healing_coefficient = 15
+damaging_coefficient = 5
+time_before_damage = 4.0
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource("Environment_4yirn")
@@ -65,11 +66,11 @@ autoplay = true
 parameters/looping = true
 
 [node name="Threatify Timer" type="Timer" parent="."]
-wait_time = 10.0
+wait_time = 9.0
 autostart = true
 
 [node name="Health Timer" type="Timer" parent="."]
-wait_time = 6.0
+wait_time = 3.0
 autostart = true
 
 [node name="ColorRect" type="ColorRect" parent="."]

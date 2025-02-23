@@ -21,11 +21,14 @@ func _ready() -> void:
 	interactables.append(get_node("Mimari/OturmaOdası/ceilingFan2/InteractableFan"))
 	interactables.append(get_node("Mimari/Tuvalet/washerDryer/InteractableWashingMachine"))
 	interactables.append(get_node("Mimari/Kitchen/kitchenFridge/InteractableFridge"))
+	interactables.append(get_node("Mimari/CocukOdası/KarKüresi/InteractableOrb"))
+	interactables.append(get_node("Mimari/Yatakodası/Calarsaat/InteractableClock"))
+	
 	#Tüm interactable'ler eklendikten sonra
 	not_used = interactables.duplicate()
 
 
-# Called every frame. 'delta' is the elapsed time since the previous frame.
+# Called every frame. 'delta' is the elapsed time since the previous frame.w
 func _process(delta: float) -> void:
 	if Input.is_action_just_pressed("pause"):
 		pause_screen = load("res://scenes/options.tscn").instantiate()
@@ -50,7 +53,6 @@ func threatify():
 	object.is_threat = true
 	object.is_used = true
 	not_used.remove_at(interactable_seed)
-
 func _on_threatify_timer_timeout() -> void:
 	if len(not_used) > 0:
 		threatify()

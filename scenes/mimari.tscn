@@ -1,4 +1,4 @@
-[gd_scene load_steps=383 format=4 uid="uid://dpeblt4rqw5b7"]
+[gd_scene load_steps=392 format=4 uid="uid://dpeblt4rqw5b7"]
 
 [ext_resource type="PackedScene" uid="uid://o8xlkrsurpdb" path="res://assets/BrickAssets/GLTF format/bedDouble.glb" id="1_5atvr"]
 [ext_resource type="PackedScene" uid="uid://duk6fyy5jog8t" path="res://assets/BrickAssets/GLTF format/cabinetTelevisionDoors.glb" id="1_o4lqs"]
@@ -23,8 +23,10 @@
 [ext_resource type="AudioStream" uid="uid://belyay18cdilw" path="res://assets/Sound Effects/tuning-radio-7150.mp3" id="13_tooig"]
 [ext_resource type="PackedScene" uid="uid://cgroaxsrf4xtr" path="res://assets/BrickAssets/GLTF format/kitchenCabinetUpperDouble.glb" id="14_0vnrv"]
 [ext_resource type="PackedScene" uid="uid://bfm4iild04gpk" path="res://assets/BrickAssets/GLTF format/kitchenCabinetUpper.glb" id="15_7j600"]
+[ext_resource type="Script" path="res://scripts/interactable_clock.gd" id="15_agl3b"]
 [ext_resource type="PackedScene" uid="uid://be1o3eprskdf5" path="res://assets/BrickAssets/GLTF format/tableCrossCloth.glb" id="15_fa6mx"]
 [ext_resource type="PackedScene" uid="uid://c37ygvl8h6r4c" path="res://assets/BrickAssets/GLTF format/rugRounded.glb" id="16_4ewvf"]
+[ext_resource type="AudioStream" uid="uid://lvkixj2rw48s" path="res://assets/Sound Effects/alarm-clock.wav" id="16_vtjd7"]
 [ext_resource type="PackedScene" uid="uid://vibhiqgcli8g" path="res://assets/BrickAssets/GLTF format/kitchenCabinetUpperCorner.glb" id="17_on43p"]
 [ext_resource type="PackedScene" uid="uid://cdj7051yegnfg" path="res://assets/BrickAssets/GLTF format/table.glb" id="18_uap4x"]
 [ext_resource type="PackedScene" uid="uid://bk64j5ts7jga1" path="res://assets/BrickAssets/GLTF format/chair.glb" id="19_g1ygv"]
@@ -76,7 +78,6 @@
 [ext_resource type="PackedScene" uid="uid://c4k4vpqmrfb3k" path="res://assets/BrickAssets/GLTF format/pillowBlue.glb" id="76_rch4r"]
 [ext_resource type="PackedScene" uid="uid://bii4k5ktm54sc" path="res://assets/BrickAssets/GLTF format/coatRack.glb" id="77_3djql"]
 [ext_resource type="ArrayMesh" uid="uid://cln7oqhq5hlw6" path="res://assets/BrickAssets/GLTF format/3d-model.obj" id="77_vrefu"]
-[ext_resource type="PackedScene" uid="uid://b10a413mrmceh" path="res://assets/BrickAssets/GLTF format/paneling.glb" id="78_c8ahk"]
 [ext_resource type="PackedScene" uid="uid://datdj885dmtmo" path="res://assets/BrickAssets/GLTF format/bench.glb" id="78_n6yvo"]
 [ext_resource type="ArrayMesh" uid="uid://dmq3lm6rpwlhi" path="res://assets/BrickAssets/GLTF format/BabyBottle.obj" id="78_og2of"]
 [ext_resource type="PackedScene" uid="uid://by2ksic21r7j7" path="res://assets/BrickAssets/GLTF format/pillowBlueLong.glb" id="79_bqvxt"]
@@ -86,6 +87,8 @@
 [ext_resource type="ArrayMesh" uid="uid://d1pklh7grfllr" path="res://assets/BrickAssets/GLTF format/ikincikar.obj" id="83_jy716"]
 [ext_resource type="PackedScene" uid="uid://bevss30m1rxe2" path="res://assets/BrickAssets/GLTF format/coatRackStanding.glb" id="83_vb8x1"]
 [ext_resource type="PackedScene" uid="uid://d32q2w3snqa6w" path="res://assets/BrickAssets/GLTF format/cabinetBedDrawer.glb" id="84_kv4qs"]
+[ext_resource type="AudioStream" uid="uid://bivn1wkg0c4ar" path="res://assets/Sound Effects/kördüğümküre_Master.wav" id="85_cyyra"]
+[ext_resource type="Script" path="res://scripts/interactable_orb.gd" id="85_g2guc"]
 [ext_resource type="PackedScene" uid="uid://dqvb52u2167ql" path="res://assets/BrickAssets/GLTF format/bookcaseClosedDoors.glb" id="85_x2rge"]
 [ext_resource type="PackedScene" uid="uid://b4bdikliuy11n" path="res://assets/BrickAssets/GLTF format/cabinetBedDrawerTable.glb" id="86_wgbxi"]
 
@@ -119,13 +122,100 @@ size = Vector3(1, 1, 0.56543)
 [sub_resource type="BoxShape3D" id="BoxShape3D_iy8v8"]
 size = Vector3(1.0498, 1, 0.46875)
 
-[sub_resource type="BoxShape3D" id="BoxShape3D_qtlv7"]
-size = Vector3(0.991089, 1, 0.476563)
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ixxdy"]
+albedo_color = Color(0.890196, 0.741176, 0.647059, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_leu8j"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_u1bbb"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_qsjht"]
+albedo_color = Color(0.815686, 0.815686, 0.815686, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_qq6os"]
+albedo_color = Color(0.890196, 0.741176, 0.647059, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_5qi5i"]
+albedo_color = Color(0.890196, 0.741176, 0.647059, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_iruqc"]
+albedo_color = Color(0.815686, 0.815686, 0.815686, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_vgtdr"]
+albedo_color = Color(0.815686, 0.815686, 0.815686, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_y3ped"]
+albedo_color = Color(0.815686, 0.815686, 0.815686, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_hq5b4"]
+albedo_color = Color(0.815686, 0.815686, 0.815686, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_dja14"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_0ouil"]
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_efnm5"]
+height = 3.2
+radius = 2.0
+
+[sub_resource type="Animation" id="Animation_va1pl"]
+resource_name = "ring"
+length = 0.2
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.0666667, 0.1, 0.133333, 0.166667),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector3(0, 3.14159, 0), Vector3(1.31601e-08, 3.14159, 0.0872665), Vector3(-1.3653e-15, 3.14159, -1.34111e-22), Vector3(-1.31602e-08, 3.14159, -0.0872665), Vector3(-2.37684e-15, 3.14159, -5.34161e-23)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:rotation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.0666667, 0.133333, 0.166667, 0.2),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector3(0, 3.14159, 0), Vector3(0, 3.40339, 0), Vector3(0, 3.14159, 0), Vector3(0, 2.87979, 0), Vector3(0, 3.14159, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_ofsgf"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(0, 3.14159, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_mwkac"]
+_data = {
+"RESET": SubResource("Animation_ofsgf"),
+"ring": SubResource("Animation_va1pl")
+}
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_71vge"]
+size = Vector3(0.841675, 1.3, 0.3)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_mam0i"]
-size = Vector3(1.9082, 1, 0.831055)
+size = Vector3(2, 0.5, 0.523926)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_pd38i"]
+size = Vector3(0.7, 0.4, 0.4)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_aq37p"]
 size = Vector3(0.552246, 0.571484, 0.18811)
@@ -276,8 +366,8 @@ size = Vector3(0.490509, 1.4491, 0.215576)
 size = Vector3(0.4, 0.4, 0.4)
 
 [sub_resource type="CylinderShape3D" id="CylinderShape3D_twv1c"]
-height = 0.287718
-radius = 0.12147
+height = 0.4
+radius = 0.2
 
 [sub_resource type="Animation" id="Animation_2dp0f"]
 length = 0.001
@@ -387,10 +477,6 @@ radius = 0.174256
 [sub_resource type="BoxShape3D" id="BoxShape3D_b2tuv"]
 size = Vector3(0.424316, 1.91675, 0.889893)
 
-[sub_resource type="CylinderShape3D" id="CylinderShape3D_burhg"]
-height = 1.60124
-radius = 0.289469
-
 [sub_resource type="Animation" id="Animation_6ja7t"]
 length = 0.001
 tracks/0/type = "value"
@@ -428,37 +514,8 @@ _data = {
 "work": SubResource("Animation_uboqn")
 }
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ixxdy"]
-albedo_color = Color(0.890196, 0.741176, 0.647059, 1)
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_leu8j"]
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_u1bbb"]
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_qsjht"]
-albedo_color = Color(0.815686, 0.815686, 0.815686, 1)
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_qq6os"]
-albedo_color = Color(0.890196, 0.741176, 0.647059, 1)
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_5qi5i"]
-albedo_color = Color(0.890196, 0.741176, 0.647059, 1)
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_iruqc"]
-albedo_color = Color(0.815686, 0.815686, 0.815686, 1)
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_vgtdr"]
-albedo_color = Color(0.815686, 0.815686, 0.815686, 1)
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_y3ped"]
-albedo_color = Color(0.815686, 0.815686, 0.815686, 1)
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_hq5b4"]
-albedo_color = Color(0.815686, 0.815686, 0.815686, 1)
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_dja14"]
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_0ouil"]
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_burhg"]
+height = 2.4
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_4awcr"]
 size = Vector3(0.898315, 0.346558, 0.439087)
@@ -580,8 +637,8 @@ albedo_color = Color(0.792157, 0.592157, 0.458824, 1)
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_l14pi"]
 albedo_color = Color(1, 0.647059, 0, 1)
 
-[sub_resource type="BoxShape3D" id="BoxShape3D_pbl0q"]
-size = Vector3(0.552046, 2.00835, 1.08727)
+[sub_resource type="BoxShape3D" id="BoxShape3D_0tgte"]
+size = Vector3(3.1, 4.6, 5.6)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_o0yrr"]
 albedo_color = Color(0.503916, 0.616807, 0.912305, 1)
@@ -608,6 +665,9 @@ albedo_color = Color(0.894927, 0.873194, 1, 1)
 metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_huid1"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_pbl0q"]
+size = Vector3(0.552046, 2.00835, 1.08727)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_y7obq"]
 
@@ -1036,6 +1096,10 @@ albedo_color = Color(0.921796, 0.982419, 1, 1)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_7g16t"]
 
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_y80k1"]
+height = 466.8
+radius = 279.4
+
 [sub_resource type="BoxShape3D" id="BoxShape3D_83o6e"]
 size = Vector3(0.401001, 0.212185, 0.168243)
 
@@ -1107,7 +1171,7 @@ transform = Transform3D(-3, 0, -2.62268e-07, 0, 3, 0, 2.62268e-07, 0, -3, -5.896
 [node name="StaticBody3D" type="StaticBody3D" parent="Yatakodası/cabinetBedDrawerTable"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Yatakodası/cabinetBedDrawerTable/StaticBody3D"]
-transform = Transform3D(0.400985, 0, 3.62957e-15, 0, 0.264174, 0, -5.69834e-15, 0, 0.255408, 0.122901, 0.13092, -0.0983942)
+transform = Transform3D(0.400985, 0, 7.10543e-15, 0, 0.264174, 0, -7.10543e-15, 0, 0.255408, 0.122901, 0.164253, -0.098394)
 shape = SubResource("BoxShape3D_k3y7m")
 
 [node name="cardboardBoxOpen2" parent="Yatakodası" instance=ExtResource("43_5ct58")]
@@ -1149,6 +1213,41 @@ shape = SubResource("BoxShape3D_iy8v8")
 [node name="rugRound3" parent="Yatakodası" instance=ExtResource("58_5082x")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.66379, 0.25, -5.75979)
 
+[node name="Calarsaat" type="MeshInstance3D" parent="Yatakodası"]
+transform = Transform3D(-0.107037, 0, 2.37063e-08, 0, 0.103, 0, -1.61622e-08, 0, -0.157, -6.24643, 1.02898, -5.10904)
+mesh = ExtResource("67_a5p57")
+surface_material_override/0 = SubResource("StandardMaterial3D_ixxdy")
+surface_material_override/1 = SubResource("StandardMaterial3D_leu8j")
+surface_material_override/2 = SubResource("StandardMaterial3D_u1bbb")
+surface_material_override/3 = SubResource("StandardMaterial3D_qsjht")
+surface_material_override/4 = SubResource("StandardMaterial3D_qq6os")
+surface_material_override/5 = SubResource("StandardMaterial3D_5qi5i")
+surface_material_override/6 = SubResource("StandardMaterial3D_iruqc")
+surface_material_override/7 = SubResource("StandardMaterial3D_vgtdr")
+surface_material_override/8 = SubResource("StandardMaterial3D_y3ped")
+surface_material_override/9 = SubResource("StandardMaterial3D_hq5b4")
+surface_material_override/10 = SubResource("StandardMaterial3D_dja14")
+surface_material_override/11 = SubResource("StandardMaterial3D_0ouil")
+
+[node name="InteractableClock" type="Area3D" parent="Yatakodası/Calarsaat"]
+collision_layer = 4
+collision_mask = 4
+script = ExtResource("15_agl3b")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Yatakodası/Calarsaat/InteractableClock"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.94175, 0)
+shape = SubResource("CylinderShape3D_efnm5")
+
+[node name="ClockAnim" type="AnimationPlayer" parent="Yatakodası/Calarsaat"]
+libraries = {
+"": SubResource("AnimationLibrary_mwkac")
+}
+
+[node name="ClockNoise" type="AudioStreamPlayer3D" parent="Yatakodası/Calarsaat"]
+stream = ExtResource("16_vtjd7")
+volume_db = -20.0
+bus = &"SFX"
+
 [node name="OturmaOdası" type="Node3D" parent="."]
 
 [node name="cabinetTelevisionDoors" parent="OturmaOdası" instance=ExtResource("1_o4lqs")]
@@ -1157,16 +1256,16 @@ transform = Transform3D(2.7, 0, -3.49431e-13, 0, 2.7, 0, 2.41585e-13, 0, 3.90531
 [node name="StaticBody3D" type="StaticBody3D" parent="OturmaOdası/cabinetTelevisionDoors"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="OturmaOdası/cabinetTelevisionDoors/StaticBody3D"]
-transform = Transform3D(0.799452, 0, 0, 0, 1.39382, 0, 5.28821e-19, 0, 0.481912, 0.399824, 0, -0.11637)
-shape = SubResource("BoxShape3D_qtlv7")
+transform = Transform3D(1, 0, 1.35525e-20, 0, 1, 0, 1.49078e-19, 0, 1, 0.402319, 0.261111, -0.114768)
+shape = SubResource("BoxShape3D_71vge")
 
 [node name="cabinetTelevision" parent="OturmaOdası" instance=ExtResource("2_gaunw")]
 transform = Transform3D(-8.74228e-08, 0, -2, 0, 2, 0, 2, 0, -8.74228e-08, 8.4136, 0.243491, -5.99828)
 
 [node name="StaticBody3D" type="StaticBody3D" parent="OturmaOdası/cabinetTelevision"]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="OturmaOdası/cabinetTelevision/StaticBody3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 0.496402, -0.9845, 0, 0.0463672)
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="OturmaOdası/cabinetTelevision/StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.9959, 0.3, 0.0619631)
 shape = SubResource("BoxShape3D_mam0i")
 
 [node name="cabinetTelevision2" parent="OturmaOdası" instance=ExtResource("2_gaunw")]
@@ -1174,8 +1273,8 @@ transform = Transform3D(-8.74228e-08, 0, -2, 0, 2, 0, 2, 0, -8.74228e-08, 8.4142
 
 [node name="StaticBody3D" type="StaticBody3D" parent="OturmaOdası/cabinetTelevision2"]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="OturmaOdası/cabinetTelevision2/StaticBody3D"]
-transform = Transform3D(0.77816, 0, 0, 0, 0.319511, 0, 0, 0, 0.189805, 2.50177, 0.219559, -0.102494)
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="OturmaOdası/cabinetTelevision2/StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.5, 0.3, -0.1)
 shape = SubResource("BoxShape3D_pd38i")
 
 [node name="televisionVintage2" parent="OturmaOdası" instance=ExtResource("67_nd0ah")]
@@ -1211,8 +1310,14 @@ lower_fade = 5.94914e-05
 [node name="TvLight" type="SpotLight3D" parent="OturmaOdası/televisionVintage2/Decal"]
 transform = Transform3D(-0.241481, 0, -0.0647048, 0, 0.25, 0, 0.0647048, 0, -0.241481, 0, 0, -0.05637)
 light_color = Color(0.77084, 0.770839, 0.770839, 1)
+light_energy = 3.438
 spot_range = 4.267
 spot_angle = 50.14
+
+[node name="TvInternalLight" type="OmniLight3D" parent="OturmaOdası/televisionVintage2/Decal"]
+transform = Transform3D(0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, 0.00523776, -0.0016723, 0.0191469)
+light_energy = 3.133
+omni_range = 0.69
 
 [node name="TvRedDot" type="OmniLight3D" parent="OturmaOdası/televisionVintage2"]
 transform = Transform3D(-0.25, 0, 2.18557e-08, 0, 0.25, 0, -2.18557e-08, 0, -0.25, 0.350749, 0.209508, 0.00313568)
@@ -1422,6 +1527,15 @@ shape = SubResource("BoxShape3D_pipm2")
 [node name="InDoor" parent="Kapılar" instance=ExtResource("39_a1mjd")]
 transform = Transform3D(-2.06196, 0, -1.83588e-07, 0, 2.23352, 0, 1.80262e-07, 0, -2.1, -2.00344, 0.251334, -4.20395)
 
+[node name="InDoor2" parent="Kapılar" instance=ExtResource("39_a1mjd")]
+transform = Transform3D(2.45724, 0, 0, 0, 2.19556, 0, 0, 0, 2.19556, -4.00352, 0.3, 6.45447)
+
+[node name="InDoor3" parent="Kapılar" instance=ExtResource("39_a1mjd")]
+transform = Transform3D(-1.07409e-07, 0, -2.19556, 0, 2.19556, 0, 2.45724, 0, -9.59709e-08, -5.98434, 0.3, 4.35688)
+
+[node name="InDoor4" parent="Kapılar" instance=ExtResource("39_a1mjd")]
+transform = Transform3D(-1.07409e-07, 0, -2.19556, 0, 2.19556, 0, 2.45724, 0, -9.59709e-08, -5.98434, 0.3, -0.207674)
+
 [node name="Kitchen" type="Node3D" parent="."]
 
 [node name="kitchenStove" parent="Kitchen" instance=ExtResource("5_twmpm")]
@@ -1449,7 +1563,7 @@ collision_mask = 4
 script = ExtResource("6_2okq6")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Kitchen/kitchenStove/InteractableOven"]
-transform = Transform3D(1, 0, -8.47033e-22, 0, 1, 0, 8.47033e-22, 0, 1, 0.162946, 0, -0.0689418)
+transform = Transform3D(1, 0, -8.47033e-22, 0, 1, 0, 8.47033e-22, 0, 1, 0.225661, 0.297704, -0.202775)
 shape = SubResource("CylinderShape3D_twv1c")
 
 [node name="Oven-timer" type="AudioStreamPlayer3D" parent="Kitchen/kitchenStove"]
@@ -1683,16 +1797,6 @@ parameters/looping = true
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.2902, 0.97375, 0.479063)
 shape = SubResource("BoxShape3D_b2tuv")
 
-[node name="InteractableWashingMachine" type="Area3D" parent="Tuvalet/washerDryer"]
-transform = Transform3D(1.0009, 0, 0, 0, 0.755001, 0, 0, 0, 1, 0, 0, 0)
-collision_layer = 4
-collision_mask = 4
-script = ExtResource("63_tfghm")
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Tuvalet/washerDryer/InteractableWashingMachine"]
-transform = Transform3D(1, 0, 0, 0, 0.999651, -0.0264309, 0, 0.0264309, 0.999651, 0.31032, 1.10301, 0.557985)
-shape = SubResource("CylinderShape3D_burhg")
-
 [node name="washer" parent="Tuvalet/washerDryer" instance=ExtResource("39_yhkgk")]
 transform = Transform3D(-5.2935e-08, 0, 1.21101, 0, 2, 0, -2, 0, -8.74228e-08, 0.515626, 0.958626, 0.837567)
 
@@ -1704,21 +1808,15 @@ libraries = {
 "": SubResource("AnimationLibrary_qhu6x")
 }
 
-[node name="Calarsaat" type="MeshInstance3D" parent="Tuvalet/washerDryer"]
-transform = Transform3D(-0.06, 0, 2.37063e-08, 0, 0.103, 0, -9.05975e-09, 0, -0.157, -0.0804406, 0.767996, -11.748)
-mesh = ExtResource("67_a5p57")
-surface_material_override/0 = SubResource("StandardMaterial3D_ixxdy")
-surface_material_override/1 = SubResource("StandardMaterial3D_leu8j")
-surface_material_override/2 = SubResource("StandardMaterial3D_u1bbb")
-surface_material_override/3 = SubResource("StandardMaterial3D_qsjht")
-surface_material_override/4 = SubResource("StandardMaterial3D_qq6os")
-surface_material_override/5 = SubResource("StandardMaterial3D_5qi5i")
-surface_material_override/6 = SubResource("StandardMaterial3D_iruqc")
-surface_material_override/7 = SubResource("StandardMaterial3D_vgtdr")
-surface_material_override/8 = SubResource("StandardMaterial3D_y3ped")
-surface_material_override/9 = SubResource("StandardMaterial3D_hq5b4")
-surface_material_override/10 = SubResource("StandardMaterial3D_dja14")
-surface_material_override/11 = SubResource("StandardMaterial3D_0ouil")
+[node name="InteractableWashingMachine" type="Area3D" parent="Tuvalet/washerDryer"]
+transform = Transform3D(1.0009, 0, 0, 0, 0.755001, 0, 0, 0, 1, 0, 0, 0)
+collision_layer = 4
+collision_mask = 4
+script = ExtResource("63_tfghm")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Tuvalet/washerDryer/InteractableWashingMachine"]
+transform = Transform3D(1, 0, 0, 0, 0.999651, -0.0264309, 0, 0.0264309, 0.999651, 0.31032, 1.23546, 0.557985)
+shape = SubResource("CylinderShape3D_burhg")
 
 [node name="bathroomCabinet" parent="Tuvalet" instance=ExtResource("39_qqc3d")]
 transform = Transform3D(-2.9, 0, 4.37888e-07, 0, 2.9, 0, -4.37888e-07, 0, -2.9, -4.5947, 0.250001, 8.28623)
@@ -1915,11 +2013,8 @@ surface_material_override/20 = SubResource("StandardMaterial3D_l14pi")
 [node name="StaticBody3D" type="StaticBody3D" parent="CocukOdası/Cot"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="CocukOdası/Cot/StaticBody3D"]
-transform = Transform3D(3.17376, 0, -1.08752e-07, 0, 0.825185, 0, -1.16229e-06, 0, 4.29863, 0.733849, 3.95778, -0.184689)
-shape = SubResource("BoxShape3D_pbl0q")
-
-[node name="paneling" parent="CocukOdası/Cot/StaticBody3D" instance=ExtResource("78_c8ahk")]
-transform = Transform3D(-5.84691e-07, -0.0467554, 7.1129, 0, 8.92954, 0.0372434, -13.3762, 2.04374e-09, -3.10915e-07, -23.2586, 5.82748, 66.9171)
+transform = Transform3D(1, 0, 0, 0, 0.99996, 0, 0, 0, 0.999963, 0.721827, 2.96174, -0.288139)
+shape = SubResource("BoxShape3D_0tgte")
 
 [node name="araba" type="MeshInstance3D" parent="CocukOdası"]
 transform = Transform3D(0.358913, 0, 0, 0, 0.466381, 0, 0, 0, 0.246497, -7.30357, 0.460959, 3.55343)
@@ -2164,6 +2259,25 @@ surface_material_override/50 = SubResource("StandardMaterial3D_15b0l")
 surface_material_override/102 = SubResource("StandardMaterial3D_ed5vg")
 surface_material_override/103 = SubResource("StandardMaterial3D_r43ow")
 surface_material_override/104 = SubResource("StandardMaterial3D_7g16t")
+
+[node name="InteractableOrb" type="Area3D" parent="CocukOdası/KarKüresi"]
+collision_layer = 4
+collision_mask = 4
+script = ExtResource("85_g2guc")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="CocukOdası/KarKüresi/InteractableOrb"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 300, 0)
+shape = SubResource("CylinderShape3D_y80k1")
+
+[node name="PinkLight" type="OmniLight3D" parent="CocukOdası/KarKüresi"]
+transform = Transform3D(1000, 0, 0, 0, 1000, 0, 0, 0, 1000, 111.415, 301.009, 94.8596)
+light_color = Color(0.785368, 0.558977, 0.582939, 1)
+light_energy = 1.305
+omni_range = 1.3
+
+[node name="SnowGlobeSong" type="AudioStreamPlayer3D" parent="CocukOdası/KarKüresi"]
+stream = ExtResource("85_cyyra")
+volume_db = -5.189
 
 [node name="Hol" type="Node3D" parent="."]
 
