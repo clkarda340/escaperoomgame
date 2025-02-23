@@ -21,7 +21,8 @@ func _process(delta: float) -> void:
 	else:
 		oven_light.visible = false
 		kitchen_light.stop()
-
+		if oven_timer.playing:
+			oven_timer.queue_free()
 func in_threat():
 	kitchen_light = $"../KitchenLightBlink"
 	kitchen_light.play("blink")

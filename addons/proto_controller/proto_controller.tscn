@@ -41,10 +41,10 @@ collide_with_bodies = false
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.430138, 0)
 
 [node name="OmniLight3D" type="OmniLight3D" parent="Head/Hand"]
-light_color = Color(0.325441, 0.325441, 0.325441, 1)
-light_energy = 0.125
+light_color = Color(0.427493, 0.427493, 0.427493, 1)
+light_energy = 0.085
 shadow_enabled = true
-omni_range = 1.6503
+omni_range = 19.991
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 

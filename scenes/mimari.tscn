@@ -1,4 +1,4 @@
-[gd_scene load_steps=410 format=4 uid="uid://dpeblt4rqw5b7"]
+[gd_scene load_steps=411 format=4 uid="uid://dpeblt4rqw5b7"]
 
 [ext_resource type="PackedScene" uid="uid://o8xlkrsurpdb" path="res://assets/BrickAssets/GLTF format/bedDouble.glb" id="1_5atvr"]
 [ext_resource type="PackedScene" uid="uid://duk6fyy5jog8t" path="res://assets/BrickAssets/GLTF format/cabinetTelevisionDoors.glb" id="1_o4lqs"]
@@ -1122,6 +1122,12 @@ _surfaces = [{
 "vertex_count": 107,
 "vertex_data": PackedByteArray("AAAYQV5oVkDAzEy+AAAYQV5oVkAAACjBAAAYQdDMTD4AACjBAAAYQdDMTD7AzEy+zkcTQV5oVkDAzEy+NDMTQV5oVkDAzEy+NDMTQV5oVkAAACTBB1ETQV5oVkAAACTBAAAYQV5oVkDAzEy+NDMTQV5oVkAAACTBMzMXQV5oVkAAACjBAAAYQV5oVkAAACjBMzMXQV5oVkAAACTBNDMTQV5oVkAAACTBNDMTQV5oVkDAzEy+NDMTQdDMTD7AzEy+NDMTQamDUUAAACTBNDMTQf4Vdj4AACTBNDMTQSDOTD4AACTBNDMTQamDUUAAACTBNDMTQdDMTD7AzEy+AAAYQdDMTD7AzEy+AAAYQdDMTD4AACjBNDMTQdDMTD4AACjBAAAYQdDMTD4AACjBAAAYQV5oVkAAACjBMzMXQc/NOEAAACjBMzMXQV5oVkAAACjBMzMXQSObOT8AACjBMzMXQSDOTD4AACjBAAAYQdDMTD4AACjBMzMXQSObOT8AACjBAAAYQV5oVkDAzEy+AAAYQdDMTD7AzEy+AAAYQW/YWUAAABhBAAAYQW/YWUDAzEy+AAAYQSDOTD4AABhBAAAYQW/YWUAAABhBNDMTQW/YWUAAABhBNDMTQW/YWUDAzEy+AAAYQW/YWUDAzEy+AAAYQW/YWUAAABhBAAAYQSDOTD4AABhBNDMTQSDOTD4AABhBNDMTQW/YWUAAABhBNDMTQW/YWUDAzEy+NDMTQW/YWUAAABhBNDMTQSDOTD4AABhBNDMTQV5oVkDAzEy+NDMTQdDMTD7AzEy+NDMTQSDOTD4AABhBAAAYQSDOTD4AABhBAAAYQdDMTD7AzEy+NDMTQdDMTD7AzEy+AAAYQV5oVkDAzEy+AAAYQW/YWUDAzEy+NDMTQW/YWUDAzEy+zkcTQV5oVkDAzEy+NDMTQV5oVkDAzEy+MzMXQW40W0DNzCjBzcwowW40W0DMzCjBzcwowSDOTD7MzCjBMzMXQSDOTD7NzCjBMzMXQW40W0DNzCjBMzMXQW40W0AAACTBzcwowW40W0D//yPBzcwowW40W0DMzCjBMzMXQW40W0DNzCjBMzMXQSDOTD7NzCjBMzMXQSObOT8AACjBMzMXQSDOTD4AACjBMzMXQc/NOEAAACjBMzMXQV5oVkAAACTBMzMXQW40W0AAACTBMzMXQV5oVkAAACjBMzMXQW40W0DNzCjBMzMXQc/NOEAAACjBzcwowW40W0D//yPBMzMXQW40W0AAACTBNDMTQV5oVkAAACTBB1ETQV5oVkAAACTBMzMXQW40W0AAACTBMzMXQV5oVkAAACTBNDMTQf4Vdj4AACTBzcwowW40W0D//yPBNDMTQamDUUAAACTBNDMTQV5oVkAAACTBNDMTQSDOTD4AACTBzcwowSDOTD7//yPBMzMXQSDOTD4AACjBMzMXQSDOTD7NzCjBNDMTQdDMTD4AACjBMzMXQSDOTD4AACTBMzMXQSDOTD7NzCjBzcwowSDOTD7MzCjBNDMTQdDMTD4AACjBNDMTQSDOTD5cDyTBMzMXQSDOTD4AACTBNDMTQdDMTD4AACjBzcwowSDOTD7MzCjBNDMTQSDOTD5cDyTBNDMTQSDOTD4AACTBzcwowSDOTD7//yPBzcwowSDOTD7MzCjBzcwowW40W0DMzCjBzcwowW40W0D//yPBzcwowSDOTD7//yPB//8AgP9//n///wCA/3/+f///AID/f/5///8AgP9//n8AgP////8AAACA/////wAAAID/////AAAAgP////8AAACA/////wAAAID/////AAAAgP////8AAACA/////wAAAID/////AAAAAACA/3/+fwAAAID/f/5/AAAAgP9//n8AAACAAID+fwAAAID/f/5/AAAAgP9//n8AAACA/3/+fwCAAAD//wAAAIAAAP//AAAAgAAA//8AAACAAAD//wAA/////wAA/z//////AAD/P/////8JAARA/////wAA/z//////AQD+P/////8CAP4//////wIA/j//////AgD+P///AID/f/5///8AgP9//n///wCA/3/+f///AID/f/5///8AgP9//n8AgP////8AAACA/////wAAAID/////AAAAgP////8AAP9//38AAP8//3//fwAA/z//f/9/AAD/P/9//38AAP8/AAAAgP9//n8AAACA/3/+fwAAAID/f/5/AAAAgP9//n8AAACA/3/+fwCAAAD+//5/AIAAAP7//n8AgAAA/v/+fwCAAAD+//5//////wAA/z//////AAD/P/////8AAP8//////wAA/z//////AAD/P///////f/5///////9//n///////3/+f///////f/5/AID//wAA/z8AgP//AAD/PwCA//8AAP8/AID//wAA/z///wCA/3//P///AID/f/8///8AgP9//z///wCA/3//P///AID/f/8///8AgP9//j///wCA/3/+P///AID/fwNA//8AgP9/AUD//wCA/38FQP9//3/0f/p//3//f/R/+n//f/9/9H/6f/9//3/1f/p//3//f/9//n//f/9//3/+f/9//3//f/5//3//f/9//n//f/9//3/+f/9//3//f/5//3//f/5//n//f/9//3/+fwCAAAAAAP8/AIAAAAAA/z8AgAAAAAD/PwCAAAAAAP8/A4AAAAAA/z8DgAAAAAD/PwOAAAAAAP8/AIAAAAAA/z8AgAAAAAD/PwCAAAAAAP8/AIAAAAAA/z8AgAAAAAD/PwCAAAAAAP8/AIAAAAAA/z8AAACA/3//PwAAAID/f/8/AAAAgP9//z8AAACA/3//Pw==")
 }]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ps0sn"]
+albedo_color = Color(0.724643, 0.724642, 0.724643, 1)
+emission = Color(0.0338533, 0.0338533, 0.0338533, 1)
+backlight_enabled = true
+backlight = Color(0.589096, 0.589096, 0.589096, 1)
 
 [sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_wggbt"]
 data = PackedVector3Array(9.5, 3.3501, -0.2, 9.5, 3.3501, -10.5, 9.5, 0.2, -10.5, 9.5, 0.2, -10.5, 9.5, 0.2, -0.2, 9.5, 3.3501, -0.2, 9.205, 3.3501, -0.2, 9.2, 3.3501, -0.2, 9.2, 3.3501, -10.25, 9.2073, 3.3501, -10.25, 9.5, 3.3501, -0.2, 9.205, 3.3501, -0.2, 9.2073, 3.3501, -10.25, 9.205, 3.3501, -0.2, 9.2, 3.3501, -10.25, 9.45, 3.3501, -10.5, 9.5, 3.3501, -10.5, 9.45, 3.3501, -10.25, 9.5, 3.3501, -10.5, 9.5, 3.3501, -0.2, 9.45, 3.3501, -10.25, 9.45, 3.3501, -10.25, 9.5, 3.3501, -0.2, 9.2073, 3.3501, -10.25, 9.2, 3.3501, -10.25, 9.2, 3.3501, -0.2, 9.2, 0.2, -0.2, 9.2, 3.3501, -10.25, 9.2, 0.2, -0.2, 9.2, 3.2737, -10.25, 9.2, 0.2403, -10.25, 9.2, 0.2, -0.2, 9.2, 0.2, -10.25, 9.2, 3.2737, -10.25, 9.2, 0.2, -0.2, 9.2, 0.2403, -10.25, 9.2, 0.2, -0.2, 9.5, 0.2, -0.2, 9.5, 0.2, -10.5, 9.5, 0.2, -10.5, 9.2, 0.2, -10.5, 9.2, 0.2, -0.2, 9.5, 0.2, -10.5, 9.5, 3.3501, -10.5, 9.45, 2.8876, -10.5, 9.45, 2.8876, -10.5, 9.5, 3.3501, -10.5, 9.45, 3.3501, -10.5, 9.45, 0.725, -10.5, 9.5, 0.2, -10.5, 9.45, 2.8876, -10.5, 9.45, 0.2, -10.5, 9.5, 0.2, -10.5, 9.45, 0.725, -10.5, 9.5, 3.3501, -0.2, 9.5, 0.2, -0.2, 9.5, 3.4038, 9.5, 9.5, 3.4038, 9.5, 9.5, 3.4038, -0.2, 9.5, 3.3501, -0.2, 9.5, 0.2, -0.2, 9.5, 0.2, 9.5, 9.5, 3.4038, 9.5, 9.5, 3.4038, 9.5, 9.2, 3.4038, 9.5, 9.2, 3.4038, -0.2, 9.2, 3.4038, -0.2, 9.5, 3.4038, -0.2, 9.5, 3.4038, 9.5, 9.5, 3.4038, 9.5, 9.5, 0.2, 9.5, 9.2, 0.2, 9.5, 9.2, 0.2, 9.5, 9.2, 3.4038, 9.5, 9.5, 3.4038, 9.5, 9.2, 3.4038, -0.2, 9.2, 3.4038, 9.5, 9.2, 0.2, 9.5, 9.2, 3.3501, -0.2, 9.2, 3.4038, -0.2, 9.2, 0.2, 9.5, 9.2, 0.2, 9.5, 9.2, 0.2, -0.2, 9.2, 3.3501, -0.2, 9.2, 0.2, 9.5, 9.5, 0.2, 9.5, 9.5, 0.2, -0.2, 9.5, 0.2, -0.2, 9.2, 0.2, -0.2, 9.2, 0.2, 9.5, 9.5, 3.3501, -0.2, 9.5, 3.4038, -0.2, 9.2, 3.4038, -0.2, 9.5, 3.3501, -0.2, 9.2, 3.4038, -0.2, 9.205, 3.3501, -0.2, 9.205, 3.3501, -0.2, 9.2, 3.4038, -0.2, 9.2, 3.3501, -0.2, 9.45, 3.4251, -10.55, -10.55, 3.4251, -10.55, -10.55, 0.2, -10.55, -10.55, 0.2, -10.55, 9.45, 0.2, -10.55, 9.45, 3.4251, -10.55, 9.45, 3.4251, -10.55, 9.45, 3.4251, -10.25, -10.55, 3.4251, -10.25, -10.55, 3.4251, -10.25, -10.55, 3.4251, -10.55, 9.45, 3.4251, -10.55, 9.45, 3.4251, -10.55, 9.45, 0.2, -10.55, 9.45, 0.725, -10.5, 9.45, 0.725, -10.5, 9.45, 0.2, -10.55, 9.45, 0.2, -10.5, 9.45, 2.8876, -10.5, 9.45, 3.4251, -10.55, 9.45, 0.725, -10.5, 9.45, 3.3501, -10.25, 9.45, 3.4251, -10.25, 9.45, 3.3501, -10.5, 9.45, 3.4251, -10.25, 9.45, 3.4251, -10.55, 9.45, 3.3501, -10.5, 9.45, 3.3501, -10.5, 9.45, 3.4251, -10.55, 9.45, 2.8876, -10.5, -10.55, 3.4251, -10.25, 9.45, 3.4251, -10.25, 9.2, 3.3501, -10.25, 9.2073, 3.3501, -10.25, 9.45, 3.4251, -10.25, 9.45, 3.3501, -10.25, 9.2, 3.3501, -10.25, 9.45, 3.4251, -10.25, 9.2073, 3.3501, -10.25, 9.2, 0.2403, -10.25, -10.55, 3.4251, -10.25, 9.2, 3.2737, -10.25, -10.55, 3.4251, -10.25, 9.2, 3.3501, -10.25, 9.2, 3.2737, -10.25, 9.2, 0.2, -10.25, -10.55, 0.2, -10.25, -10.55, 3.4251, -10.25, 9.2, 0.2, -10.25, -10.55, 3.4251, -10.25, 9.2, 0.2403, -10.25, 9.45, 0.2, -10.5, 9.45, 0.2, -10.55, 9.2, 0.2, -10.5, 9.2, 0.2, -10.5, 9.45, 0.2, -10.25, 9.45, 0.2, -10.5, 9.45, 0.2, -10.55, -10.55, 0.2, -10.55, 9.2, 0.2, -10.5, 9.2, 0.2, -10.2538, 9.45, 0.2, -10.25, 9.2, 0.2, -10.5, 9.2, 0.2, -10.5, -10.55, 0.2, -10.55, 9.2, 0.2, -10.2538, 9.2, 0.2, -10.2538, -10.55, 0.2, -10.55, 9.2, 0.2, -10.25, 9.2, 0.2, -10.25, 9.45, 0.2, -10.25, 9.2, 0.2, -10.2538, -10.55, 0.2, -10.55, -10.55, 0.2, -10.25, 9.2, 0.2, -10.25, -10.55, 0.2, -10.55, -10.55, 3.4251, -10.55, -10.55, 3.4251, -10.25, -10.55, 3.4251, -10.25, -10.55, 0.2, -10.25, -10.55, 0.2, -10.55)
@@ -2462,6 +2468,7 @@ shape = SubResource("CylinderShape3D_jpbf7")
 
 [node name="MeshDış Duvarlar 2" type="MeshInstance3D" parent="Duvarlar"]
 mesh = SubResource("ArrayMesh_x1lkb")
+surface_material_override/0 = SubResource("StandardMaterial3D_ps0sn")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Duvarlar/MeshDış Duvarlar 2"]
 
@@ -2470,6 +2477,7 @@ shape = SubResource("ConcavePolygonShape3D_wggbt")
 
 [node name="MeshDış duvarlar" type="MeshInstance3D" parent="Duvarlar"]
 mesh = SubResource("ArrayMesh_gt7ou")
+surface_material_override/0 = SubResource("StandardMaterial3D_ps0sn")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Duvarlar/MeshDış duvarlar"]
 
@@ -2479,6 +2487,7 @@ shape = SubResource("ConcavePolygonShape3D_vrtmb")
 [node name="MeshKapılı Duvar 1" type="MeshInstance3D" parent="Duvarlar"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.9, 0, 0)
 mesh = SubResource("ArrayMesh_whuf2")
+surface_material_override/0 = SubResource("StandardMaterial3D_ps0sn")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Duvarlar/MeshKapılı Duvar 1"]
 
@@ -2488,6 +2497,7 @@ shape = SubResource("ConcavePolygonShape3D_3x5vx")
 [node name="MeshKapılı Duvar 2" type="MeshInstance3D" parent="Duvarlar"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.3, 0, 0)
 mesh = SubResource("ArrayMesh_dhiqe")
+surface_material_override/0 = SubResource("StandardMaterial3D_ps0sn")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Duvarlar/MeshKapılı Duvar 2"]
 
@@ -2496,6 +2506,7 @@ shape = SubResource("ConcavePolygonShape3D_sny2b")
 
 [node name="MeshÇift Kapılı Duvar" type="MeshInstance3D" parent="Duvarlar"]
 mesh = SubResource("ArrayMesh_58j8f")
+surface_material_override/0 = SubResource("StandardMaterial3D_ps0sn")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Duvarlar/MeshÇift Kapılı Duvar"]
 
@@ -2504,6 +2515,7 @@ shape = SubResource("ConcavePolygonShape3D_7lwwp")
 
 [node name="MeshÇift Kapılı Duvar 2" type="MeshInstance3D" parent="Duvarlar"]
 mesh = SubResource("ArrayMesh_qq5jm")
+surface_material_override/0 = SubResource("StandardMaterial3D_ps0sn")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Duvarlar/MeshÇift Kapılı Duvar 2"]
 
@@ -2512,6 +2524,7 @@ shape = SubResource("ConcavePolygonShape3D_10e6r")
 
 [node name="MeshAna Kapı Duvarı" type="MeshInstance3D" parent="Duvarlar"]
 mesh = SubResource("ArrayMesh_1psaa")
+surface_material_override/0 = SubResource("StandardMaterial3D_ps0sn")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Duvarlar/MeshAna Kapı Duvarı"]
 
@@ -2520,6 +2533,7 @@ shape = SubResource("ConcavePolygonShape3D_fk3jw")
 
 [node name="MeshTavan" type="MeshInstance3D" parent="Duvarlar"]
 mesh = SubResource("ArrayMesh_7ftbn")
+surface_material_override/0 = SubResource("StandardMaterial3D_ps0sn")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Duvarlar/MeshTavan"]
 
@@ -2528,6 +2542,7 @@ shape = SubResource("ConcavePolygonShape3D_nf1js")
 
 [node name="MeshTaban" type="MeshInstance3D" parent="Duvarlar"]
 mesh = SubResource("ArrayMesh_0d50x")
+surface_material_override/0 = SubResource("StandardMaterial3D_ps0sn")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Duvarlar/MeshTaban"]
 
