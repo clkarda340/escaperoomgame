@@ -36,14 +36,17 @@ size_flags_horizontal = 4
 size_flags_vertical = 4
 
 [node name="Play" type="Button" parent="PanelContainer/VBoxContainer"]
-custom_minimum_size = Vector2(200, 40)
+custom_minimum_size = Vector2(400, 60)
 layout_mode = 2
+size_flags_vertical = 3
+theme_override_font_sizes/font_size = 50
 text = "Play
 "
 
 [node name="Options" type="Button" parent="PanelContainer/VBoxContainer"]
-custom_minimum_size = Vector2(200, 40)
+custom_minimum_size = Vector2(400, 60)
 layout_mode = 2
+theme_override_font_sizes/font_size = 50
 text = "Options
 "
 
@@ -54,7 +57,7 @@ size_flags_vertical = 0
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_font_sizes/font_size = 50
 theme_override_styles/normal = SubResource("StyleBoxEmpty_t54db")
-text = "Home Alone"
+text = "Midnight Anxiety"
 horizontal_alignment = 1
 vertical_alignment = 1
 

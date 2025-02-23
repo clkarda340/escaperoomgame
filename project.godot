@@ -10,9 +10,9 @@ config_version=5
 
 [application]
 
-config/name="Home Alone"
+config/name="Midnight Anxiety"
 config/name_localized={
-"tr": "Evde Tek"
+"tr": "Geceyarısı Anksiyete"
 }
 config/description="You wake up in the middle of the night and you have to check those irritating noises in the house. You have to solve those if you want to get back to your sleep. Your vision gets blurry if you waste too much time. Be quick, do your best to get back to your cozy bed and sleep tight next time!"
 config/version="0.1"
@@ -27,6 +27,10 @@ Persistence="*res://scripts/persistence.gd"
 [dotnet]
 
 project/assembly_name="Gerilimli Ev"
+
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/csgtomesh/plugin.cfg")
 
 [filesystem]
 
@@ -78,4 +82,10 @@ pause={
 
 [physics]
 
-3d/physics_engine="JoltPhysics3D"
+3d/physics_engine="GodotPhysics3D"
+
+[rendering]
+
+renderer/rendering_method="gl_compatibility"
+renderer/rendering_method.mobile="gl_compatibility"
+textures/vram_compression/import_etc2_astc=true

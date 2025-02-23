@@ -262,5 +262,5 @@ libraries = {
 }
 
 [node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="."]
-volume_db = -10.0
+volume_db = -15.0
 bus = &"SFX"

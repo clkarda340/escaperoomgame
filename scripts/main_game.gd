@@ -38,6 +38,7 @@ func _process(delta: float) -> void:
 	get_node("ColorRect").material.set_shader_parameter("amount",remap($Player.health,0,$Player.max_health,3,1))
 func pause_game():
 	if game_paused:
+		get_node("Player/CanvasLayer/BoxContainer/Label").hide()
 		if get_tree().get_root().get_node_or_null("Options"):
 			return
 		get_tree().paused = true
