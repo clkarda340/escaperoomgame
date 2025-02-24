@@ -21,27 +21,33 @@ func _ready() -> void:
 	interactables.append(get_node("Mimari/OturmaOdası/ceilingFan2/InteractableFan"))
 	interactables.append(get_node("Mimari/Tuvalet/washerDryer/InteractableWashingMachine"))
 	interactables.append(get_node("Mimari/Kitchen/kitchenFridge/InteractableFridge"))
+	interactables.append(get_node("Mimari/CocukOdası/KarKüresi/InteractableOrb"))
+	interactables.append(get_node("Mimari/Yatakodası/Calarsaat/InteractableClock"))
+	
 	#Tüm interactable'ler eklendikten sonra
 	not_used = interactables.duplicate()
 
 
-# Called every frame. 'delta' is the elapsed time since the previous frame.
+# Called every frame. 'delta' is the elapsed time since the previous frame.w
 func _process(delta: float) -> void:
 	if Input.is_action_just_pressed("pause"):
 		pause_screen = load("res://scenes/options.tscn").instantiate()
+		pause_screen.get_node("HBoxContainer2/Restart").visible = true
 		game_paused = !game_paused
 		pause_game()
-	get_node("ColorRect").material.set_shader_parameter("transparency",remap($Player.health,0,$Player.max_health,0.3,0))
-	get_node("ColorRect").material.set_shader_parameter("amount",remap($Player.health,0,$Player.max_health,3,1))
+	get_node("ColorRect").material.set_shader_parameter("transparency",remap($Player.health,0,$Player.max_health,0.25,0))
+	get_node("ColorRect").material.set_shader_parameter("amount",remap($Player.health,0,$Player.max_health,2.6,1))
 func pause_game():
 	if game_paused:
 		if get_tree().get_root().get_node_or_null("Options"):
 			return
 		get_tree().paused = true
 		get_tree().get_root().add_child(pause_screen)
+		get_node("Player/CanvasLayer/BoxContainer/Label").hide()
 	else:
 		pause_screen.queue_free()
 		get_tree().paused = false
+		
 		
 
 func threatify():
@@ -50,7 +56,6 @@ func threatify():
 	object.is_threat = true
 	object.is_used = true
 	not_used.remove_at(interactable_seed)
-
 func _on_threatify_timer_timeout() -> void:
 	if len(not_used) > 0:
 		threatify()

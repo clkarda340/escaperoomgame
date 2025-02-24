@@ -10,10 +10,22 @@ config_version=5
 
 [application]
 
-config/name="Gerilimli Ev"
+config/name="Midnight Anxiety"
+config/name_localized={
+"tr": "Geceyarısı Anksiyete"
+}
+config/description="This game is about the feeling of something might be wrong. 
+Character wakes up at night, and tries to conquer this feeling
+ in order to get back to sleep.
+
+
+
+
+"
+config/version="0.1.1"
 run/main_scene="res://scenes/main_menu.tscn"
 config/features=PackedStringArray("4.3", "Forward Plus")
-config/icon="res://icon.svg"
+config/icon="res://icon2.png"
 
 [autoload]
 

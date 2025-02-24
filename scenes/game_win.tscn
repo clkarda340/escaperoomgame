@@ -45,21 +45,21 @@ anchors_preset = 12
 anchor_top = 1.0
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_top = -145.0
+offset_top = -77.0
 grow_horizontal = 2
 grow_vertical = 0
-
-[node name="Restart" type="Button" parent="Panel/HBoxContainer"]
-layout_mode = 2
-size_flags_horizontal = 3
-theme_override_font_sizes/font_size = 100
-text = "Restart"
 
 [node name="Quit Game" type="Button" parent="Panel/HBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 3
-theme_override_font_sizes/font_size = 100
+theme_override_font_sizes/font_size = 50
 text = "Quit Game"
+
+[node name="Restart" type="Button" parent="Panel/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_font_sizes/font_size = 50
+text = "Restart"
 
 [node name="Control" type="Control" parent="Panel"]
 layout_mode = 1
@@ -151,5 +151,5 @@ horizontal_alignment = 1
 stream = ExtResource("2_rwlem")
 autoplay = true
 
-[connection signal="pressed" from="Panel/HBoxContainer/Restart" to="." method="_on_restart_pressed"]
 [connection signal="pressed" from="Panel/HBoxContainer/Quit Game" to="." method="_on_quit_game_pressed"]
+[connection signal="pressed" from="Panel/HBoxContainer/Restart" to="." method="_on_restart_pressed"]
