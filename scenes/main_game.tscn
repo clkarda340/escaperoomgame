@@ -40,7 +40,7 @@ shader_parameter/amount = 4.0
 [node name="Main Game" type="Node3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.2, 0.2, 0.1)
 script = ExtResource("1_ujsor")
-healing_coefficient = 15
+healing_coefficient = 5
 damaging_coefficient = 5
 time_before_damage = 6.0
 
@@ -87,5 +87,10 @@ stream = ExtResource("6_y5jlj")
 volume_db = -15.0
 bus = &"Music"
 
+[node name="Heal Timer" type="Timer" parent="."]
+wait_time = 2.0
+autostart = true
+
 [connection signal="timeout" from="Threatify Timer" to="." method="_on_threatify_timer_timeout"]
 [connection signal="timeout" from="Health Timer" to="." method="_on_health_timer_timeout"]
+[connection signal="timeout" from="Heal Timer" to="." method="_on_heal_timer_timeout"]
