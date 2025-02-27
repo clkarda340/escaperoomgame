@@ -1097,8 +1097,8 @@ albedo_color = Color(0.921796, 0.982419, 1, 1)
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_7g16t"]
 
 [sub_resource type="CylinderShape3D" id="CylinderShape3D_y80k1"]
-height = 466.8
-radius = 279.4
+height = 736.2
+radius = 322.9
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_83o6e"]
 size = Vector3(0.401001, 0.212185, 0.168243)
@@ -1621,6 +1621,17 @@ libraries = {
 transform = Transform3D(0.255528, -0.0329098, 0.0299117, 0.0376811, 0.360518, 0.0747535, -0.0310783, -0.0421794, 0.219087, 0, 0, 0)
 stream = ExtResource("27_dridy")
 parameters/looping = true
+
+[node name="FanLight" type="SpotLight3D" parent="OturmaOdası/ceilingFan2"]
+transform = Transform3D(0.259369, 0, 0, 0, -1.6178e-08, 0.37011, 0, -0.225264, -9.84662e-09, 0, 0, 0)
+visible = false
+light_color = Color(0.819295, 0.635398, 0.243229, 1)
+
+[node name="FanSelfLight" type="OmniLight3D" parent="OturmaOdası/ceilingFan2"]
+transform = Transform3D(0.259369, 0, 0, 0, 0.37011, 0, 0, 0, 0.225264, 0, -0.185055, 0)
+visible = false
+light_color = Color(0.997398, 0.809223, 3.85046e-07, 1)
+omni_range = 0.5
 
 [node name="rugDoormat8" parent="OturmaOdası" instance=ExtResource("56_omv02")]
 transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 0.349744, 0.299638, -3.54712)
@@ -2413,7 +2424,7 @@ collision_mask = 4
 script = ExtResource("85_g2guc")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="CocukOdası/KarKüresi/InteractableOrb"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 300, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 200, 0)
 shape = SubResource("CylinderShape3D_y80k1")
 
 [node name="PinkLight" type="OmniLight3D" parent="CocukOdası/KarKüresi"]

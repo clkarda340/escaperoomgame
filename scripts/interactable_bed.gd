@@ -20,4 +20,5 @@ func is_game_finished():
 	for i in main_game.interactables:
 		if i.is_used == false:
 			return 0
+	game_finished=true
 	return 1

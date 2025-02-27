@@ -7,6 +7,9 @@ extends Node3D
 var in_game_music
 var game_paused=false
 var pause_screen = load("res://scenes/options.tscn").instantiate()
+var active_threats_count = 0
+@onready var player = get_node("Player")
+
 var interactables = []
 var not_used = []
 # Called when the node enters the scene tree for the first time.
@@ -33,6 +36,7 @@ func _process(delta: float) -> void:
 	if Input.is_action_just_pressed("pause"):
 		pause_screen = load("res://scenes/options.tscn").instantiate()
 		pause_screen.get_node("HBoxContainer2/Restart").visible = true
+		print("pause started")
 		game_paused = !game_paused
 		pause_game()
 	get_node("ColorRect").material.set_shader_parameter("transparency",remap($Player.health,0,$Player.max_health,0.25,0))
@@ -41,14 +45,16 @@ func pause_game():
 	if game_paused:
 		if get_tree().get_root().get_node_or_null("Options"):
 			return
+		print("Really Paused")
 		get_tree().paused = true
 		get_tree().get_root().add_child(pause_screen)
-		get_node("Player/CanvasLayer/BoxContainer/Label").hide()
+		get_node("Player/UI").hide()
+		player.release_mouse()
+		game_paused = !game_paused
 	else:
 		pause_screen.queue_free()
 		get_tree().paused = false
-		
-		
+		player.capture_mouse()
 
 func threatify():
 	var interactable_seed = randi_range(0,len(not_used)-1)
@@ -73,17 +79,18 @@ func _on_threatify_timer_timeout() -> void:
 
 
 func _on_health_timer_timeout() -> void:
-	var player = get_node("Player")
-	var active_threats_count = 0
+	active_threats_count = 0
 	for i in interactables:
 		if i.is_threat:
 			active_threats_count +=1
 	if active_threats_count>0:
 		await get_tree().create_timer(time_before_damage).timeout
 		player.health -= damaging_coefficient*active_threats_count
-	else:
+
+func _on_heal_timer_timeout() -> void:
+	if active_threats_count==0:
 		player.health+= healing_coefficient
-		
+	
 func game_lost():
 	get_tree().change_scene_to_file("res://scenes/game_lost.tscn")
 
