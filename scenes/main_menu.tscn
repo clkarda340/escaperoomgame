@@ -36,14 +36,16 @@ size_flags_horizontal = 4
 size_flags_vertical = 4
 
 [node name="Play" type="Button" parent="PanelContainer/VBoxContainer"]
-custom_minimum_size = Vector2(200, 40)
+custom_minimum_size = Vector2(300, 50)
 layout_mode = 2
+theme_override_font_sizes/font_size = 50
 text = "Play
 "
 
 [node name="Options" type="Button" parent="PanelContainer/VBoxContainer"]
-custom_minimum_size = Vector2(200, 40)
+custom_minimum_size = Vector2(300, 50)
 layout_mode = 2
+theme_override_font_sizes/font_size = 50
 text = "Options
 "
 
@@ -54,9 +56,24 @@ size_flags_vertical = 0
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_font_sizes/font_size = 50
 theme_override_styles/normal = SubResource("StyleBoxEmpty_t54db")
-text = "Home Alone"
+text = "Midnight Anxiety"
 horizontal_alignment = 1
 vertical_alignment = 1
+
+[node name="Label" type="Label" parent="PanelContainer"]
+custom_minimum_size = Vector2(500, 150)
+layout_mode = 2
+size_flags_vertical = 8
+text = "This game is about the feeling of something might be wrong. 
+Character wakes up at night, and tries to conquer this feeling
+ in order to get back to sleep.
+
+
+
+
+"
+horizontal_alignment = 1
+autowrap_mode = 1
 
 [node name="ColorRect" type="ColorRect" parent="."]
 material = SubResource("ShaderMaterial_kuii2")

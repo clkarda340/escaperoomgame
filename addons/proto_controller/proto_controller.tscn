@@ -1,6 +1,8 @@
-[gd_scene load_steps=5 format=3 uid="uid://bs72ogkvdd7d6"]
+[gd_scene load_steps=7 format=3 uid="uid://bs72ogkvdd7d6"]
 
 [ext_resource type="Script" path="res://addons/proto_controller/proto_controller.gd" id="1_ucva2"]
+[ext_resource type="Texture2D" uid="uid://cq6vick1eso2" path="res://assets/Kenneys UI/White/crosshair180.png" id="2_yafe4"]
+[ext_resource type="Texture2D" uid="uid://dlrghvasgcl5v" path="res://assets/Kenneys UI/White/crosshair180-2.png" id="3_3j4py"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_iof21"]
 albedo_color = Color(0.91806, 0.575202, 0.222449, 1)
@@ -46,9 +48,30 @@ light_energy = 0.125
 shadow_enabled = true
 omni_range = 1.6503
 
-[node name="CanvasLayer" type="CanvasLayer" parent="."]
+[node name="UI" type="CanvasLayer" parent="."]
 
-[node name="BoxContainer" type="BoxContainer" parent="CanvasLayer"]
+[node name="BoxContainer" type="BoxContainer" parent="UI"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -80.5
+offset_top = 5.0
+offset_right = 80.5
+offset_bottom = 45.0
+grow_horizontal = 2
+grow_vertical = 2
+metadata/_edit_use_anchors_ = true
+
+[node name="Label" type="Label" parent="UI/BoxContainer"]
+layout_mode = 2
+text = "Interact \"E\" or \"LMB\"
+"
+
+[node name="Crosshair" type="Control" parent="UI"]
+top_level = true
+layout_mode = 3
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
@@ -60,8 +83,36 @@ offset_right = 20.0
 offset_bottom = 20.0
 grow_horizontal = 2
 grow_vertical = 2
+scale = Vector2(0.601489, 0.601489)
+size_flags_horizontal = 4
+size_flags_vertical = 4
 
-[node name="Label" type="Label" parent="CanvasLayer/BoxContainer"]
-layout_mode = 2
-text = "Press \"E\" to interact
-"
+[node name="Empty" type="TextureRect" parent="UI/Crosshair"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -0.3
+anchor_top = -0.3
+anchor_right = 1.3
+anchor_bottom = 1.3
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_yafe4")
+stretch_mode = 2
+
+[node name="Interact" type="TextureRect" parent="UI/Crosshair"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -13.0
+offset_top = -13.0
+offset_right = 51.0
+offset_bottom = 51.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.407837, 0.407837)
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture = ExtResource("3_3j4py")

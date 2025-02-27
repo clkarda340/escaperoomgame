@@ -1,8 +1,10 @@
-[gd_scene load_steps=18 format=4 uid="uid://nkijjlvsuso8"]
+[gd_scene load_steps=20 format=4 uid="uid://nkijjlvsuso8"]
 
 [ext_resource type="Script" path="res://scripts/interactable_door.gd" id="1_v27ro"]
 [ext_resource type="AudioStream" uid="uid://dhsyksdri6e02" path="res://assets/Sound Effects/door-slam-angrily-86963.mp3" id="2_5xurs"]
 [ext_resource type="AudioStream" uid="uid://dmqpjdm2ehesp" path="res://assets/Sound Effects/squeaky-door-open-113212.mp3" id="2_6vfli"]
+[ext_resource type="AudioStream" uid="uid://bom8o74qltpsq" path="res://assets/Sound Effects/squeaky-bathroom-door-102756.mp3" id="3_i2mk0"]
+[ext_resource type="AudioStream" uid="uid://fwsp58riwg6p" path="res://assets/Sound Effects/squeaky-bathroom-door-102756-reverse.mp3" id="3_jgxt1"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_6q6la"]
 resource_name = "wood"
@@ -134,11 +136,11 @@ tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
 "clips": [{
-"end_offset": 4.83,
-"start_offset": 0.14,
-"stream": ExtResource("2_6vfli")
+"end_offset": 0.75,
+"start_offset": 0.32,
+"stream": ExtResource("3_i2mk0")
 }],
-"times": PackedFloat32Array(0.04)
+"times": PackedFloat32Array(0.1)
 }
 tracks/1/use_blend = true
 
@@ -159,11 +161,11 @@ tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
 "clips": [{
-"end_offset": 4.83,
-"start_offset": 0.14,
-"stream": ExtResource("2_6vfli")
+"end_offset": 0.34,
+"start_offset": 0.74,
+"stream": ExtResource("3_jgxt1")
 }],
-"times": PackedFloat32Array(0.04)
+"times": PackedFloat32Array(0.1)
 }
 tracks/1/use_blend = true
 
@@ -262,4 +264,5 @@ libraries = {
 }
 
 [node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="."]
+volume_db = -10.0
 bus = &"SFX"

@@ -24,6 +24,11 @@ func _ready() -> void:
 
 func _on_back_pressed() -> void:
 	get_tree().paused = false
+	var main_game = get_tree().get_root().get_node_or_null("Main Game")
+	if main_game != null:
+		main_game.get_node("Player/UI").show()
+		main_game.get_node("Player").capture_mouse()
+		
 	get_parent().get_parent().queue_free()
 
 func _on_brightness_value_changed(value: float) -> void:
@@ -68,3 +73,9 @@ func set_volume(idx,value):
 
 func _on_quit_pressed() -> void:
 	get_tree().quit()
+
+
+func _on_restart_pressed() -> void:
+	get_tree().reload_current_scene()
+	get_parent().get_parent().queue_free()
+	get_tree().paused = false

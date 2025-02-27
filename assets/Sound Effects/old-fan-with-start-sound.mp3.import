@@ -13,7 +13,7 @@ dest_files=["res://.godot/imported/old-fan-with-start-sound.mp3-55772ccc082980ff
 [params]
 
 loop=true
-loop_offset=0.37
+loop_offset=5.03
 bpm=0.0
 beat_count=0
 bar_beats=4

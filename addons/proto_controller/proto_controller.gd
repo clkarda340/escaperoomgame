@@ -45,7 +45,7 @@ extends CharacterBody3D
 ## Name of Input Action to toggle freefly mode.
 @export var input_freefly : String = "freefly"
 
-var mouse_captured : bool = false
+var mouse_captured : bool = true
 var look_rotation : Vector2
 var move_speed : float = 0.0
 var freeflying : bool = false
@@ -59,22 +59,32 @@ var health = max_health:
 			get_parent().game_lost()
 		else:
 			health = value
-			
+var ui_empty
+var ui_interact
+var ui_label
+@onready var ui_crosshair = get_node("UI/Crosshair")
+var ui_interact_zoom :=1
+var ui_interact_scale
 ## IMPORTANT REFERENCES
 @onready var head: Node3D = $Head
 @onready var collider: CollisionShape3D = $Collider
 
 func _ready() -> void:
+	capture_mouse()
 	check_input_mappings()
 	look_rotation.y = rotation.y
 	look_rotation.x = head.rotation.x
+	ui_empty = get_node("UI/Crosshair/Empty")
+	ui_interact = get_node("UI/Crosshair/Interact")
+	ui_label = get_node("UI/BoxContainer/Label")
+	ui_interact_scale =ui_crosshair.scale
 
 func _unhandled_input(event: InputEvent) -> void:
 	# Mouse capturing
-	if Input.is_mouse_button_pressed(MOUSE_BUTTON_LEFT):
-		capture_mouse()
-	if Input.is_key_pressed(KEY_ESCAPE):
-		release_mouse()
+	#if Input.is_mouse_button_pressed(MOUSE_BUTTON_LEFT):
+		#capture_mouse()
+	#if Input.is_key_pressed(KEY_ESCAPE):
+		#release_mouse()
 	
 	# Look around
 	if mouse_captured and event is InputEventMouseMotion:
@@ -89,16 +99,35 @@ func _unhandled_input(event: InputEvent) -> void:
 
 func _physics_process(delta: float) -> void:
 	# If freeflying, handle freefly and nothing else
-	$CanvasLayer/BoxContainer/Label.hide()
+	ui_label.hide()
+	ui_interact.hide()
+	ui_crosshair.scale = ui_interact_scale
 	if $Head/Camera3D/RayCast3D.is_colliding():
 		var target = $Head/Camera3D/RayCast3D.get_collider()
-		$CanvasLayer/BoxContainer/Label.show()
+		ui_interact.show()
+		ui_crosshair.scale = ui_interact_zoom  * ui_interact_scale
+		if "game_finished" in target:
+			if target.is_game_finished():
+				ui_label.hide()
+				ui_label.text = "Sleep \"E\" or \"LMB\""
+			else:
+				ui_label.show()
+				ui_label.text = "Can't sleep now. There are unsettling noises."
+		else:
+			ui_label.text ="Interact \"E\" or \"LMB\" "
+			ui_label.hide()
+
+		if !"is_open" in target:
+			if !target.is_threat:
+				ui_label.hide()
+				ui_interact.hide()
+				ui_crosshair.scale = ui_interact_scale/ui_interact_zoom
+				
 		if Input.is_action_just_pressed("interact"):
 			if "is_open" in target:
 				target.change_door_state()
 			else:
 				target.is_threat = false
-		
 	if can_freefly and freeflying:
 		var input_dir := Input.get_vector(input_left, input_right, input_forward, input_back)
 		var motion := (head.global_basis * Vector3(input_dir.x, 0, input_dir.y)).normalized()

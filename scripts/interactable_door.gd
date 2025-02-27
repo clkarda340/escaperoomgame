@@ -23,11 +23,11 @@ var is_open := false:
 		if value:
 			if is_used == false:
 				interactables.append(self)
-				not_used.append(self)
+				get_tree().get_root().get_node("Main Game").not_used.append(self)
 			is_open = value
 		else:
 			interactables.erase(self)
-			not_used.erase(self)
+			get_tree().get_root().get_node("Main Game").not_used.erase(self)
 			is_open = value
 			
 var animation
@@ -40,13 +40,6 @@ func _ready() -> void:
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
 		pass
-	#if radio_noise.playing == false:
-		#radio_noise.play()
-		#pass
-	#else:
-		#green_light.visible = false
-		#if radio_noise.playing == true:
-			#radio_noise.stop()
 
 func change_door_state():
 	if is_open:
