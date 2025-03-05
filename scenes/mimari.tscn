@@ -3304,7 +3304,7 @@ process_priority = 10
 layout_mode = 2
 text = "Press any key to continue..."
 horizontal_alignment = 2
-=======
+
 [node name="Duvar" type="MeshInstance3D" parent="Duvarlar/YatakodasıMesh"]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -1.00808, 1.70513, -7.15)
 mesh = SubResource("ArrayMesh_o3jqq")
