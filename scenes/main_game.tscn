@@ -1,6 +1,6 @@
 [gd_scene load_steps=11 format=3 uid="uid://dyo4arcx2l8oc"]
 
-[ext_resource type="PackedScene" uid="uid://dpeblt4rqw5b7" path="res://mimari.tscn" id="1_r6jw6"]
+[ext_resource type="PackedScene" uid="uid://dpeblt4rqw5b7" path="res://scenes/mimari.tscn" id="1_r6jw6"]
 [ext_resource type="Script" path="res://scripts/main_game.gd" id="1_ujsor"]
 [ext_resource type="PackedScene" uid="uid://bs72ogkvdd7d6" path="res://addons/proto_controller/proto_controller.tscn" id="2_g72bx"]
 [ext_resource type="AudioStream" uid="uid://q41r7kqbhgeb" path="res://assets/Music/Ingame.mp3" id="4_1kbah"]

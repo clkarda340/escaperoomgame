@@ -61,6 +61,7 @@ horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="Label" type="Label" parent="PanelContainer"]
+visible = false
 custom_minimum_size = Vector2(500, 150)
 layout_mode = 2
 size_flags_vertical = 8

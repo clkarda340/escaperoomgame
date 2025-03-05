@@ -1,27 +1,28 @@
 extends Control
 
-@onready var labels = [$Heading/Label1,$Heading2/Label2,$Heading3/Label3,$Heading4/Label4]  # Labels artık VBoxContainer içinde
-@onready var continue_label = $Heading5/ContinueLabel
+@onready var labels = [$VBoxContainer/Label,$VBoxContainer/Label2,$VBoxContainer/Label3,$VBoxContainer/Label4]  # Labels artık VBoxContainer içinde
+@onready var continue_label = $VBoxContainer/ContinueLabel
 
-var text_speed = 0.006  # Harflerin daha hızlı görünmesi için süreyi daha kısa yapıyoruz
+var text_speed = 0.008  # Harflerin daha hızlı görünmesi için süreyi daha kısa yapıyoruz
 var current_label_index = 0
 var is_typing = false
 var can_continue = false
 
 # SAHNEDE GÖRÜNECEK METİNLER (Bunları değiştirebilirsin)
 var label_texts = [
-	"CONTENT WARNING",
+	"\n \n CONTENT WARNING \n \n",
 	"Some individuals may experience seizures when exposed to 
-certain visual stimuli, including flashing lights or patterns.",
+certain visual stimuli, including flashing lights or patterns. \n \n",
 	"If you have a history of seizures or epilepsy, please consult
-a healthcare professional before engaging with this content.",
-	"This game is about the feeling of something might be wrong. 
+a healthcare professional before engaging with this content. \n \n",
+	"\n \n \n \n This game is about the feeling of something might be wrong. 
 Character wakes up at night, and tries to conquer this feeling
- in order to get back to sleep."
+ in order to get back to sleep. \n \n"
 ]
 
 func _ready():
 	# **Tüm Label'ları başta boş yap**
+	print($VBoxContainer)
 	for label in labels:
 		label.set_text("")  # Godot 4'te metin ayarlamak için set_text() kullanılır.
 	
@@ -58,4 +59,4 @@ func blink_continue_label():
 
 func _input(event):
 	if can_continue and event.is_pressed():
-		get_tree().change_scene_to_file("res://main_menu.tscn")  # Bir sonraki sahneye geç
+		get_tree().change_scene_to_file("res://scenes/main_menu.tscn")  # Bir sonraki sahneye geç
