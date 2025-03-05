@@ -35,8 +35,8 @@ var animation
 
 func _ready() -> void:
 	animation = get_parent().get_parent().get_node("DoorAnimations")
-	interactables = $".".interactables
-	not_used =$".".not_used
+	interactables = get_tree().get_root().get_node("Main Game").interactables
+	not_used =get_tree().get_root().get_node("Main Game").not_used
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
 		pass
