@@ -1,7 +1,6 @@
-[gd_scene load_steps=371 format=4 uid="uid://b1wna7on3l423"]
+[gd_scene load_steps=369 format=4 uid="uid://b1wna7on3l423"]
 
 [ext_resource type="PackedScene" uid="uid://o8xlkrsurpdb" path="res://assets/BrickAssets/GLTF format/bedDouble.glb" id="1_5atvr"]
-[ext_resource type="Script" path="res://scenes/mimari.gd" id="1_6an7e"]
 [ext_resource type="PackedScene" uid="uid://duk6fyy5jog8t" path="res://assets/BrickAssets/GLTF format/cabinetTelevisionDoors.glb" id="1_o4lqs"]
 [ext_resource type="PackedScene" uid="uid://dj5g7uw3ft3cc" path="res://assets/BrickAssets/GLTF format/pottedPlant.glb" id="2_eljoh"]
 [ext_resource type="PackedScene" uid="uid://c2uasebk07vsb" path="res://assets/BrickAssets/GLTF format/cabinetTelevision.glb" id="2_gaunw"]
@@ -69,7 +68,6 @@
 [ext_resource type="ArrayMesh" uid="uid://cln7oqhq5hlw6" path="res://assets/BrickAssets/GLTF format/3d-model.obj" id="77_vrefu"]
 [ext_resource type="PackedScene" uid="uid://datdj885dmtmo" path="res://assets/BrickAssets/GLTF format/bench.glb" id="78_n6yvo"]
 [ext_resource type="ArrayMesh" uid="uid://dmq3lm6rpwlhi" path="res://assets/BrickAssets/GLTF format/BabyBottle.obj" id="78_og2of"]
-[ext_resource type="Script" path="res://scenes/tuvalet.gd" id="79_0dslk"]
 [ext_resource type="PackedScene" uid="uid://by2ksic21r7j7" path="res://assets/BrickAssets/GLTF format/pillowBlueLong.glb" id="79_bqvxt"]
 [ext_resource type="ArrayMesh" uid="uid://dldsyyfs3yppk" path="res://assets/BrickAssets/GLTF format/BabyPacifier.obj" id="79_sjg8o"]
 [ext_resource type="PackedScene" uid="uid://drpp7yytgl8l7" path="res://assets/BrickAssets/GLTF format/laptop.glb" id="80_wlm5r"]
@@ -1414,7 +1412,6 @@ _surfaces = [{
 }]
 
 [node name="Mimari" type="Node"]
-script = ExtResource("1_6an7e")
 
 [node name="Mutfak" type="CSGCombiner3D" parent="."]
 use_collision = true
@@ -2443,7 +2440,6 @@ transform = Transform3D(-1.9, 0, 1.66103e-07, 0, 1.9, 0, -1.66103e-07, 0, -1.9, 
 transform = Transform3D(-1.90512, 0, -1.06946e-07, 0, 1.90512, 0, 1.06946e-07, 0, -1.90512, 7.4, 2.1, 8.74409)
 
 [node name="Tuvalet" type="Node3D" parent="."]
-script = ExtResource("79_0dslk")
 
 [node name="bathroomCabinetDrawer" parent="Tuvalet" instance=ExtResource("32_bxeuy")]
 transform = Transform3D(-2, 0, -1.74846e-07, 0, 2, 0, 1.74846e-07, 0, -2, -4.31171, 0.129189, 8.2252)
