@@ -3,14 +3,14 @@ extends Control
 @onready var labels = [$Heading/Label1,$Heading2/Label2,$Heading3/Label3,$Heading4/Label4]  # Labels artık VBoxContainer içinde
 @onready var continue_label = $Heading5/ContinueLabel
 
-var text_speed = 0.01  # Harflerin daha hızlı görünmesi için süreyi daha kısa yapıyoruz
+var text_speed = 0.006  # Harflerin daha hızlı görünmesi için süreyi daha kısa yapıyoruz
 var current_label_index = 0
 var is_typing = false
 var can_continue = false
 
 # SAHNEDE GÖRÜNECEK METİNLER (Bunları değiştirebilirsin)
 var label_texts = [
-	"CONTENT WARNİNG",
+	"CONTENT WARNING",
 	"Some individuals may experience seizures when exposed to 
 certain visual stimuli, including flashing lights or patterns.",
 	"If you have a history of seizures or epilepsy, please consult
@@ -58,4 +58,4 @@ func blink_continue_label():
 
 func _input(event):
 	if can_continue and event.is_pressed():
-		get_tree().change_scene_to_file("res://next_scene.tscn")  # Bir sonraki sahneye geç
+		get_tree().change_scene_to_file("res://main_menu.tscn")  # Bir sonraki sahneye geç
