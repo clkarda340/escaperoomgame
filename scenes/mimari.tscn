@@ -1,4 +1,3 @@
-
 [gd_scene load_steps=485 format=4 uid="uid://dpeblt4rqw5b7"]
 
 [ext_resource type="PackedScene" uid="uid://o8xlkrsurpdb" path="res://assets/BrickAssets/GLTF format/bedDouble.glb" id="1_5atvr"]
@@ -92,7 +91,6 @@
 [ext_resource type="Script" path="res://scripts/interactable_orb.gd" id="85_g2guc"]
 [ext_resource type="PackedScene" uid="uid://dqvb52u2167ql" path="res://assets/BrickAssets/GLTF format/bookcaseClosedDoors.glb" id="85_x2rge"]
 [ext_resource type="PackedScene" uid="uid://b4bdikliuy11n" path="res://assets/BrickAssets/GLTF format/cabinetBedDrawerTable.glb" id="86_wgbxi"]
-[ext_resource type="Script" path="res://scenes/splash_screen.gd" id="92_5rsu0"]
 
 [sub_resource type="CylinderShape3D" id="CylinderShape3D_lnnpm"]
 height = 0.6
@@ -3231,80 +3229,6 @@ surface_material_override/0 = SubResource("StandardMaterial3D_qor7n")
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Duvarlar/YatakodasıMesh/Kapılı Duvar/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_dfr8e")
 
-
-[node name="SplashScreen" type="Control" parent="."]
-modulate = Color(0, 0, 0, 1)
-layout_mode = 3
-anchors_preset = 0
-offset_left = 346.0
-offset_top = 132.0
-offset_right = 386.0
-offset_bottom = 172.0
-script = ExtResource("92_5rsu0")
-
-[node name="Heading" type="VBoxContainer" parent="SplashScreen"]
-layout_mode = 0
-offset_left = 77.0
-offset_top = 98.0
-offset_right = 527.0
-offset_bottom = 138.0
-scale = Vector2(2, 2)
-
-[node name="Label1" type="Label" parent="SplashScreen/Heading"]
-process_priority = 10
-layout_mode = 2
-horizontal_alignment = 1
-
-[node name="Heading2" type="VBoxContainer" parent="SplashScreen"]
-layout_mode = 0
-offset_left = 77.0
-offset_top = 190.0
-offset_right = 527.0
-offset_bottom = 230.0
-scale = Vector2(2, 2)
-
-[node name="Label2" type="Label" parent="SplashScreen/Heading2"]
-process_priority = 10
-layout_mode = 2
-
-[node name="Heading3" type="VBoxContainer" parent="SplashScreen"]
-layout_mode = 0
-offset_left = 77.0
-offset_top = 320.0
-offset_right = 527.0
-offset_bottom = 360.0
-scale = Vector2(2, 2)
-
-[node name="Label3" type="Label" parent="SplashScreen/Heading3"]
-process_priority = 10
-layout_mode = 2
-
-[node name="Heading4" type="VBoxContainer" parent="SplashScreen"]
-layout_mode = 0
-offset_left = 77.0
-offset_top = 450.0
-offset_right = 527.0
-offset_bottom = 490.0
-scale = Vector2(2, 2)
-
-[node name="Label4" type="Label" parent="SplashScreen/Heading4"]
-process_priority = 10
-layout_mode = 2
-
-[node name="Heading5" type="VBoxContainer" parent="SplashScreen"]
-layout_mode = 0
-offset_left = 593.0
-offset_top = 859.0
-offset_right = 1043.0
-offset_bottom = 899.0
-scale = Vector2(2, 2)
-
-[node name="ContinueLabel" type="Label" parent="SplashScreen/Heading5"]
-process_priority = 10
-layout_mode = 2
-text = "Press any key to continue..."
-horizontal_alignment = 2
-=======
 [node name="Duvar" type="MeshInstance3D" parent="Duvarlar/YatakodasıMesh"]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -1.00808, 1.70513, -7.15)
 mesh = SubResource("ArrayMesh_o3jqq")
@@ -3674,4 +3598,3 @@ skeleton = NodePath("")
 transform = Transform3D(-7.43094e-08, 0, -1.7, 0, 1.02, 0, 1.7, 0, -7.43094e-08, -5.9566, 1.99425, 7.65006)
 mesh = SubResource("ArrayMesh_dabey")
 skeleton = NodePath("")
-

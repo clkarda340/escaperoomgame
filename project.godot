@@ -23,7 +23,7 @@ Character wakes up at night, and tries to conquer this feeling
 
 "
 config/version="0.1.1"
-run/main_scene="res://scenes/mimari.tscn"
+run/main_scene="res://scenes/main_menu.tscn"
 config/features=PackedStringArray("4.3", "Forward Plus")
 boot_splash/bg_color=Color(0, 0, 0, 1)
 boot_splash/show_image=false
