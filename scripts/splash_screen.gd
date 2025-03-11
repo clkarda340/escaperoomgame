@@ -16,7 +16,7 @@ certain visual stimuli, including flashing lights or patterns. \n \n",
 	"If you have a history of seizures or epilepsy, please consult
 a healthcare professional before engaging with this content. \n \n",
 	"\n \n \n \n This game is about the feeling of something might be wrong. 
-Character wakes up at night, and tries to conquer this feeling
+Wake up at night, and try to conquer this feeling
  in order to get back to sleep. \n \n"
 ]
 
