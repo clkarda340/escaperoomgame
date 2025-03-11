@@ -39,8 +39,8 @@ func _process(delta: float) -> void:
 		print("pause started")
 		game_paused = !game_paused
 		pause_game()
-	get_node("ColorRect").material.set_shader_parameter("transparency",remap($Player.health,0,$Player.max_health,0.25,0))
-	get_node("ColorRect").material.set_shader_parameter("amount",remap($Player.health,0,$Player.max_health,2.6,1))
+	get_node("ColorRect").material.set_shader_parameter("transparency",remap(player.health,0,player.max_health,0.25,0))
+	get_node("ColorRect").material.set_shader_parameter("amount",remap(player.health,0,player.max_health,2.6,1))
 func pause_game():
 	if game_paused:
 		if get_tree().get_root().get_node_or_null("Options"):
@@ -74,8 +74,14 @@ func _on_threatify_timer_timeout() -> void:
 		$Player.health = $Player.max_health
 		if in_game_music.playing:
 			in_game_music.stop()
+		get_node("Threatify Timer").stop()
 		await get_tree().create_timer(1.0).timeout
 		get_node("ThreatGone").play()
+		var ui_label = get_node("EndgameLabel")
+		ui_label.show()
+		await get_tree().create_timer(5.0).timeout
+		ui_label.hide()
+		
 
 
 func _on_health_timer_timeout() -> void:
