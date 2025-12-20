@@ -4,12 +4,12 @@
 [ext_resource type="PackedScene" uid="uid://duk6fyy5jog8t" path="res://assets/BrickAssets/GLTF format/cabinetTelevisionDoors.glb" id="1_o4lqs"]
 [ext_resource type="PackedScene" uid="uid://dj5g7uw3ft3cc" path="res://assets/BrickAssets/GLTF format/pottedPlant.glb" id="2_eljoh"]
 [ext_resource type="PackedScene" uid="uid://c2uasebk07vsb" path="res://assets/BrickAssets/GLTF format/cabinetTelevision.glb" id="2_gaunw"]
-[ext_resource type="Script" path="res://scripts/interactable_bed.gd" id="2_hvmeb"]
+[ext_resource type="Script" uid="uid://buis6nvkuurp0" path="res://scripts/interactable_bed.gd" id="2_hvmeb"]
 [ext_resource type="PackedScene" uid="uid://do72gc30eqeir" path="res://assets/BrickAssets/GLTF format/doorwayFront.glb" id="3_oi3yh"]
 [ext_resource type="PackedScene" uid="uid://c11n1k8ksrdoj" path="res://assets/BrickAssets/GLTF format/doorway.glb" id="4_sis80"]
-[ext_resource type="Script" path="res://scripts/interactable_tv.gd" id="5_2q2m2"]
+[ext_resource type="Script" uid="uid://djts718yi2wkn" path="res://scripts/interactable_tv.gd" id="5_2q2m2"]
 [ext_resource type="PackedScene" uid="uid://bn0vmmxt3mhav" path="res://assets/BrickAssets/GLTF format/kitchenStove.glb" id="5_twmpm"]
-[ext_resource type="Script" path="res://scripts/interactable_oven.gd" id="6_2okq6"]
+[ext_resource type="Script" uid="uid://ckp4yderh7uv8" path="res://scripts/interactable_oven.gd" id="6_2okq6"]
 [ext_resource type="AudioStream" uid="uid://cw35dpxiyfk8" path="res://assets/Sound Effects/tv-static-noise-291374.mp3" id="6_3jk5s"]
 [ext_resource type="PackedScene" uid="uid://b4d2x2avcxukd" path="res://assets/BrickAssets/GLTF format/kitchenSink.glb" id="6_hj3p3"]
 [ext_resource type="PackedScene" uid="uid://b5kd2fwn2dkvm" path="res://assets/BrickAssets/GLTF format/kitchenFridge.glb" id="7_7bn84"]
@@ -725,8 +725,8 @@ tracks/1/use_blend = true
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_x21q7"]
 _data = {
-"RESET": SubResource("Animation_2dp0f"),
-"blink": SubResource("Animation_7cbqr")
+&"RESET": SubResource("Animation_2dp0f"),
+&"blink": SubResource("Animation_7cbqr")
 }
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_ah3cx"]
