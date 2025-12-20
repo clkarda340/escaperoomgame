@@ -1,7 +1,7 @@
 [gd_scene load_steps=6 format=3 uid="uid://2covfo2kp4as"]
 
-[ext_resource type="Script" path="res://scripts/game_lost.gd" id="1_27t3i"]
-[ext_resource type="Shader" path="res://assets/shaders/screen_effect.gdshader" id="2_4qs7n"]
+[ext_resource type="Script" uid="uid://b71762wkrtria" path="res://scripts/game_lost.gd" id="1_27t3i"]
+[ext_resource type="Shader" uid="uid://cm1in7ljbgqnr" path="res://assets/shaders/screen_effect.gdshader" id="2_4qs7n"]
 [ext_resource type="AudioStream" uid="uid://blro5qw1g7epb" path="res://assets/Music/Finale.mp3" id="2_yujcn"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_74o8t"]

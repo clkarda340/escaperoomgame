@@ -1,6 +1,6 @@
 [gd_scene load_steps=20 format=4 uid="uid://nkijjlvsuso8"]
 
-[ext_resource type="Script" path="res://scripts/interactable_door.gd" id="1_v27ro"]
+[ext_resource type="Script" uid="uid://l36v6n1dk1d5" path="res://scripts/interactable_door.gd" id="1_v27ro"]
 [ext_resource type="AudioStream" uid="uid://dhsyksdri6e02" path="res://assets/Sound Effects/door-slam-angrily-86963.mp3" id="2_5xurs"]
 [ext_resource type="AudioStream" uid="uid://dmqpjdm2ehesp" path="res://assets/Sound Effects/squeaky-door-open-113212.mp3" id="2_6vfli"]
 [ext_resource type="AudioStream" uid="uid://bom8o74qltpsq" path="res://assets/Sound Effects/squeaky-bathroom-door-102756.mp3" id="3_i2mk0"]
@@ -224,11 +224,11 @@ tracks/1/use_blend = true
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_6q56h"]
 _data = {
-"RESET": SubResource("Animation_w6nh4"),
-"door_close": SubResource("Animation_t6ld3"),
-"door_open": SubResource("Animation_g1y7a"),
-"door_slam": SubResource("Animation_fxnya"),
-"door_wiggle": SubResource("Animation_tn24m")
+&"RESET": SubResource("Animation_w6nh4"),
+&"door_close": SubResource("Animation_t6ld3"),
+&"door_open": SubResource("Animation_g1y7a"),
+&"door_slam": SubResource("Animation_fxnya"),
+&"door_wiggle": SubResource("Animation_tn24m")
 }
 
 [node name="InDoor" type="Node3D"]

@@ -1,8 +1,8 @@
 [gd_scene load_steps=6 format=3 uid="uid://pyci4yn6i5bk"]
 
-[ext_resource type="Script" path="res://scripts/main_menu.gd" id="1_n3in4"]
+[ext_resource type="Script" uid="uid://kc2wo64q81cs" path="res://scripts/main_menu.gd" id="1_n3in4"]
 [ext_resource type="AudioStream" uid="uid://bv5hlacq3141m" path="res://assets/Music/Menu.mp3" id="2_mk6du"]
-[ext_resource type="Shader" path="res://assets/shaders/screen_effect.gdshader" id="3_421mt"]
+[ext_resource type="Shader" uid="uid://cm1in7ljbgqnr" path="res://assets/shaders/screen_effect.gdshader" id="3_421mt"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_t54db"]
 content_margin_top = 70.0

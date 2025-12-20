@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://cvpjt228b87uk"]
 
-[ext_resource type="Script" path="res://scripts/game_win.gd" id="1_veuxi"]
+[ext_resource type="Script" uid="uid://cokmbqqsfd8eo" path="res://scripts/game_win.gd" id="1_veuxi"]
 [ext_resource type="AudioStream" uid="uid://db5k6qxqp8xrx" path="res://assets/Music/ThreatGone.wav" id="2_rwlem"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_mi7mw"]

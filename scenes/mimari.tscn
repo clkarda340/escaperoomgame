@@ -4,11 +4,11 @@
 [ext_resource type="PackedScene" uid="uid://duk6fyy5jog8t" path="res://assets/BrickAssets/GLTF format/cabinetTelevisionDoors.glb" id="1_o4lqs"]
 [ext_resource type="PackedScene" uid="uid://dj5g7uw3ft3cc" path="res://assets/BrickAssets/GLTF format/pottedPlant.glb" id="2_eljoh"]
 [ext_resource type="PackedScene" uid="uid://c2uasebk07vsb" path="res://assets/BrickAssets/GLTF format/cabinetTelevision.glb" id="2_gaunw"]
-[ext_resource type="Script" path="res://scripts/interactable_bed.gd" id="2_hvmeb"]
+[ext_resource type="Script" uid="uid://buis6nvkuurp0" path="res://scripts/interactable_bed.gd" id="2_hvmeb"]
 [ext_resource type="PackedScene" uid="uid://do72gc30eqeir" path="res://assets/BrickAssets/GLTF format/doorwayFront.glb" id="3_oi3yh"]
-[ext_resource type="Script" path="res://scripts/interactable_tv.gd" id="5_2q2m2"]
+[ext_resource type="Script" uid="uid://djts718yi2wkn" path="res://scripts/interactable_tv.gd" id="5_2q2m2"]
 [ext_resource type="PackedScene" uid="uid://bn0vmmxt3mhav" path="res://assets/BrickAssets/GLTF format/kitchenStove.glb" id="5_twmpm"]
-[ext_resource type="Script" path="res://scripts/interactable_oven.gd" id="6_2okq6"]
+[ext_resource type="Script" uid="uid://ckp4yderh7uv8" path="res://scripts/interactable_oven.gd" id="6_2okq6"]
 [ext_resource type="AudioStream" uid="uid://cw35dpxiyfk8" path="res://assets/Sound Effects/tv-static-noise-291374.mp3" id="6_3jk5s"]
 [ext_resource type="PackedScene" uid="uid://b4d2x2avcxukd" path="res://assets/BrickAssets/GLTF format/kitchenSink.glb" id="6_hj3p3"]
 [ext_resource type="PackedScene" uid="uid://b5kd2fwn2dkvm" path="res://assets/BrickAssets/GLTF format/kitchenFridge.glb" id="7_7bn84"]
@@ -18,12 +18,12 @@
 [ext_resource type="PackedScene" uid="uid://n4veikm3m2da" path="res://assets/BrickAssets/GLTF format/kitchenBlender.glb" id="10_pw06m"]
 [ext_resource type="PackedScene" uid="uid://b2ph2nflixdf5" path="res://assets/BrickAssets/GLTF format/hoodLarge.glb" id="11_4cgwm"]
 [ext_resource type="PackedScene" uid="uid://u8ipnt240771" path="res://assets/BrickAssets/GLTF format/kitchenCabinetCornerRound.glb" id="12_68dkv"]
-[ext_resource type="Script" path="res://scripts/interactable_radio.gd" id="12_a6kpc"]
+[ext_resource type="Script" uid="uid://ovofjsl77skt" path="res://scripts/interactable_radio.gd" id="12_a6kpc"]
 [ext_resource type="PackedScene" uid="uid://ksirx3xymw5s" path="res://assets/BrickAssets/GLTF format/kitchenMicrowave.glb" id="13_e2f5t"]
 [ext_resource type="AudioStream" uid="uid://belyay18cdilw" path="res://assets/Sound Effects/tuning-radio-7150.mp3" id="13_tooig"]
 [ext_resource type="PackedScene" uid="uid://cgroaxsrf4xtr" path="res://assets/BrickAssets/GLTF format/kitchenCabinetUpperDouble.glb" id="14_0vnrv"]
 [ext_resource type="PackedScene" uid="uid://bfm4iild04gpk" path="res://assets/BrickAssets/GLTF format/kitchenCabinetUpper.glb" id="15_7j600"]
-[ext_resource type="Script" path="res://scripts/interactable_clock.gd" id="15_agl3b"]
+[ext_resource type="Script" uid="uid://dh1g1phwhs26d" path="res://scripts/interactable_clock.gd" id="15_agl3b"]
 [ext_resource type="PackedScene" uid="uid://be1o3eprskdf5" path="res://assets/BrickAssets/GLTF format/tableCrossCloth.glb" id="15_fa6mx"]
 [ext_resource type="PackedScene" uid="uid://c37ygvl8h6r4c" path="res://assets/BrickAssets/GLTF format/rugRounded.glb" id="16_4ewvf"]
 [ext_resource type="AudioStream" uid="uid://lvkixj2rw48s" path="res://assets/Sound Effects/alarm-clock.wav" id="16_vtjd7"]
@@ -31,7 +31,7 @@
 [ext_resource type="PackedScene" uid="uid://cdj7051yegnfg" path="res://assets/BrickAssets/GLTF format/table.glb" id="18_uap4x"]
 [ext_resource type="PackedScene" uid="uid://bk64j5ts7jga1" path="res://assets/BrickAssets/GLTF format/chair.glb" id="19_g1ygv"]
 [ext_resource type="PackedScene" uid="uid://cqarishig0mps" path="res://assets/BrickAssets/GLTF format/books.glb" id="22_qhif0"]
-[ext_resource type="Script" path="res://scripts/interactable_fan.gd" id="26_o2hjl"]
+[ext_resource type="Script" uid="uid://diddrawlxcb16" path="res://scripts/interactable_fan.gd" id="26_o2hjl"]
 [ext_resource type="PackedScene" uid="uid://b8rjyduayhecd" path="res://assets/BrickAssets/GLTF format/plantSmall2.glb" id="27_3ox7f"]
 [ext_resource type="AudioStream" uid="uid://cv5lxmpymko4x" path="res://assets/Sound Effects/old-fan-with-start-sound.mp3" id="27_dridy"]
 [ext_resource type="PackedScene" uid="uid://cwtat72yrtk20" path="res://assets/BrickAssets/GLTF format/radio.glb" id="28_yb28r"]
@@ -54,7 +54,7 @@
 [ext_resource type="PackedScene" uid="uid://bud3yc08oy25v" path="res://assets/BrickAssets/GLTF format/ceilingFan.glb" id="44_70ljx"]
 [ext_resource type="AudioStream" uid="uid://y5qgvjeyrsw3" path="res://assets/Sound Effects/broken-fridge.mp3" id="45_65crg"]
 [ext_resource type="PackedScene" uid="uid://83kmeih7qd7d" path="res://assets/BrickAssets/GLTF format/lampRoundTable.glb" id="45_483pw"]
-[ext_resource type="Script" path="res://scripts/interactable_fridge.gd" id="45_uf6s5"]
+[ext_resource type="Script" uid="uid://j8l4ujghkuiy" path="res://scripts/interactable_fridge.gd" id="45_uf6s5"]
 [ext_resource type="PackedScene" uid="uid://qc0bm6nhnwaa" path="res://assets/BrickAssets/GLTF format/lampSquareTable.glb" id="48_6h63t"]
 [ext_resource type="PackedScene" uid="uid://co0jbm8iixy7y" path="res://assets/BrickAssets/GLTF format/loungeChairRelax.glb" id="50_kaktv"]
 [ext_resource type="PackedScene" uid="uid://bj2sl5huj2ifd" path="res://assets/BrickAssets/GLTF format/pillow.glb" id="53_71v2s"]
@@ -65,12 +65,12 @@
 [ext_resource type="PackedScene" uid="uid://bd2lo23hcu1gf" path="res://assets/BrickAssets/GLTF format/sideTable.glb" id="60_ygrpk"]
 [ext_resource type="PackedScene" uid="uid://db10ij2665rno" path="res://assets/BrickAssets/GLTF format/speakerSmall.glb" id="62_jsa83"]
 [ext_resource type="AudioStream" uid="uid://civwdnqqdv0bf" path="res://assets/Sound Effects/washing-machine-20006.mp3" id="63_2a7x0"]
-[ext_resource type="Script" path="res://scripts/interactable_washing_machine.gd" id="63_tfghm"]
+[ext_resource type="Script" uid="uid://dxjcafkayoxv0" path="res://scripts/interactable_washing_machine.gd" id="63_tfghm"]
 [ext_resource type="PackedScene" uid="uid://bsc5qc5ejclau" path="res://assets/BrickAssets/GLTF format/televisionAntenna.glb" id="65_samyg"]
 [ext_resource type="ArrayMesh" uid="uid://bydfhet1il5nd" path="res://assets/BrickAssets/GLTF format/calarsaat.obj" id="67_a5p57"]
 [ext_resource type="PackedScene" uid="uid://0jbaqe6atg8x" path="res://assets/BrickAssets/GLTF format/televisionVintage.glb" id="67_nd0ah"]
 [ext_resource type="AudioStream" uid="uid://cag4k0mrb15l2" path="res://assets/Sound Effects/computer-startup-music-97699.mp3" id="73_0wu1u"]
-[ext_resource type="Script" path="res://scripts/interactable_laptop.gd" id="73_34khw"]
+[ext_resource type="Script" uid="uid://intut1nx1anl" path="res://scripts/interactable_laptop.gd" id="73_34khw"]
 [ext_resource type="ArrayMesh" uid="uid://dh4hragf7kt0a" path="res://assets/BrickAssets/GLTF format/ÇocukOyuncğaı.obj" id="74_5s181"]
 [ext_resource type="PackedScene" uid="uid://cmhtv8ekbm02l" path="res://assets/BrickAssets/GLTF format/loungeSofaCorner.glb" id="74_wpjvv"]
 [ext_resource type="PackedScene" uid="uid://bnyb31b4lhxpf" path="res://assets/BrickAssets/GLTF format/loungeSofa.glb" id="75_janlc"]
@@ -89,7 +89,7 @@
 [ext_resource type="PackedScene" uid="uid://bevss30m1rxe2" path="res://assets/BrickAssets/GLTF format/coatRackStanding.glb" id="83_vb8x1"]
 [ext_resource type="PackedScene" uid="uid://d32q2w3snqa6w" path="res://assets/BrickAssets/GLTF format/cabinetBedDrawer.glb" id="84_kv4qs"]
 [ext_resource type="AudioStream" uid="uid://bivn1wkg0c4ar" path="res://assets/Sound Effects/kördüğümküre_Master.wav" id="85_cyyra"]
-[ext_resource type="Script" path="res://scripts/interactable_orb.gd" id="85_g2guc"]
+[ext_resource type="Script" uid="uid://bih0kjmpdhqrp" path="res://scripts/interactable_orb.gd" id="85_g2guc"]
 [ext_resource type="PackedScene" uid="uid://dqvb52u2167ql" path="res://assets/BrickAssets/GLTF format/bookcaseClosedDoors.glb" id="85_x2rge"]
 [ext_resource type="PackedScene" uid="uid://b4bdikliuy11n" path="res://assets/BrickAssets/GLTF format/cabinetBedDrawerTable.glb" id="86_wgbxi"]
 
@@ -205,8 +205,8 @@ tracks/1/keys = {
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_mwkac"]
 _data = {
-"RESET": SubResource("Animation_ofsgf"),
-"ring": SubResource("Animation_va1pl")
+&"RESET": SubResource("Animation_ofsgf"),
+&"ring": SubResource("Animation_va1pl")
 }
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_71vge"]
@@ -231,9 +231,9 @@ seed = 5
 domain_warp_enabled = true
 
 [sub_resource type="NoiseTexture2D" id="NoiseTexture2D_44tou"]
+noise = SubResource("FastNoiseLite_urxyh")
 invert = true
 in_3d_space = true
-noise = SubResource("FastNoiseLite_urxyh")
 
 [sub_resource type="CylinderShape3D" id="CylinderShape3D_jgj3s"]
 height = 0.51529
@@ -291,8 +291,8 @@ tracks/0/keys = {
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_4spdy"]
 _data = {
-"RESET": SubResource("Animation_vlqck"),
-"play": SubResource("Animation_c2x40")
+&"RESET": SubResource("Animation_vlqck"),
+&"play": SubResource("Animation_c2x40")
 }
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_pipm2"]
@@ -354,8 +354,8 @@ tracks/1/use_blend = true
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_x21q7"]
 _data = {
-"RESET": SubResource("Animation_2dp0f"),
-"blink": SubResource("Animation_7cbqr")
+&"RESET": SubResource("Animation_2dp0f"),
+&"blink": SubResource("Animation_7cbqr")
 }
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_ah3cx"]
@@ -389,8 +389,8 @@ tracks/0/keys = PackedFloat32Array(0, 1, 8.4, 0.3, 6.7, 0.0666667, 1, 8.4, 0.3, 
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_och5t"]
 _data = {
-"RESET": SubResource("Animation_arxhp"),
-"shiver": SubResource("Animation_3jstj")
+&"RESET": SubResource("Animation_arxhp"),
+&"shiver": SubResource("Animation_3jstj")
 }
 
 [sub_resource type="CylinderShape3D" id="CylinderShape3D_xceee"]
@@ -446,8 +446,8 @@ tracks/0/keys = {
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_qhu6x"]
 _data = {
-"RESET": SubResource("Animation_6ja7t"),
-"work": SubResource("Animation_uboqn")
+&"RESET": SubResource("Animation_6ja7t"),
+&"work": SubResource("Animation_uboqn")
 }
 
 [sub_resource type="CylinderShape3D" id="CylinderShape3D_burhg"]
@@ -2020,7 +2020,7 @@ shape = SubResource("BoxShape3D_iy8v8")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.66379, 0.25, -5.75979)
 
 [node name="Calarsaat" type="MeshInstance3D" parent="Yatakodası"]
-transform = Transform3D(-0.107037, 0, 3.98024e-07, 0, 0.103, 0, -2.71358e-07, 0, -0.157, -6.24643, 1.02898, -5.10904)
+transform = Transform3D(-0.107037, 0, 3.9802353e-07, 0, 0.103, 0, -2.7135823e-07, 0, -0.157, -6.24643, 1.02898, -5.10904)
 mesh = ExtResource("67_a5p57")
 surface_material_override/0 = SubResource("StandardMaterial3D_ixxdy")
 surface_material_override/1 = SubResource("StandardMaterial3D_leu8j")
@@ -2046,7 +2046,7 @@ shape = SubResource("CylinderShape3D_efnm5")
 
 [node name="ClockAnim" type="AnimationPlayer" parent="Yatakodası/Calarsaat"]
 libraries = {
-"": SubResource("AnimationLibrary_mwkac")
+&"": SubResource("AnimationLibrary_mwkac")
 }
 
 [node name="ClockNoise" type="AudioStreamPlayer3D" parent="Yatakodası/Calarsaat"]
@@ -2279,7 +2279,7 @@ shape = SubResource("CylinderShape3D_yu4w7")
 
 [node name="FanAnimation" type="AnimationPlayer" parent="OturmaOdası/ceilingFan2"]
 libraries = {
-"": SubResource("AnimationLibrary_4spdy")
+&"": SubResource("AnimationLibrary_4spdy")
 }
 
 [node name="FanNoise" type="AudioStreamPlayer3D" parent="OturmaOdası/ceilingFan2"]
@@ -2377,7 +2377,7 @@ bus = &"SFX"
 
 [node name="KitchenLightBlink" type="AnimationPlayer" parent="Kitchen/kitchenStove"]
 libraries = {
-"": SubResource("AnimationLibrary_x21q7")
+&"": SubResource("AnimationLibrary_x21q7")
 }
 
 [node name="kitchenSink" parent="Kitchen" instance=ExtResource("6_hj3p3")]
@@ -2418,7 +2418,7 @@ parameters/looping = true
 
 [node name="FridgeShiver" type="AnimationPlayer" parent="Kitchen/kitchenFridge"]
 libraries = {
-"": SubResource("AnimationLibrary_och5t")
+&"": SubResource("AnimationLibrary_och5t")
 }
 
 [node name="kitchenBlender" parent="Kitchen" instance=ExtResource("10_pw06m")]
@@ -2604,7 +2604,7 @@ transform = Transform3D(-5.2935e-08, 0, 1.21101, 0, 2, 0, -2, 0, -8.74228e-08, 0
 
 [node name="WashingMachineAnim" type="AnimationPlayer" parent="Tuvalet/washerDryer"]
 libraries = {
-"": SubResource("AnimationLibrary_qhu6x")
+&"": SubResource("AnimationLibrary_qhu6x")
 }
 
 [node name="InteractableWashingMachine" type="Area3D" parent="Tuvalet/washerDryer"]
@@ -3107,6 +3107,7 @@ shape = SubResource("CylinderShape3D_jpbf7")
 [node name="Duvarlar" type="Node3D" parent="."]
 
 [node name="MeshTavan" type="MeshInstance3D" parent="Duvarlar"]
+visible = false
 mesh = SubResource("ArrayMesh_7ftbn")
 surface_material_override/0 = SubResource("StandardMaterial3D_ytt5h")
 

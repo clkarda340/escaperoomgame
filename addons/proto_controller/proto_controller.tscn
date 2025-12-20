@@ -1,6 +1,6 @@
 [gd_scene load_steps=7 format=3 uid="uid://bs72ogkvdd7d6"]
 
-[ext_resource type="Script" path="res://addons/proto_controller/proto_controller.gd" id="1_ucva2"]
+[ext_resource type="Script" uid="uid://c8ejvfyrb13y2" path="res://addons/proto_controller/proto_controller.gd" id="1_ucva2"]
 [ext_resource type="Texture2D" uid="uid://cq6vick1eso2" path="res://assets/Kenneys UI/White/crosshair180.png" id="2_yafe4"]
 [ext_resource type="Texture2D" uid="uid://dlrghvasgcl5v" path="res://assets/Kenneys UI/White/crosshair180-2.png" id="3_3j4py"]
 
